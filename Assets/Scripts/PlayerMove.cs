@@ -60,7 +60,7 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
-                jumpForce -= 0.001f;
+                jumpForce -= 0.004f;
             }
             //Debug.Log(jumpForce);
         }
