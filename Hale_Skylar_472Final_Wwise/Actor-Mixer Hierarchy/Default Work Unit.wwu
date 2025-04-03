@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7F9F1F6D-CD20-4117-B7A4-231D53E9841D}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{7F9F1F6D-CD20-4117-B7A4-231D53E9841D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="TEST_door_knock" ID="{91AF8BC0-7BBA-47A8-B82A-E3B5C2405912}" ShortID="517503083">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{813F8248-966D-45D9-AC39-7C6128529A5A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{587F478E-7D52-48B2-A92D-F12FF7E7D9C2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="door_knock" ID="{39AD2C3F-EAE3-4879-B008-E26CB0E23DD0}">
+							<Language>SFX</Language>
+							<AudioFile>door_knock.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="296257393"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="door_knock" ID="{39AD2C3F-EAE3-4879-B008-E26CB0E23DD0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

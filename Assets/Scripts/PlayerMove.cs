@@ -6,6 +6,7 @@ public class PlayerMove : MonoBehaviour
 {
     public float playerSpeed = 100f;
     public float jumpForce = 0.5f;
+    public float jumpDecelerationRate = 0.0005f;
     public float jumpCap;
     public bool isJump = false;
 
@@ -16,7 +17,7 @@ public class PlayerMove : MonoBehaviour
     void Start()
     {
         Controller = GetComponent<CharacterController>();
-        jumpCap = jumpForce * -1;
+        jumpCap = (jumpForce * -1);// + this.transform.position.y;
     }
 
     // Update is called once per frame
@@ -60,7 +61,7 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
-                jumpForce -= 0.004f;
+                jumpForce -= jumpDecelerationRate;
             }
             //Debug.Log(jumpForce);
         }
