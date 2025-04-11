@@ -27,6 +27,14 @@
 						<State Name="LowTension" ID="{4F472619-ABF5-46F8-A870-1F512C5B19B0}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="GameState" ID="{7985154B-CC0D-4D73-A187-239F44ECB9B8}">
+					<ChildrenList>
+						<State Name="None" ID="{E9A92B53-2363-4D1D-B314-3B53661074B1}"/>
+						<State Name="Town" ID="{17F4C1A1-2982-4C2A-BA30-8F22BFED4AEB}"/>
+						<State Name="Exploration" ID="{992C674E-248F-461E-9D00-0F88A53D0451}"/>
+						<State Name="Combat" ID="{5A2158CE-35FA-4475-BDEF-225F98B26970}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
