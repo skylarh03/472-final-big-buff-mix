@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}" SchemaVersion="119">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="TownStates" ID="{2BBC5840-336D-4685-8392-26BA3393B836}">
+					<ChildrenList>
+						<State Name="None" ID="{1FA46F1D-0DB1-4CA0-A154-435A65E51B39}"/>
+						<State Name="Town_Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+						<State Name="Town_Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="ExplorationStates" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{7EA90BC0-0ACE-4609-88F5-60A22891B1C1}"/>
+						<State Name="Exploration_Day" ID="{F746724D-7B70-499F-8E42-CC7A45861061}"/>
+						<State Name="Exploration_Night" ID="{5A6BDE94-934D-4B99-BE3D-38CACD4DA57B}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Combat_Tension" ID="{2C91092E-BC3F-4A35-A6EF-F91557A4964E}">
+					<ChildrenList>
+						<State Name="None" ID="{9F22F7E7-2790-40C7-BD68-DF75CAA341CC}"/>
+						<State Name="HighTension" ID="{3A76F891-69A1-4D36-94DE-5788C6CB73AC}"/>
+						<State Name="LowTension" ID="{4F472619-ABF5-46F8-A870-1F512C5B19B0}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

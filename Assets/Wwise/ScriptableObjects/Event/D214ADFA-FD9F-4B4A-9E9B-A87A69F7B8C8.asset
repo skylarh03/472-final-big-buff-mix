@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 713b8a995f76bb8408585033b84518e9, type: 3}
+  m_Name: D214ADFA-FD9F-4B4A-9E9B-A87A69F7B8C8
+  m_EditorClassIdentifier: 
+  objectName: Town_GoToBeach
+  id: 3122302906
+  guid: D214ADFA-FD9F-4B4A-9E9B-A87A69F7B8C8

@@ -1,0 +1,1157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{42326E80-D219-7A5D-9E65-BF28F7AF7033}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="48620415" Name="Have_U_Ever_Been_Outside" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="2675251108" Name="New_Peak_Limiter" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="2940432316" Name="Stingers"/>
+				<Bus Id="3803692087" Name="Master Audio Bus">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2675251108"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
+				<Bus Id="3991942870" Name="Music">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="48620415"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
+			</Busses>
+			<GameParameters>
+				<GameParameter Id="822163944" Name="SS_Air_RPM"/>
+				<GameParameter Id="1029930033" Name="SS_Air_Fury"/>
+				<GameParameter Id="1206868862" Name="Combat_Tension"/>
+				<GameParameter Id="1351367891" Name="SS_Air_Fear"/>
+				<GameParameter Id="2648548617" Name="SS_Air_Month"/>
+				<GameParameter Id="3002758120" Name="SS_Air_Freefall"/>
+				<GameParameter Id="3074696722" Name="SS_Air_Size"/>
+				<GameParameter Id="3203397129" Name="SS_Air_TimeOfDay"/>
+				<GameParameter Id="3715662592" Name="SS_Air_Storm"/>
+				<GameParameter Id="3725838539" Name="AtBeach"/>
+				<GameParameter Id="3847924954" Name="SS_Air_Presence"/>
+				<GameParameter Id="4160247818" Name="SS_Air_Turbulence"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="1206868862" Name="Combat_Tension">
+					<States>
+						<State Id="376032185" Name="LowTension"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="4033417077" Name="HighTension"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3427946127" Name="TownStates">
+					<States>
+						<State Id="377176802" Name="Town_Day"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="3205202438" Name="Town_Night"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3482212766" Name="ExplorationStates">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="3608744671" Name="Exploration_Day"/>
+						<State Id="3817056875" Name="Exploration_Night"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<AcousticTextures>
+				<AcousticTexture Id="504532776" Name="Brick">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="18"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="23"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="513139656" Name="Mountain">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="841620460" Name="Concrete">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="14"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1755085759" Name="Wood_Deep">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="1"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="8"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1873957695" Name="Anechoic">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1970351858" Name="Fabric">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="3"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="13"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="48"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="72"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2058049674" Name="Wood">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2412606308" Name="Carpet">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="46"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="45"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="76"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2637588553" Name="Tile">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="67"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="41"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2928161104" Name="Curtains">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="7"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="60"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="84"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3195498748" Name="Cork_Tiles">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="14"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="30"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="73"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3670307564" Name="Drywall">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="2"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4168643977" Name="Acoustic_Banner">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="37"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4262522749" Name="Wood_Bright">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="10"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="9"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+			</AcousticTextures>
+		</SoundBank>
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{073CAA9C-24FC-2462-5615-98366DD414B5}">
+			<ShortName>Master</ShortName>
+			<Path>Master.bnk</Path>
+			<Media>
+				<File Id="7717425" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_23.wav</ShortName>
+					<CachePath>SFX/night_base_140_23_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="21414237" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_26.wav</ShortName>
+					<CachePath>SFX/day_base_178_26_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="27508784" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_15.wav</ShortName>
+					<CachePath>SFX/day_base_178_15_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="30947667" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_30.wav</ShortName>
+					<CachePath>SFX/night_base_140_30_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="34431315" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_14.wav</ShortName>
+					<CachePath>SFX/night_base_140_14_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="57729547" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_13.wav</ShortName>
+					<CachePath>SFX/night_base_140_13_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="63685387" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_08.wav</ShortName>
+					<CachePath>SFX/night_base_140_08_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="68647566" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_37.wav</ShortName>
+					<CachePath>SFX/day_base_178_37_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="75886366" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_04.wav</ShortName>
+					<CachePath>SFX/day_base_178_04_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="99715958" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_02.wav</ShortName>
+					<CachePath>SFX/night_base_140_02_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="101232745" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_19.wav</ShortName>
+					<CachePath>SFX/night_base_140_19_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="102290091" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_arp.wav</ShortName>
+					<CachePath>SFX/night_arp_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="118641051" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_17.wav</ShortName>
+					<CachePath>SFX/day_base_178_17_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="154726874" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_38.wav</ShortName>
+					<CachePath>SFX/night_base_140_38_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="160996572" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_44.wav</ShortName>
+					<CachePath>SFX/day_base_178_44_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="166061174" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_28.wav</ShortName>
+					<CachePath>SFX/day_base_178_28_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="179787333" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_05.wav</ShortName>
+					<CachePath>SFX/day_base_178_05_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="193395013" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_35.wav</ShortName>
+					<CachePath>SFX/day_base_178_35_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="200019902" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_07.wav</ShortName>
+					<CachePath>SFX/day_base_178_07_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="214825501" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_52.wav</ShortName>
+					<CachePath>SFX/day_base_178_52_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="221073331" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_50.wav</ShortName>
+					<CachePath>SFX/day_base_178_50_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="236492864" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_07.wav</ShortName>
+					<CachePath>SFX/night_base_140_07_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="238184512" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>stinger_item_collection_178.wav</ShortName>
+					<CachePath>SFX/stinger_item_collection_178_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="251137450" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_27.wav</ShortName>
+					<CachePath>SFX/day_base_178_27_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="271798309" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_25.wav</ShortName>
+					<CachePath>SFX/day_base_178_25_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="281573393" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_12.wav</ShortName>
+					<CachePath>SFX/day_base_178_12_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="289746657" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_01.wav</ShortName>
+					<CachePath>SFX/night_base_140_01_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="292962377" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_44.wav</ShortName>
+					<CachePath>SFX/night_base_140_44_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="342615801" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_03.wav</ShortName>
+					<CachePath>SFX/day_base_178_03_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="350898139" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_49.wav</ShortName>
+					<CachePath>SFX/day_base_178_49_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="369973815" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_20.wav</ShortName>
+					<CachePath>SFX/day_base_178_20_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="374036014" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_30.wav</ShortName>
+					<CachePath>SFX/day_base_178_30_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="377478711" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_43.wav</ShortName>
+					<CachePath>SFX/day_base_178_43_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="380013376" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_05.wav</ShortName>
+					<CachePath>SFX/night_base_140_05_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="395189598" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_43.wav</ShortName>
+					<CachePath>SFX/night_base_140_43_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="395898495" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_26.wav</ShortName>
+					<CachePath>SFX/night_base_140_26_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="396784195" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_12.wav</ShortName>
+					<CachePath>SFX/night_base_140_12_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="401265481" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_01.wav</ShortName>
+					<CachePath>SFX/day_base_178_01_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="415952063" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_28.wav</ShortName>
+					<CachePath>SFX/night_base_140_28_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="419981500" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_15.wav</ShortName>
+					<CachePath>SFX/night_base_140_15_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="422935936" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_25.wav</ShortName>
+					<CachePath>SFX/night_base_140_25_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="428081969" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_38.wav</ShortName>
+					<CachePath>SFX/day_base_178_38_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="473494768" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_to_day_01.wav</ShortName>
+					<CachePath>SFX/night_to_day_01_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="488021391" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_06.wav</ShortName>
+					<CachePath>SFX/night_base_140_06_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="489348864" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_40.wav</ShortName>
+					<CachePath>SFX/day_base_178_40_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="493651152" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_33.wav</ShortName>
+					<CachePath>SFX/night_base_140_33_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="498843853" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_29.wav</ShortName>
+					<CachePath>SFX/day_base_178_29_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="499031677" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_24.wav</ShortName>
+					<CachePath>SFX/night_base_140_24_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="502036796" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_melody_live_guitar.wav</ShortName>
+					<CachePath>SFX/night_melody_live_guitar_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="511836074" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_to_night_04.wav</ShortName>
+					<CachePath>SFX/day_to_night_04_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="522239975" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_21.wav</ShortName>
+					<CachePath>SFX/night_base_140_21_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="524824347" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_18.wav</ShortName>
+					<CachePath>SFX/day_base_178_18_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="532846205" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_22.wav</ShortName>
+					<CachePath>SFX/day_base_178_22_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="534545070" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_17.wav</ShortName>
+					<CachePath>SFX/night_base_140_17_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="545135810" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_04.wav</ShortName>
+					<CachePath>SFX/night_base_140_04_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="549288315" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_09.wav</ShortName>
+					<CachePath>SFX/day_base_178_09_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="560716799" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_11.wav</ShortName>
+					<CachePath>SFX/night_base_140_11_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="566291254" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_08.wav</ShortName>
+					<CachePath>SFX/day_base_178_08_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="585935115" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_21.wav</ShortName>
+					<CachePath>SFX/day_base_178_21_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="615664298" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_to_night_02.wav</ShortName>
+					<CachePath>SFX/day_to_night_02_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="626125282" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_countermelody.wav</ShortName>
+					<CachePath>SFX/night_countermelody_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="633752390" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_48.wav</ShortName>
+					<CachePath>SFX/day_base_178_48_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="634345249" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_29.wav</ShortName>
+					<CachePath>SFX/night_base_140_29_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="649449689" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_22.wav</ShortName>
+					<CachePath>SFX/night_base_140_22_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="654652539" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_03.wav</ShortName>
+					<CachePath>SFX/night_base_140_03_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="677423853" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_to_night_03.wav</ShortName>
+					<CachePath>SFX/day_to_night_03_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="677697525" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_42.wav</ShortName>
+					<CachePath>SFX/night_base_140_42_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="679572453" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_10.wav</ShortName>
+					<CachePath>SFX/day_base_178_10_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="685247425" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_20.wav</ShortName>
+					<CachePath>SFX/night_base_140_20_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="691258793" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_40.wav</ShortName>
+					<CachePath>SFX/night_base_140_40_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="706194213" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_39.wav</ShortName>
+					<CachePath>SFX/day_base_178_39_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="710583631" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_51.wav</ShortName>
+					<CachePath>SFX/day_base_178_51_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="726749935" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_47.wav</ShortName>
+					<CachePath>SFX/day_base_178_47_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="730055901" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_31.wav</ShortName>
+					<CachePath>SFX/night_base_140_31_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="756705463" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_09.wav</ShortName>
+					<CachePath>SFX/night_base_140_09_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="758594629" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_14.wav</ShortName>
+					<CachePath>SFX/day_base_178_14_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="762283761" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_31.wav</ShortName>
+					<CachePath>SFX/day_base_178_31_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="763995699" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_11.wav</ShortName>
+					<CachePath>SFX/day_base_178_11_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="765758947" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_37.wav</ShortName>
+					<CachePath>SFX/night_base_140_37_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="772328746" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_10.wav</ShortName>
+					<CachePath>SFX/night_base_140_10_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="777759674" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_36.wav</ShortName>
+					<CachePath>SFX/night_base_140_36_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="795287142" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_to_night_05.wav</ShortName>
+					<CachePath>SFX/day_to_night_05_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="800887784" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_41.wav</ShortName>
+					<CachePath>SFX/night_base_140_41_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="801830846" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_melody_178_02_03.wav</ShortName>
+					<CachePath>SFX/day_melody_178_02_03_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="801928461" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_16.wav</ShortName>
+					<CachePath>SFX/day_base_178_16_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="806420609" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_melody_178_02_02.wav</ShortName>
+					<CachePath>SFX/day_melody_178_02_02_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="809074364" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_42.wav</ShortName>
+					<CachePath>SFX/day_base_178_42_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="822567085" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_34.wav</ShortName>
+					<CachePath>SFX/day_base_178_34_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="822859217" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_32.wav</ShortName>
+					<CachePath>SFX/night_base_140_32_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="839586856" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_02.wav</ShortName>
+					<CachePath>SFX/day_base_178_02_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="872005110" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_13.wav</ShortName>
+					<CachePath>SFX/day_base_178_13_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="881231503" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_35.wav</ShortName>
+					<CachePath>SFX/night_base_140_35_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="888840302" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_18.wav</ShortName>
+					<CachePath>SFX/night_base_140_18_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="889310938" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_34.wav</ShortName>
+					<CachePath>SFX/night_base_140_34_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="897723927" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_46.wav</ShortName>
+					<CachePath>SFX/day_base_178_46_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="907772810" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_melody_178_03_01.wav</ShortName>
+					<CachePath>SFX/day_melody_178_03_01_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="931947455" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_41.wav</ShortName>
+					<CachePath>SFX/day_base_178_41_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="932945889" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_45.wav</ShortName>
+					<CachePath>SFX/day_base_178_45_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="935526073" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_27.wav</ShortName>
+					<CachePath>SFX/night_base_140_27_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="939101413" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_24.wav</ShortName>
+					<CachePath>SFX/day_base_178_24_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="957087349" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_39.wav</ShortName>
+					<CachePath>SFX/night_base_140_39_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="958960343" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_melody_178_01_02.wav</ShortName>
+					<CachePath>SFX/day_melody_178_01_02_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="967358011" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_36.wav</ShortName>
+					<CachePath>SFX/day_base_178_36_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="971491809" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_19.wav</ShortName>
+					<CachePath>SFX/day_base_178_19_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="986619097" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_23.wav</ShortName>
+					<CachePath>SFX/day_base_178_23_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="992133268" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_33.wav</ShortName>
+					<CachePath>SFX/day_base_178_33_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="1025300550" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_melody_178_02_01.wav</ShortName>
+					<CachePath>SFX/day_melody_178_02_01_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="1037519569" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>night_base_140_16.wav</ShortName>
+					<CachePath>SFX/night_base_140_16_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="1043263696" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_06.wav</ShortName>
+					<CachePath>SFX/day_base_178_06_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="1049700512" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_to_night_01.wav</ShortName>
+					<CachePath>SFX/day_to_night_01_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="1057963268" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_base_178_32.wav</ShortName>
+					<CachePath>SFX/day_base_178_32_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="1067407073" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>day_melody_178_01_01.wav</ShortName>
+					<CachePath>SFX/day_melody_178_01_01_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3775452854" Name="ForceSet_GameState_Town_Day" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="238184512"/>
+						<MediaRef Id="473494768"/>
+						<MediaRef Id="511836074"/>
+						<MediaRef Id="615664298"/>
+						<MediaRef Id="677423853"/>
+						<MediaRef Id="795287142"/>
+						<MediaRef Id="1049700512"/>
+					</MediaRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3427946127" Id="377176802"/>
+							<MediaRefs>
+								<MediaRef Id="21414237"/>
+								<MediaRef Id="27508784"/>
+								<MediaRef Id="68647566"/>
+								<MediaRef Id="75886366"/>
+								<MediaRef Id="118641051"/>
+								<MediaRef Id="160996572"/>
+								<MediaRef Id="166061174"/>
+								<MediaRef Id="179787333"/>
+								<MediaRef Id="193395013"/>
+								<MediaRef Id="200019902"/>
+								<MediaRef Id="214825501"/>
+								<MediaRef Id="221073331"/>
+								<MediaRef Id="238184512"/>
+								<MediaRef Id="251137450"/>
+								<MediaRef Id="271798309"/>
+								<MediaRef Id="281573393"/>
+								<MediaRef Id="342615801"/>
+								<MediaRef Id="350898139"/>
+								<MediaRef Id="369973815"/>
+								<MediaRef Id="374036014"/>
+								<MediaRef Id="377478711"/>
+								<MediaRef Id="401265481"/>
+								<MediaRef Id="428081969"/>
+								<MediaRef Id="489348864"/>
+								<MediaRef Id="498843853"/>
+								<MediaRef Id="524824347"/>
+								<MediaRef Id="532846205"/>
+								<MediaRef Id="549288315"/>
+								<MediaRef Id="566291254"/>
+								<MediaRef Id="585935115"/>
+								<MediaRef Id="633752390"/>
+								<MediaRef Id="679572453"/>
+								<MediaRef Id="706194213"/>
+								<MediaRef Id="710583631"/>
+								<MediaRef Id="726749935"/>
+								<MediaRef Id="758594629"/>
+								<MediaRef Id="762283761"/>
+								<MediaRef Id="763995699"/>
+								<MediaRef Id="801830846"/>
+								<MediaRef Id="801928461"/>
+								<MediaRef Id="806420609"/>
+								<MediaRef Id="809074364"/>
+								<MediaRef Id="822567085"/>
+								<MediaRef Id="839586856"/>
+								<MediaRef Id="872005110"/>
+								<MediaRef Id="897723927"/>
+								<MediaRef Id="907772810"/>
+								<MediaRef Id="931947455"/>
+								<MediaRef Id="932945889"/>
+								<MediaRef Id="939101413"/>
+								<MediaRef Id="958960343"/>
+								<MediaRef Id="967358011"/>
+								<MediaRef Id="971491809"/>
+								<MediaRef Id="986619097"/>
+								<MediaRef Id="992133268"/>
+								<MediaRef Id="1025300550"/>
+								<MediaRef Id="1043263696"/>
+								<MediaRef Id="1057963268"/>
+								<MediaRef Id="1067407073"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3427946127" Id="3205202438"/>
+							<MediaRefs>
+								<MediaRef Id="7717425"/>
+								<MediaRef Id="30947667"/>
+								<MediaRef Id="34431315"/>
+								<MediaRef Id="57729547"/>
+								<MediaRef Id="63685387"/>
+								<MediaRef Id="99715958"/>
+								<MediaRef Id="101232745"/>
+								<MediaRef Id="102290091"/>
+								<MediaRef Id="154726874"/>
+								<MediaRef Id="236492864"/>
+								<MediaRef Id="238184512"/>
+								<MediaRef Id="289746657"/>
+								<MediaRef Id="292962377"/>
+								<MediaRef Id="380013376"/>
+								<MediaRef Id="395189598"/>
+								<MediaRef Id="395898495"/>
+								<MediaRef Id="396784195"/>
+								<MediaRef Id="415952063"/>
+								<MediaRef Id="419981500"/>
+								<MediaRef Id="422935936"/>
+								<MediaRef Id="488021391"/>
+								<MediaRef Id="493651152"/>
+								<MediaRef Id="499031677"/>
+								<MediaRef Id="502036796"/>
+								<MediaRef Id="522239975"/>
+								<MediaRef Id="534545070"/>
+								<MediaRef Id="545135810"/>
+								<MediaRef Id="560716799"/>
+								<MediaRef Id="626125282"/>
+								<MediaRef Id="634345249"/>
+								<MediaRef Id="649449689"/>
+								<MediaRef Id="654652539"/>
+								<MediaRef Id="677697525"/>
+								<MediaRef Id="685247425"/>
+								<MediaRef Id="691258793"/>
+								<MediaRef Id="730055901"/>
+								<MediaRef Id="756705463"/>
+								<MediaRef Id="765758947"/>
+								<MediaRef Id="772328746"/>
+								<MediaRef Id="777759674"/>
+								<MediaRef Id="800887784"/>
+								<MediaRef Id="822859217"/>
+								<MediaRef Id="881231503"/>
+								<MediaRef Id="888840302"/>
+								<MediaRef Id="889310938"/>
+								<MediaRef Id="935526073"/>
+								<MediaRef Id="957087349"/>
+								<MediaRef Id="1037519569"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="252313120" Name="Stop_Night_Melody_04"/>
+						<ActionPostEventEntry Id="252313125" Name="Stop_Night_Melody_01"/>
+						<ActionPostEventEntry Id="252313126" Name="Stop_Night_Melody_02"/>
+						<ActionPostEventEntry Id="252313127" Name="Stop_Night_Melody_03"/>
+						<ActionPostEventEntry Id="2392457068" Name="Stop_Night_Arp"/>
+					</ActionPostEvent>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3427946127" Id="377176802" Name="Town_Day"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1836528842" Name="ForceSet_GameState_Town_Night" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="238184512"/>
+						<MediaRef Id="473494768"/>
+						<MediaRef Id="511836074"/>
+						<MediaRef Id="615664298"/>
+						<MediaRef Id="677423853"/>
+						<MediaRef Id="795287142"/>
+						<MediaRef Id="1049700512"/>
+					</MediaRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3427946127" Id="377176802"/>
+							<MediaRefs>
+								<MediaRef Id="21414237"/>
+								<MediaRef Id="27508784"/>
+								<MediaRef Id="68647566"/>
+								<MediaRef Id="75886366"/>
+								<MediaRef Id="118641051"/>
+								<MediaRef Id="160996572"/>
+								<MediaRef Id="166061174"/>
+								<MediaRef Id="179787333"/>
+								<MediaRef Id="193395013"/>
+								<MediaRef Id="200019902"/>
+								<MediaRef Id="214825501"/>
+								<MediaRef Id="221073331"/>
+								<MediaRef Id="238184512"/>
+								<MediaRef Id="251137450"/>
+								<MediaRef Id="271798309"/>
+								<MediaRef Id="281573393"/>
+								<MediaRef Id="342615801"/>
+								<MediaRef Id="350898139"/>
+								<MediaRef Id="369973815"/>
+								<MediaRef Id="374036014"/>
+								<MediaRef Id="377478711"/>
+								<MediaRef Id="401265481"/>
+								<MediaRef Id="428081969"/>
+								<MediaRef Id="489348864"/>
+								<MediaRef Id="498843853"/>
+								<MediaRef Id="524824347"/>
+								<MediaRef Id="532846205"/>
+								<MediaRef Id="549288315"/>
+								<MediaRef Id="566291254"/>
+								<MediaRef Id="585935115"/>
+								<MediaRef Id="633752390"/>
+								<MediaRef Id="679572453"/>
+								<MediaRef Id="706194213"/>
+								<MediaRef Id="710583631"/>
+								<MediaRef Id="726749935"/>
+								<MediaRef Id="758594629"/>
+								<MediaRef Id="762283761"/>
+								<MediaRef Id="763995699"/>
+								<MediaRef Id="801830846"/>
+								<MediaRef Id="801928461"/>
+								<MediaRef Id="806420609"/>
+								<MediaRef Id="809074364"/>
+								<MediaRef Id="822567085"/>
+								<MediaRef Id="839586856"/>
+								<MediaRef Id="872005110"/>
+								<MediaRef Id="897723927"/>
+								<MediaRef Id="907772810"/>
+								<MediaRef Id="931947455"/>
+								<MediaRef Id="932945889"/>
+								<MediaRef Id="939101413"/>
+								<MediaRef Id="958960343"/>
+								<MediaRef Id="967358011"/>
+								<MediaRef Id="971491809"/>
+								<MediaRef Id="986619097"/>
+								<MediaRef Id="992133268"/>
+								<MediaRef Id="1025300550"/>
+								<MediaRef Id="1043263696"/>
+								<MediaRef Id="1057963268"/>
+								<MediaRef Id="1067407073"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3427946127" Id="3205202438"/>
+							<MediaRefs>
+								<MediaRef Id="7717425"/>
+								<MediaRef Id="30947667"/>
+								<MediaRef Id="34431315"/>
+								<MediaRef Id="57729547"/>
+								<MediaRef Id="63685387"/>
+								<MediaRef Id="99715958"/>
+								<MediaRef Id="101232745"/>
+								<MediaRef Id="102290091"/>
+								<MediaRef Id="154726874"/>
+								<MediaRef Id="236492864"/>
+								<MediaRef Id="238184512"/>
+								<MediaRef Id="289746657"/>
+								<MediaRef Id="292962377"/>
+								<MediaRef Id="380013376"/>
+								<MediaRef Id="395189598"/>
+								<MediaRef Id="395898495"/>
+								<MediaRef Id="396784195"/>
+								<MediaRef Id="415952063"/>
+								<MediaRef Id="419981500"/>
+								<MediaRef Id="422935936"/>
+								<MediaRef Id="488021391"/>
+								<MediaRef Id="493651152"/>
+								<MediaRef Id="499031677"/>
+								<MediaRef Id="502036796"/>
+								<MediaRef Id="522239975"/>
+								<MediaRef Id="534545070"/>
+								<MediaRef Id="545135810"/>
+								<MediaRef Id="560716799"/>
+								<MediaRef Id="626125282"/>
+								<MediaRef Id="634345249"/>
+								<MediaRef Id="649449689"/>
+								<MediaRef Id="654652539"/>
+								<MediaRef Id="677697525"/>
+								<MediaRef Id="685247425"/>
+								<MediaRef Id="691258793"/>
+								<MediaRef Id="730055901"/>
+								<MediaRef Id="756705463"/>
+								<MediaRef Id="765758947"/>
+								<MediaRef Id="772328746"/>
+								<MediaRef Id="777759674"/>
+								<MediaRef Id="800887784"/>
+								<MediaRef Id="822859217"/>
+								<MediaRef Id="881231503"/>
+								<MediaRef Id="888840302"/>
+								<MediaRef Id="889310938"/>
+								<MediaRef Id="935526073"/>
+								<MediaRef Id="957087349"/>
+								<MediaRef Id="1037519569"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="3095270484" Name="HardStop_Day_Melody_03"/>
+						<ActionPostEventEntry Id="3095270485" Name="HardStop_Day_Melody_02"/>
+						<ActionPostEventEntry Id="3095270486" Name="HardStop_Day_Melody_01"/>
+					</ActionPostEvent>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3427946127" Id="3205202438" Name="Town_Night"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3095270486" Name="HardStop_Day_Melody_01" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3095270485" Name="HardStop_Day_Melody_02" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3095270484" Name="HardStop_Day_Melody_03" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2117048067" Name="Play_Day_Melody_01" DurationType="OneShot" DurationMin="25.617603" DurationMax="25.617603">
+					<MediaRefs>
+						<MediaRef Id="238184512"/>
+						<MediaRef Id="958960343"/>
+						<MediaRef Id="1067407073"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2117048064" Name="Play_Day_Melody_02" DurationType="OneShot" DurationMin="27.570229" DurationMax="27.570229">
+					<MediaRefs>
+						<MediaRef Id="238184512"/>
+						<MediaRef Id="801830846"/>
+						<MediaRef Id="806420609"/>
+						<MediaRef Id="1025300550"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2117048065" Name="Play_Day_Melody_03" DurationType="OneShot" DurationMin="51.23523" DurationMax="51.23523">
+					<MediaRefs>
+						<MediaRef Id="238184512"/>
+						<MediaRef Id="907772810"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="76591114" Name="Play_Night_Arp" DurationType="OneShot" DurationMin="61.71875" DurationMax="61.71875">
+					<MediaRefs>
+						<MediaRef Id="102290091"/>
+						<MediaRef Id="238184512"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1057837593" Name="Play_Night_Countermelody" DurationType="OneShot" DurationMin="17.196438" DurationMax="17.196438">
+					<MediaRefs>
+						<MediaRef Id="238184512"/>
+						<MediaRef Id="626125282"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2032307683" Name="Play_Night_Melody" DurationType="OneShot" DurationMin="168.13394" DurationMax="168.13394">
+					<MediaRefs>
+						<MediaRef Id="238184512"/>
+						<MediaRef Id="502036796"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2049735205" Name="Play_Stinger_Item_Collection" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="3868165313" Name="Collect_Item"/>
+					</ActionTrigger>
+				</Event>
+				<Event Id="1068983008" Name="PlayMusicStart" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="238184512"/>
+						<MediaRef Id="473494768"/>
+						<MediaRef Id="511836074"/>
+						<MediaRef Id="615664298"/>
+						<MediaRef Id="677423853"/>
+						<MediaRef Id="795287142"/>
+						<MediaRef Id="1049700512"/>
+					</MediaRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3427946127" Id="377176802"/>
+							<MediaRefs>
+								<MediaRef Id="21414237"/>
+								<MediaRef Id="27508784"/>
+								<MediaRef Id="68647566"/>
+								<MediaRef Id="75886366"/>
+								<MediaRef Id="118641051"/>
+								<MediaRef Id="160996572"/>
+								<MediaRef Id="166061174"/>
+								<MediaRef Id="179787333"/>
+								<MediaRef Id="193395013"/>
+								<MediaRef Id="200019902"/>
+								<MediaRef Id="214825501"/>
+								<MediaRef Id="221073331"/>
+								<MediaRef Id="238184512"/>
+								<MediaRef Id="251137450"/>
+								<MediaRef Id="271798309"/>
+								<MediaRef Id="281573393"/>
+								<MediaRef Id="342615801"/>
+								<MediaRef Id="350898139"/>
+								<MediaRef Id="369973815"/>
+								<MediaRef Id="374036014"/>
+								<MediaRef Id="377478711"/>
+								<MediaRef Id="401265481"/>
+								<MediaRef Id="428081969"/>
+								<MediaRef Id="489348864"/>
+								<MediaRef Id="498843853"/>
+								<MediaRef Id="524824347"/>
+								<MediaRef Id="532846205"/>
+								<MediaRef Id="549288315"/>
+								<MediaRef Id="566291254"/>
+								<MediaRef Id="585935115"/>
+								<MediaRef Id="633752390"/>
+								<MediaRef Id="679572453"/>
+								<MediaRef Id="706194213"/>
+								<MediaRef Id="710583631"/>
+								<MediaRef Id="726749935"/>
+								<MediaRef Id="758594629"/>
+								<MediaRef Id="762283761"/>
+								<MediaRef Id="763995699"/>
+								<MediaRef Id="801830846"/>
+								<MediaRef Id="801928461"/>
+								<MediaRef Id="806420609"/>
+								<MediaRef Id="809074364"/>
+								<MediaRef Id="822567085"/>
+								<MediaRef Id="839586856"/>
+								<MediaRef Id="872005110"/>
+								<MediaRef Id="897723927"/>
+								<MediaRef Id="907772810"/>
+								<MediaRef Id="931947455"/>
+								<MediaRef Id="932945889"/>
+								<MediaRef Id="939101413"/>
+								<MediaRef Id="958960343"/>
+								<MediaRef Id="967358011"/>
+								<MediaRef Id="971491809"/>
+								<MediaRef Id="986619097"/>
+								<MediaRef Id="992133268"/>
+								<MediaRef Id="1025300550"/>
+								<MediaRef Id="1043263696"/>
+								<MediaRef Id="1057963268"/>
+								<MediaRef Id="1067407073"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3427946127" Id="3205202438"/>
+							<MediaRefs>
+								<MediaRef Id="7717425"/>
+								<MediaRef Id="30947667"/>
+								<MediaRef Id="34431315"/>
+								<MediaRef Id="57729547"/>
+								<MediaRef Id="63685387"/>
+								<MediaRef Id="99715958"/>
+								<MediaRef Id="101232745"/>
+								<MediaRef Id="102290091"/>
+								<MediaRef Id="154726874"/>
+								<MediaRef Id="236492864"/>
+								<MediaRef Id="238184512"/>
+								<MediaRef Id="289746657"/>
+								<MediaRef Id="292962377"/>
+								<MediaRef Id="380013376"/>
+								<MediaRef Id="395189598"/>
+								<MediaRef Id="395898495"/>
+								<MediaRef Id="396784195"/>
+								<MediaRef Id="415952063"/>
+								<MediaRef Id="419981500"/>
+								<MediaRef Id="422935936"/>
+								<MediaRef Id="488021391"/>
+								<MediaRef Id="493651152"/>
+								<MediaRef Id="499031677"/>
+								<MediaRef Id="502036796"/>
+								<MediaRef Id="522239975"/>
+								<MediaRef Id="534545070"/>
+								<MediaRef Id="545135810"/>
+								<MediaRef Id="560716799"/>
+								<MediaRef Id="626125282"/>
+								<MediaRef Id="634345249"/>
+								<MediaRef Id="649449689"/>
+								<MediaRef Id="654652539"/>
+								<MediaRef Id="677697525"/>
+								<MediaRef Id="685247425"/>
+								<MediaRef Id="691258793"/>
+								<MediaRef Id="730055901"/>
+								<MediaRef Id="756705463"/>
+								<MediaRef Id="765758947"/>
+								<MediaRef Id="772328746"/>
+								<MediaRef Id="777759674"/>
+								<MediaRef Id="800887784"/>
+								<MediaRef Id="822859217"/>
+								<MediaRef Id="881231503"/>
+								<MediaRef Id="888840302"/>
+								<MediaRef Id="889310938"/>
+								<MediaRef Id="935526073"/>
+								<MediaRef Id="957087349"/>
+								<MediaRef Id="1037519569"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3427946127" Id="377176802" Name="Town_Day"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="94443641" Name="Set_GameState_Town_Day" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3427946127" Id="377176802" Name="Town_Day"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1717376701" Name="Set_GameState_Town_Night" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3427946127" Id="3205202438" Name="Town_Night"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="452547817" Name="Stop_All" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1359923209" Name="Stop_Day_Melody_01" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1359923210" Name="Stop_Day_Melody_02" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1359923211" Name="Stop_Day_Melody_03" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2392457068" Name="Stop_Night_Arp" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="252313125" Name="Stop_Night_Melody_01" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="252313126" Name="Stop_Night_Melody_02" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="252313127" Name="Stop_Night_Melody_03" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="252313120" Name="Stop_Night_Melody_04" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3122302906" Name="Town_GoToBeach" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1014833782" Name="Town_LeaveBeach" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+			<StateGroups>
+				<StateGroup Id="3427946127" Name="TownStates">
+					<States>
+						<State Id="377176802" Name="Town_Day"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="3205202438" Name="Town_Night"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<Triggers>
+				<Trigger Id="3868165313" Name="Collect_Item"/>
+			</Triggers>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{8DB47C37-56F7-2F68-E52D-EC749E7F8628}</FileHash>
+</SoundBanksInfo>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{65686191-85F0-42A1-B9B5-2183D373C9A5}" SchemaVersion="119">
+	<Effects>
+		<WorkUnit Name="Default Work Unit" ID="{65686191-85F0-42A1-B9B5-2183D373C9A5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_Peak_Limiter" ID="{BC8DF46D-249B-4B55-B9CE-56520A36EE95}" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+					<PropertyList>
+						<Property Name="Threshold" Type="Real32" Value="-1"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

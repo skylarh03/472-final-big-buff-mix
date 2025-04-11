@@ -1,6 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	1634842824	TEST_DoorKnock			\Default Work Unit\TEST_DoorKnock	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	296257393	TEST_door_knock	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Final_Wwise\.cache\Windows\SFX\door_knock_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\TEST_door_knock		528144
-

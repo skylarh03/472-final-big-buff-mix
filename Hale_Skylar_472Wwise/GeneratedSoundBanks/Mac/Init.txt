@@ -1,0 +1,46 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1206868862	Combat_Tension			\Default Work Unit\Combat_Tension	
+	3427946127	TownStates			\Default Work Unit\TownStates	
+	3482212766	ExplorationStates			\Default Work Unit\ExplorationStates	
+
+State	ID	Name	State Group			Notes
+	376032185	LowTension	Combat_Tension			
+	748895195	None	Combat_Tension			
+	4033417077	HighTension	Combat_Tension			
+	377176802	Town_Day	TownStates			
+	748895195	None	TownStates			
+	3205202438	Town_Night	TownStates			
+	748895195	None	ExplorationStates			
+	3608744671	Exploration_Day	ExplorationStates			
+	3817056875	Exploration_Night	ExplorationStates			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
+	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	
+	841620460	Concrete			\Factory Acoustic Textures\Textures\Concrete	
+	1755085759	Wood_Deep			\Factory Acoustic Textures\Textures\Wood_Deep	
+	1873957695	Anechoic			\Factory Acoustic Textures\Textures\Anechoic	
+	1970351858	Fabric			\Factory Acoustic Textures\Textures\Fabric	
+	2058049674	Wood			\Factory Acoustic Textures\Textures\Wood	
+	2412606308	Carpet			\Factory Acoustic Textures\Textures\Carpet	
+	2637588553	Tile			\Factory Acoustic Textures\Textures\Tile	
+	2928161104	Curtains			\Factory Acoustic Textures\Textures\Curtains	
+	3195498748	Cork_Tiles			\Factory Acoustic Textures\Textures\Cork_Tiles	
+	3670307564	Drywall			\Factory Acoustic Textures\Textures\Drywall	
+	3725838539	AtBeach			\Default Work Unit\AtBeach	
+	4168643977	Acoustic_Banner			\Factory Acoustic Textures\Textures\Acoustic_Banner	
+	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	2940432316	Stingers			\Default Work Unit\Master Audio Bus\Stingers	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
+Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	2675251108	New_Peak_Limiter	Wwise Peak Limiter			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
