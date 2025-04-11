@@ -85,5 +85,4 @@ AkWwiseProjectData.asset
 IncrementalSoundBankData.xml
 
 # Ignore Wwise Soundbanks
-\Hale_Skylar_472Wwise\GeneratedSoundBanks\Mac\Master.bnk
-\Hale_Skylar_472Wwise\GeneratedSoundBanks\Windows\Master.bnk
+/Hale_Skylar_472Wwise/GeneratedSoundBanks/
