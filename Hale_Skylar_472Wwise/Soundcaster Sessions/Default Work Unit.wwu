@@ -49,7 +49,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Town_Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+						<CurrentStateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
 						<CurrentStateRef Name="HighTension" ID="{3A76F891-69A1-4D36-94DE-5788C6CB73AC}"/>
 						<CurrentStateRef Name="Exploration_Night" ID="{5A6BDE94-934D-4B99-BE3D-38CACD4DA57B}"/>
 					</CurrentStateList>

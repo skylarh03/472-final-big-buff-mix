@@ -3,11 +3,11 @@
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="TownStates" ID="{2BBC5840-336D-4685-8392-26BA3393B836}">
+				<StateGroup Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}">
 					<ChildrenList>
 						<State Name="None" ID="{1FA46F1D-0DB1-4CA0-A154-435A65E51B39}"/>
-						<State Name="Town_Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
-						<State Name="Town_Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
+						<State Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+						<State Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
 					</ChildrenList>
 				</StateGroup>
 				<StateGroup Name="ExplorationStates" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}">

@@ -4,6 +4,10 @@
 		<WorkUnit Name="Default Work Unit" ID="{D0D94787-055C-40D2-8653-88018A9A90DA}" PersistMode="Standalone">
 			<ChildrenList>
 				<Folder Name="Town_MusicEvents" ID="{1939F6D9-64A3-4C74-B1A0-5D27F3501EFD}" ShortID="432792566">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Event Name="Stop_Night_Melody_01" ID="{B7D1DEB7-EEC7-49D9-99FE-4A134BCC3A40}">
 							<ChildrenList>
@@ -83,7 +87,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Town_Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
+											<ObjectRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -164,7 +168,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Town_Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
+											<ObjectRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -311,7 +315,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Town_Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
+											<ObjectRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -468,7 +472,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Town_Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
+											<ObjectRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -547,7 +551,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Town_Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
+											<ObjectRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -603,6 +607,10 @@
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Combat_MusicEvents" ID="{BF4BF49C-A03E-4A41-B728-E0B3E790D7A7}" ShortID="361411459">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Event Name="Set_State_Tension_High" ID="{B231B781-C6FD-40B2-B4D3-928BE3EED410}">
 							<ChildrenList>
@@ -671,6 +679,10 @@
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Global Mix Change Events" ID="{B48A005F-87E8-493B-A0E1-80AF4AAE1DD0}" ShortID="569609593">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Event Name="Town_GoToBeach" ID="{D214ADFA-FD9F-4B4A-9E9B-A87A69F7B8C8}">
 							<ChildrenList>

@@ -5,7 +5,9 @@
 			<ChildrenList>
 				<MusicSwitchContainer Name="Town" ID="{70218A88-25A0-4D4A-A2DC-E850668F0E0E}" ShortID="889499978">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
 						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -11849,7 +11851,7 @@
 					<ObjectLists>
 						<ObjectList Name="Arguments">
 							<Reference>
-								<ObjectRef Name="TownStates" ID="{2BBC5840-336D-4685-8392-26BA3393B836}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
+								<ObjectRef Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
 							</Reference>
 						</ObjectList>
 						<ObjectList Name="Entries">
@@ -11864,7 +11866,7 @@
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="Town_Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
+													<ObjectRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
@@ -11882,7 +11884,7 @@
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="Town_Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
+													<ObjectRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
@@ -11923,12 +11925,14 @@
 				</MusicSwitchContainer>
 				<MusicSegment Name="stinger_item_collection_178" ID="{2A200B96-7BE7-4B7E-8958-B81ECC831CD1}" ShortID="945382186">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="12"/>
 						<Property Name="EndPosition" Type="Real64" Value="4259.125"/>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
 								<Value>1</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseMaxSoundPerInstance" Type="bool">
 							<ValueList>
 								<Value>True</Value>
@@ -12024,7 +12028,9 @@
 				</MusicSegment>
 				<MusicSwitchContainer Name="Town_Day_Night_Transitions" ID="{5529715C-CDFC-4BB5-B78C-6216EBAE6FF3}" ShortID="571011546">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
 						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -13580,6 +13586,8 @@
 				</MusicSwitchContainer>
 				<MusicSwitchContainer Name="Exploration" ID="{00BB96B4-499D-46CB-9F66-A8D824E2994A}" ShortID="180220795">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Tempo" Type="Real64" Value="116"/>
 					</PropertyList>
 					<ReferenceList>
@@ -14089,21 +14097,21 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="ExplorationStates" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}"/>
+														<StateGroupRef Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Exploration_Day" ID="{F746724D-7B70-499F-8E42-CC7A45861061}"/>
-														<CustomState Name="" ID="{B9C6659A-D4BF-49C7-B50C-6A52C21F78ED}" ShortID="703470014"/>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Exploration_Night" ID="{5A6BDE94-934D-4B99-BE3D-38CACD4DA57B}"/>
-														<CustomState Name="" ID="{4E0C53EF-993E-4891-9AD1-FC416ACEF677}" ShortID="630108721">
+														<StateRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
+														<CustomState Name="" ID="{982FE384-63BE-4ADE-BB18-A539E4F448E4}" ShortID="762608545">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-108"/>
 															</PropertyList>
 														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+														<CustomState Name="" ID="{1D77C84F-6DAB-40C9-880C-BD96C3933CDE}" ShortID="873449991"/>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>
@@ -14162,21 +14170,21 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="ExplorationStates" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}"/>
+														<StateGroupRef Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Exploration_Day" ID="{F746724D-7B70-499F-8E42-CC7A45861061}"/>
-														<CustomState Name="" ID="{2ABA43AA-4457-47A8-B8E0-3A38DB0A2910}" ShortID="732784835">
+														<StateRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
+														<CustomState Name="" ID="{A703C2E0-7179-45B7-A1EA-35C75E591A4E}" ShortID="448934"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+														<CustomState Name="" ID="{C8030441-4833-485E-ABB1-378D6C8E7CE1}" ShortID="443166178">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-108"/>
 															</PropertyList>
 														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Exploration_Night" ID="{5A6BDE94-934D-4B99-BE3D-38CACD4DA57B}"/>
-														<CustomState Name="" ID="{9C8D75DA-FBF2-44B4-8CE8-C0D0BFF8AA99}" ShortID="879240157"/>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>
@@ -14321,21 +14329,21 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="ExplorationStates" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}"/>
+														<StateGroupRef Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Exploration_Day" ID="{F746724D-7B70-499F-8E42-CC7A45861061}"/>
-														<CustomState Name="" ID="{E00D1017-6470-4C11-A1D3-384222EBD091}" ShortID="567374682"/>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Exploration_Night" ID="{5A6BDE94-934D-4B99-BE3D-38CACD4DA57B}"/>
-														<CustomState Name="" ID="{4400F492-C428-4946-A968-F254BA742374}" ShortID="971011143">
+														<StateRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
+														<CustomState Name="" ID="{D520F8B8-8DBF-452E-BB13-8FA76796F4F0}" ShortID="166784963">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-108"/>
 															</PropertyList>
 														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+														<CustomState Name="" ID="{01092C55-6B53-495F-A53F-173BA02CF038}" ShortID="686648295"/>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>
@@ -14394,21 +14402,21 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="ExplorationStates" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}"/>
+														<StateGroupRef Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Exploration_Day" ID="{F746724D-7B70-499F-8E42-CC7A45861061}"/>
-														<CustomState Name="" ID="{27F0251D-2181-47DE-A5F8-E6A05264EF62}" ShortID="950086243">
+														<StateRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
+														<CustomState Name="" ID="{372A36E8-3B47-4CAF-9E56-EC9EDF256796}" ShortID="637858638"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+														<CustomState Name="" ID="{F16F5080-8343-4FBD-9C26-AC5E618D4D66}" ShortID="807241922">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-108"/>
 															</PropertyList>
 														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Exploration_Night" ID="{5A6BDE94-934D-4B99-BE3D-38CACD4DA57B}"/>
-														<CustomState Name="" ID="{89F56D97-39A0-4C43-A5FE-76D1B47FB3EA}" ShortID="1008392539"/>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>
@@ -14553,21 +14561,21 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="ExplorationStates" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}"/>
+														<StateGroupRef Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Exploration_Day" ID="{F746724D-7B70-499F-8E42-CC7A45861061}"/>
-														<CustomState Name="" ID="{B8B3BA41-8FE8-4B30-8E8E-30B599574924}" ShortID="500626064"/>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Exploration_Night" ID="{5A6BDE94-934D-4B99-BE3D-38CACD4DA57B}"/>
-														<CustomState Name="" ID="{B308FFE0-629D-4FE8-A960-7A4FA8E5E3F0}" ShortID="227599649">
+														<StateRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
+														<CustomState Name="" ID="{4DD9DC88-A527-42B1-81C9-168969AD89C5}" ShortID="107092413">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-108"/>
 															</PropertyList>
 														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+														<CustomState Name="" ID="{E176D64C-AAB5-4285-9137-1BBA32AF23DA}" ShortID="495308144"/>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>
@@ -14626,21 +14634,21 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="ExplorationStates" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}"/>
+														<StateGroupRef Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Exploration_Day" ID="{F746724D-7B70-499F-8E42-CC7A45861061}"/>
-														<CustomState Name="" ID="{D67E3C1E-1E2E-47E3-A452-506998DC2511}" ShortID="233819892">
+														<StateRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
+														<CustomState Name="" ID="{7CA72FAA-3A05-4B03-BD0D-91DF1E8540E1}" ShortID="796935927"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+														<CustomState Name="" ID="{BF95272F-F203-48B0-9B1D-184E60568E07}" ShortID="1068555835">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-108"/>
 															</PropertyList>
 														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Exploration_Night" ID="{5A6BDE94-934D-4B99-BE3D-38CACD4DA57B}"/>
-														<CustomState Name="" ID="{21D4D71D-AE9D-4941-8242-9D30D015540F}" ShortID="804490601"/>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>
@@ -14785,21 +14793,21 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="ExplorationStates" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}"/>
+														<StateGroupRef Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Exploration_Day" ID="{F746724D-7B70-499F-8E42-CC7A45861061}"/>
-														<CustomState Name="" ID="{D7BB7CB5-BE10-4CDF-BCD1-5C60A916FA49}" ShortID="689389387"/>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Exploration_Night" ID="{5A6BDE94-934D-4B99-BE3D-38CACD4DA57B}"/>
-														<CustomState Name="" ID="{3E09117D-409C-4BAC-A220-DC749503E5C3}" ShortID="713676859">
+														<StateRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
+														<CustomState Name="" ID="{0D472E64-A0A2-4F38-A5F5-5EF1AD5329A3}" ShortID="764771598">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-108"/>
 															</PropertyList>
 														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+														<CustomState Name="" ID="{60321712-0AE0-45BB-BC06-A61D3DAE92AD}" ShortID="666218720"/>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>
@@ -14858,21 +14866,21 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="ExplorationStates" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}"/>
+														<StateGroupRef Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Exploration_Day" ID="{F746724D-7B70-499F-8E42-CC7A45861061}"/>
-														<CustomState Name="" ID="{80699C03-5EED-4A9B-8B58-2F8C5CB41BCA}" ShortID="42022358">
+														<StateRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
+														<CustomState Name="" ID="{8DD38AB9-A196-4CCC-B856-157F75E9A40D}" ShortID="398883316"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+														<CustomState Name="" ID="{825B28AE-D400-4984-9649-5ED7F1A6E0C1}" ShortID="13711960">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-108"/>
 															</PropertyList>
 														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Exploration_Night" ID="{5A6BDE94-934D-4B99-BE3D-38CACD4DA57B}"/>
-														<CustomState Name="" ID="{0697311C-EA65-46D6-B9CF-30D565FEEEF2}" ShortID="639722181"/>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>
@@ -15017,21 +15025,21 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="ExplorationStates" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}"/>
+														<StateGroupRef Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Exploration_Day" ID="{F746724D-7B70-499F-8E42-CC7A45861061}"/>
-														<CustomState Name="" ID="{AF92D6DC-9779-42F4-9CA3-804F2FA8662A}" ShortID="261834108"/>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Exploration_Night" ID="{5A6BDE94-934D-4B99-BE3D-38CACD4DA57B}"/>
-														<CustomState Name="" ID="{DBA79935-D67D-486E-AD71-0D3FB85EA173}" ShortID="149454681">
+														<StateRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
+														<CustomState Name="" ID="{D05386FE-BB19-4C8B-9C97-66B6E019BC40}" ShortID="498262674">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-108"/>
 															</PropertyList>
 														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+														<CustomState Name="" ID="{C0CD29F8-7506-4F33-AB41-D4CD1D0F747E}" ShortID="42707946"/>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>
@@ -15090,21 +15098,21 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="ExplorationStates" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}"/>
+														<StateGroupRef Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Exploration_Day" ID="{F746724D-7B70-499F-8E42-CC7A45861061}"/>
-														<CustomState Name="" ID="{55A5C951-C62A-49D1-9760-20A2AF12BBAB}" ShortID="127496152">
+														<StateRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
+														<CustomState Name="" ID="{D79359C3-C8F3-4421-906E-26FD88CF6D22}" ShortID="682737003"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+														<CustomState Name="" ID="{2F7A20F8-C272-44F3-AC0B-D9FBE4C475F4}" ShortID="511544527">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-108"/>
 															</PropertyList>
 														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Exploration_Night" ID="{5A6BDE94-934D-4B99-BE3D-38CACD4DA57B}"/>
-														<CustomState Name="" ID="{CB573D4B-CD85-41C8-916B-EDC341F548E8}" ShortID="115844214"/>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>
@@ -15249,21 +15257,21 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="ExplorationStates" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}"/>
+														<StateGroupRef Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Exploration_Day" ID="{F746724D-7B70-499F-8E42-CC7A45861061}"/>
-														<CustomState Name="" ID="{508E97A3-EDBD-4269-B562-A903667A731D}" ShortID="644474574"/>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Exploration_Night" ID="{5A6BDE94-934D-4B99-BE3D-38CACD4DA57B}"/>
-														<CustomState Name="" ID="{83C7A7B7-8241-4882-BA7D-648C54730680}" ShortID="783631825">
+														<StateRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
+														<CustomState Name="" ID="{55639489-DB6A-4CFE-9E7F-15F46647632E}" ShortID="341772112">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-108"/>
 															</PropertyList>
 														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+														<CustomState Name="" ID="{0EDBDD4C-0B10-4981-B283-55FFF2BBF6FE}" ShortID="122287131"/>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>
@@ -15322,21 +15330,21 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="ExplorationStates" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}"/>
+														<StateGroupRef Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Exploration_Day" ID="{F746724D-7B70-499F-8E42-CC7A45861061}"/>
-														<CustomState Name="" ID="{59AD1B79-7B7D-4884-8ABD-1BAB5B253408}" ShortID="846589720">
+														<StateRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
+														<CustomState Name="" ID="{713D9B5C-7630-4786-B69D-99E8DC0432BC}" ShortID="999900702"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+														<CustomState Name="" ID="{F6B143EF-730D-47BC-8ABB-E40692FBA8AE}" ShortID="964515540">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-108"/>
 															</PropertyList>
 														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Exploration_Night" ID="{5A6BDE94-934D-4B99-BE3D-38CACD4DA57B}"/>
-														<CustomState Name="" ID="{3D3511BB-F8CB-4CAE-8E35-879C2A725FE6}" ShortID="226325672"/>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>
@@ -15481,21 +15489,21 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="ExplorationStates" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}"/>
+														<StateGroupRef Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Exploration_Day" ID="{F746724D-7B70-499F-8E42-CC7A45861061}"/>
-														<CustomState Name="" ID="{B0324C15-436E-4494-98C0-F25F3086E7C3}" ShortID="635631453"/>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Exploration_Night" ID="{5A6BDE94-934D-4B99-BE3D-38CACD4DA57B}"/>
-														<CustomState Name="" ID="{5F892B41-A908-41B6-8745-075A2289611F}" ShortID="28029293">
+														<StateRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
+														<CustomState Name="" ID="{A2645F00-90CA-4CBF-AE62-F9E6AE13DBF0}" ShortID="672578296">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-108"/>
 															</PropertyList>
 														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+														<CustomState Name="" ID="{F4AB0E4F-B445-4EAD-95FC-147A690A6580}" ShortID="144438748"/>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>
@@ -15554,21 +15562,21 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="ExplorationStates" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}"/>
+														<StateGroupRef Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Exploration_Day" ID="{F746724D-7B70-499F-8E42-CC7A45861061}"/>
-														<CustomState Name="" ID="{FF42409D-26E2-494C-8119-D9D44DDB3B4E}" ShortID="888066953">
+														<StateRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
+														<CustomState Name="" ID="{C06248D6-50FB-45A4-B2CD-4457492E0A9F}" ShortID="557330735"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+														<CustomState Name="" ID="{94B89D93-4CA1-4423-A053-48E5C7B5FD16}" ShortID="62126845">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-108"/>
 															</PropertyList>
 														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Exploration_Night" ID="{5A6BDE94-934D-4B99-BE3D-38CACD4DA57B}"/>
-														<CustomState Name="" ID="{792DD3E3-03CE-4790-AD19-5604D5E9F6F1}" ShortID="815618925"/>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>
@@ -15714,21 +15722,21 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="ExplorationStates" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}"/>
+														<StateGroupRef Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Exploration_Day" ID="{F746724D-7B70-499F-8E42-CC7A45861061}"/>
-														<CustomState Name="" ID="{753FC7C8-B6D2-49E8-887A-D5C1E34CEC5B}" ShortID="183092752"/>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Exploration_Night" ID="{5A6BDE94-934D-4B99-BE3D-38CACD4DA57B}"/>
-														<CustomState Name="" ID="{27836297-0D0E-4AC2-9FD5-05F56ED18239}" ShortID="919970008">
+														<StateRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
+														<CustomState Name="" ID="{96911839-F3EA-49F1-9BE2-725D72A41178}" ShortID="7847196">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-108"/>
 															</PropertyList>
 														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+														<CustomState Name="" ID="{E2C0640C-FDBC-4152-8C56-D66BCFB1C413}" ShortID="1031916856"/>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>
@@ -15787,21 +15795,21 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="ExplorationStates" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}"/>
+														<StateGroupRef Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Exploration_Day" ID="{F746724D-7B70-499F-8E42-CC7A45861061}"/>
-														<CustomState Name="" ID="{EB61C625-66EE-4423-8EFF-C74DE9AEEBE4}" ShortID="903435096">
+														<StateRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
+														<CustomState Name="" ID="{064DFFA0-CD78-4B46-9903-876538BC43C8}" ShortID="34152182"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+														<CustomState Name="" ID="{B6C29BD2-338E-4CEB-93E1-3B09C99670E5}" ShortID="488746337">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-108"/>
 															</PropertyList>
 														</CustomState>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="Exploration_Night" ID="{5A6BDE94-934D-4B99-BE3D-38CACD4DA57B}"/>
-														<CustomState Name="" ID="{137F25F8-303A-40F5-BE3A-EBF34651BBA4}" ShortID="736708907"/>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>
@@ -15932,6 +15940,10 @@
 					</ObjectLists>
 				</MusicSwitchContainer>
 				<Folder Name="Combat_Folder" ID="{957849AA-42CF-4952-AEC7-01CFEF6B5D71}" ShortID="52215609">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<MusicPlaylistContainer Name="Combat_Playlist_PlayFirst" ID="{A21237E9-B095-4ADD-922C-F0C1143AC668}" ShortID="43094030">
 							<PropertyList>
@@ -16427,6 +16439,8 @@
 				</Folder>
 				<MusicSwitchContainer Name="Combat" ID="{041260F1-3EBA-4FA7-ABF4-C552FCABF801}" ShortID="1066354632">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Tempo" Type="Real64" Value="160"/>
 					</PropertyList>
 					<ReferenceList>
