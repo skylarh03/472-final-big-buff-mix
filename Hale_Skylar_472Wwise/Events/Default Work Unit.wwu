@@ -963,6 +963,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="test" ID="{B442B64E-FD74-4BBB-90FD-B2C1ABB73B6F}">
+					<ChildrenList>
+						<Action Name="" ID="{79D34DE4-AA0B-41C1-BC4A-86C89AC91B77}" ShortID="592580181">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AmbMaster" ID="{E532C9FB-679A-4BE5-8836-4A555154DC49}" WorkUnitID="{420D9460-9F40-4496-9EF5-F4A36E7E7AE3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
