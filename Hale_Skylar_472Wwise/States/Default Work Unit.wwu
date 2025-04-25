@@ -4,36 +4,59 @@
 		<WorkUnit Name="Default Work Unit" ID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}" PersistMode="Standalone">
 			<ChildrenList>
 				<StateGroup Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="1"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{1FA46F1D-0DB1-4CA0-A154-435A65E51B39}"/>
 						<State Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
 						<State Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
 					</ChildrenList>
 				</StateGroup>
-				<StateGroup Name="ExplorationStates" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}">
+				<StateGroup Name="GameState" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
 						<Property Name="DefaultTransitionTime" Type="Real64" Value="5"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{7EA90BC0-0ACE-4609-88F5-60A22891B1C1}"/>
-						<State Name="Exploration_Day" ID="{F746724D-7B70-499F-8E42-CC7A45861061}"/>
-						<State Name="Exploration_Night" ID="{5A6BDE94-934D-4B99-BE3D-38CACD4DA57B}"/>
+						<State Name="Exploration" ID="{CDE166DA-E50A-4F86-A0B2-0495C843848F}"/>
+						<State Name="Town" ID="{2478A35C-5EEB-4CE7-A31F-E6181DA77410}"/>
+						<State Name="Combat" ID="{4B6B9C84-A5B7-4D4B-B90A-A9A62FF750BA}"/>
 					</ChildrenList>
 				</StateGroup>
-				<StateGroup Name="Combat_Tension" ID="{2C91092E-BC3F-4A35-A6EF-F91557A4964E}">
+				<StateGroup Name="CombatTension" ID="{2C91092E-BC3F-4A35-A6EF-F91557A4964E}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{9F22F7E7-2790-40C7-BD68-DF75CAA341CC}"/>
-						<State Name="HighTension" ID="{3A76F891-69A1-4D36-94DE-5788C6CB73AC}"/>
-						<State Name="LowTension" ID="{4F472619-ABF5-46F8-A870-1F512C5B19B0}"/>
+						<State Name="High" ID="{3A76F891-69A1-4D36-94DE-5788C6CB73AC}"/>
+						<State Name="Low" ID="{4F472619-ABF5-46F8-A870-1F512C5B19B0}"/>
 					</ChildrenList>
 				</StateGroup>
-				<StateGroup Name="GameState" ID="{7985154B-CC0D-4D73-A187-239F44ECB9B8}">
+				<StateGroup Name="AtBeach" ID="{9491D525-CF23-46AC-96EE-A75BEB723AF0}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
-						<State Name="None" ID="{E9A92B53-2363-4D1D-B314-3B53661074B1}"/>
-						<State Name="Town" ID="{17F4C1A1-2982-4C2A-BA30-8F22BFED4AEB}"/>
-						<State Name="Exploration" ID="{992C674E-248F-461E-9D00-0F88A53D0451}"/>
-						<State Name="Combat" ID="{5A2158CE-35FA-4475-BDEF-225F98B26970}"/>
+						<State Name="None" ID="{77D0893C-5C4E-45E6-AD53-E1F18F3354E7}"/>
+						<State Name="True" ID="{E35EF895-F940-44D2-9AD4-66EB54D1F5A0}"/>
+						<State Name="False" ID="{9B7CA706-99B9-4BED-8F26-7725E59C7183}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="False" ID="{9B7CA706-99B9-4BED-8F26-7725E59C7183}"/>
+							<EndState Name="True" ID="{E35EF895-F940-44D2-9AD4-66EB54D1F5A0}"/>
+							<Time>3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>

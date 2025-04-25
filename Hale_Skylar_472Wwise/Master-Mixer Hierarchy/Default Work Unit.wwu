@@ -10,26 +10,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="Music" ID="{1F87B96C-E2CF-421D-9AE2-841D10671525}">
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<Reference>
-										<Local>
-											<EffectSlot Name="" ID="{1ADE517E-F606-40C0-A3CA-2E07E5C65118}" ShortID="327650814">
-												<PropertyList>
-													<Property Name="Bypass" Type="bool" Value="True"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-														<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</Bus>
+						<Bus Name="Music" ID="{1F87B96C-E2CF-421D-9AE2-841D10671525}"/>
 						<Bus Name="Stingers" ID="{F089BAD8-28D5-44AC-AE40-DDA9CC4CAD84}"/>
 					</ChildrenList>
 					<ObjectLists>

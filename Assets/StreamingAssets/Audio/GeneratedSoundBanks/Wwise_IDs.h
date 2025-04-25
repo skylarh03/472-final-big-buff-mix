@@ -13,11 +13,12 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID FORCESET_GAMESTATE_TOWN_DAY = 3775452854U;
-        static const AkUniqueID FORCESET_GAMESTATE_TOWN_NIGHT = 1836528842U;
+        static const AkUniqueID FORCESET_TIMEOFDAY_DAY = 1866332930U;
+        static const AkUniqueID FORCESET_TIMEOFDAY_NIGHT = 1700992294U;
         static const AkUniqueID HARDSTOP_DAY_MELODY_01 = 3095270486U;
         static const AkUniqueID HARDSTOP_DAY_MELODY_02 = 3095270485U;
         static const AkUniqueID HARDSTOP_DAY_MELODY_03 = 3095270484U;
+        static const AkUniqueID PLAY_COMBAT_MUSIC = 3155474038U;
         static const AkUniqueID PLAY_DAY_MELODY_01 = 2117048067U;
         static const AkUniqueID PLAY_DAY_MELODY_02 = 2117048064U;
         static const AkUniqueID PLAY_DAY_MELODY_03 = 2117048065U;
@@ -26,8 +27,16 @@ namespace AK
         static const AkUniqueID PLAY_NIGHT_MELODY = 2032307683U;
         static const AkUniqueID PLAY_STINGER_ITEM_COLLECTION = 2049735205U;
         static const AkUniqueID PLAYMUSICSTART = 1068983008U;
-        static const AkUniqueID SET_GAMESTATE_TOWN_DAY = 94443641U;
-        static const AkUniqueID SET_GAMESTATE_TOWN_NIGHT = 1717376701U;
+        static const AkUniqueID SET_ATBEACH_FALSE = 1153877450U;
+        static const AkUniqueID SET_ATBEACH_TRUE = 1120071521U;
+        static const AkUniqueID SET_COMBATTENSION_HIGH = 1092604815U;
+        static const AkUniqueID SET_COMBATTENSION_LOW = 2957603579U;
+        static const AkUniqueID SET_GAMESTATE_COMBAT = 2438311370U;
+        static const AkUniqueID SET_GAMESTATE_EXPLORATION = 1544625833U;
+        static const AkUniqueID SET_GAMESTATE_TOWN = 2995852670U;
+        static const AkUniqueID SET_TENSION_HIGH_33PERCENT = 2122435667U;
+        static const AkUniqueID SET_TIMEOFDAY_DAY = 753784447U;
+        static const AkUniqueID SET_TIMEOFDAY_NIGHT = 71469835U;
         static const AkUniqueID STOP_ALL = 452547817U;
         static const AkUniqueID STOP_DAY_MELODY_01 = 1359923209U;
         static const AkUniqueID STOP_DAY_MELODY_02 = 1359923210U;
@@ -37,54 +46,63 @@ namespace AK
         static const AkUniqueID STOP_NIGHT_MELODY_02 = 252313126U;
         static const AkUniqueID STOP_NIGHT_MELODY_03 = 252313127U;
         static const AkUniqueID STOP_NIGHT_MELODY_04 = 252313120U;
-        static const AkUniqueID TOWN_GOTOBEACH = 3122302906U;
-        static const AkUniqueID TOWN_LEAVEBEACH = 1014833782U;
     } // namespace EVENTS
 
     namespace STATES
     {
-        namespace COMBAT_TENSION
+        namespace ATBEACH
         {
-            static const AkUniqueID GROUP = 1206868862U;
+            static const AkUniqueID GROUP = 3725838539U;
 
             namespace STATE
             {
-                static const AkUniqueID HIGHTENSION = 4033417077U;
-                static const AkUniqueID LOWTENSION = 376032185U;
+                static const AkUniqueID FALSE = 2452206122U;
                 static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID TRUE = 3053630529U;
             } // namespace STATE
-        } // namespace COMBAT_TENSION
+        } // namespace ATBEACH
 
-        namespace EXPLORATIONSTATES
+        namespace COMBATTENSION
         {
-            static const AkUniqueID GROUP = 3482212766U;
+            static const AkUniqueID GROUP = 1069915969U;
 
             namespace STATE
             {
-                static const AkUniqueID EXPLORATION_DAY = 3608744671U;
-                static const AkUniqueID EXPLORATION_NIGHT = 3817056875U;
+                static const AkUniqueID HIGH = 3550808449U;
+                static const AkUniqueID LOW = 545371365U;
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
-        } // namespace EXPLORATIONSTATES
+        } // namespace COMBATTENSION
 
-        namespace TOWNSTATES
+        namespace GAMESTATE
         {
-            static const AkUniqueID GROUP = 3427946127U;
+            static const AkUniqueID GROUP = 4091656514U;
 
             namespace STATE
             {
+                static const AkUniqueID COMBAT = 2764240573U;
+                static const AkUniqueID EXPLORATION = 2582085496U;
                 static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID TOWN_DAY = 377176802U;
-                static const AkUniqueID TOWN_NIGHT = 3205202438U;
+                static const AkUniqueID TOWN = 3091570009U;
             } // namespace STATE
-        } // namespace TOWNSTATES
+        } // namespace GAMESTATE
+
+        namespace TIMEOFDAY
+        {
+            static const AkUniqueID GROUP = 3729505769U;
+
+            namespace STATE
+            {
+                static const AkUniqueID DAY = 311764537U;
+                static const AkUniqueID NIGHT = 1011622525U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace TIMEOFDAY
 
     } // namespace STATES
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID ATBEACH = 3725838539U;
-        static const AkUniqueID COMBAT_TENSION = 1206868862U;
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;
         static const AkUniqueID SS_AIR_FREEFALL = 3002758120U;
         static const AkUniqueID SS_AIR_FURY = 1029930033U;

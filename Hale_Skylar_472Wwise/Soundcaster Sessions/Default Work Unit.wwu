@@ -10,7 +10,7 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Set_GameState_Town_Day" ID="{EF45C5F7-F4EA-4CB4-A865-E8C8C2CE7D52}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<ObjectRef Name="Set_TimeOfDay_Day" ID="{EF45C5F7-F4EA-4CB4-A865-E8C8C2CE7D52}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
@@ -22,49 +22,75 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Set_GameState_Town_Night" ID="{141DE395-D6F5-42A3-A9DB-778961ED5340}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<ObjectRef Name="Set_TimeOfDay_Night" ID="{141DE395-D6F5-42A3-A9DB-778961ED5340}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
 							<Position X="1" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Town_GoToBeach" ID="{D214ADFA-FD9F-4B4A-9E9B-A87A69F7B8C8}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
-							<Position X="2" Y="2"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="ForceSet_GameState_Town_Day" ID="{C0EA8BF3-9B79-4142-9437-3665C0D6FCEC}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
-							<Position X="3" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="ForceSet_GameState_Town_Night" ID="{ABEC5FFF-53DD-4D19-9009-A3DA285ED4B5}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
-							<Position X="3" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Town_LeaveBeach" ID="{9363D4BC-7785-4F78-84C3-AE33675E55BB}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
-							<Position X="3" Y="2"/>
-						</Module>
-					</ModuleList>
-					<RTPCValueList ShowAll="true">
-						<RTPCValue>
-							<GameParameterRef Name="Combat_Tension" ID="{7ECB56E1-03DA-43A1-87D8-A3A0099A404F}"/>
-							<Value>0</Value>
-						</RTPCValue>
-					</RTPCValueList>
-					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
-						<CurrentStateRef Name="HighTension" ID="{3A76F891-69A1-4D36-94DE-5788C6CB73AC}"/>
-						<CurrentStateRef Name="Exploration_Night" ID="{5A6BDE94-934D-4B99-BE3D-38CACD4DA57B}"/>
-					</CurrentStateList>
-					<CurrentSwitchList ShowAll="true"/>
-				</SoundcasterSession>
-				<SoundcasterSession Name="Combat Music Test" ID="{E506F798-7636-4540-9083-430CDDB7DAB0}">
-					<ModuleList>
-						<Module>
-							<ObjectRef Name="Play_Combat_Music_Start" ID="{9C978A57-5E3F-4BD0-A7DC-F3353B67C67A}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
-							<Position X="0" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="HighTension" ID="{3A76F891-69A1-4D36-94DE-5788C6CB73AC}"/>
+						<CurrentStateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+						<CurrentStateRef Name="High" ID="{3A76F891-69A1-4D36-94DE-5788C6CB73AC}"/>
+						<CurrentStateRef Name="Exploration" ID="{CDE166DA-E50A-4F86-A0B2-0495C843848F}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Combat Music Test" ID="{E506F798-7636-4540-9083-430CDDB7DAB0}">
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="High" ID="{3A76F891-69A1-4D36-94DE-5788C6CB73AC}"/>
+						<CurrentStateRef Name="Combat" ID="{4B6B9C84-A5B7-4D4B-B90A-A9A62FF750BA}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Full Music Test" ID="{335AF64A-28C8-49BC-899B-6030C6C60445}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="PlayMusicStart" ID="{5EB94324-7922-4BB8-8126-912EA861862F}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_TimeOfDay_Day" ID="{EF45C5F7-F4EA-4CB4-A865-E8C8C2CE7D52}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Stinger_Item_Collection" ID="{B709D4E6-75F3-414B-B9D4-F8B60F8AA2B3}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_All" ID="{32DEDBA2-D909-40D2-A160-461D3E8B5D07}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_TimeOfDay_Night" ID="{141DE395-D6F5-42A3-A9DB-778961ED5340}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_GameState_Exploration" ID="{53A9351C-FFE4-40D4-80F2-D41543ED2CA3}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_GameState_Town" ID="{D2B3D9D0-019A-49FE-94B4-FC167476E29C}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_GameState_Combat" ID="{4A008EAF-11A9-412E-A7A2-46E31F2E3D9B}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_AtBeach_True" ID="{AD870A13-6B59-4470-9296-1DC4E596C3D8}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_AtBeach_False" ID="{181D3411-8C21-4785-97BD-6C7B90E34FB2}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+						<CurrentStateRef Name="False" ID="{9B7CA706-99B9-4BED-8F26-7725E59C7183}"/>
+						<CurrentStateRef Name="Low" ID="{4F472619-ABF5-46F8-A870-1F512C5B19B0}"/>
+						<CurrentStateRef Name="Exploration" ID="{CDE166DA-E50A-4F86-A0B2-0495C843848F}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

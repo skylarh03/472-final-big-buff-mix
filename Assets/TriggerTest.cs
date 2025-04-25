@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TriggerTest : MonoBehaviour
 {
+    public GameObject timeManager;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,8 @@ public class TriggerTest : MonoBehaviour
     void OnTriggerEnter()
     {
         Debug.Log("trigger entered");
+
+        //adjust timeManager variables
     }
     
     void OnTriggerExit()

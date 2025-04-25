@@ -1507,10 +1507,8 @@
 							<ChildrenList>
 								<Effect Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<PropertyList>
-										<Property Name="CenterLevel" Type="Real32" Value="-96"/>
-										<Property Name="DecayTime" Type="Real32" Value="1.9"/>
-										<Property Name="Density" Type="Real32" Value="22"/>
-										<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+										<Property Name="DecayTime" Type="Real32" Value="1"/>
+										<Property Name="Density" Type="Real32" Value="50"/>
 										<Property Name="ERLevel" Type="Real32" Value="-18"/>
 										<Property Name="ERPattern" Type="int32" Value="29"/>
 										<Property Name="Filter1Freq" Type="Real32" Value="210"/>
@@ -1520,87 +1518,13 @@
 										<Property Name="Filter2Q" Type="Real32" Value="0.65"/>
 										<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
 										<Property Name="Filter3Gain" Type="Real32" Value="-4"/>
-										<Property Name="PreDelay" Type="Real32" Value="45"/>
+										<Property Name="HFDamping" Type="Real32" Value="5.05"/>
+										<Property Name="PreDelay" Type="Real32" Value="145"/>
 										<Property Name="Quality" Type="int32" Value="12"/>
-										<Property Name="RearLevel" Type="Real32" Value="-96"/>
-										<Property Name="ReverbLevel" Type="Real32" Value="-31"/>
+										<Property Name="ReverbLevel" Type="Real32" Value="-37"/>
 										<Property Name="RoomSize" Type="Real32" Value="73"/>
-										<Property Name="StereoWidth" Type="Real32" Value="0"/>
+										<Property Name="StereoWidth" Type="Real32" Value="28"/>
 									</PropertyList>
-									<ObjectLists>
-										<ObjectList Name="RTPC">
-											<Reference>
-												<Local>
-													<RTPC Name="" ID="{732649E1-2C4D-49B7-A606-80A7E90C7483}" ShortID="263340460">
-														<PropertyList>
-															<Property Name="PropertyName" Type="string" Value="DryLevel"/>
-														</PropertyList>
-														<ReferenceList>
-															<Reference Name="ControlInput">
-																<ObjectRef Name="AtBeach" ID="{13F86269-3A8A-4BD1-941A-7C811A3C192F}" WorkUnitID="{641D1E10-9339-45CB-8064-2A5E4AC0EC54}"/>
-															</Reference>
-															<Reference Name="Curve">
-																<Custom>
-																	<Curve Name="" ID="{B72A7BBF-DF02-460E-83C1-F763FC788B4B}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>0.08671</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>-96.3</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</Custom>
-															</Reference>
-														</ReferenceList>
-													</RTPC>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<RTPC Name="" ID="{7E6CEED3-0811-4AF4-9EF6-E5D27630C621}" ShortID="601044564">
-														<PropertyList>
-															<Property Name="PropertyName" Type="string" Value="ReverbLevel"/>
-														</PropertyList>
-														<ReferenceList>
-															<Reference Name="ControlInput">
-																<ObjectRef Name="AtBeach" ID="{13F86269-3A8A-4BD1-941A-7C811A3C192F}" WorkUnitID="{641D1E10-9339-45CB-8064-2A5E4AC0EC54}"/>
-															</Reference>
-															<Reference Name="Curve">
-																<Custom>
-																	<Curve Name="" ID="{0587E42A-E5DD-4CAB-9050-0E220AF30C79}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-96.3000030517578</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</Custom>
-															</Reference>
-														</ReferenceList>
-													</RTPC>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
 								</Effect>
 							</ChildrenList>
 						</Folder>

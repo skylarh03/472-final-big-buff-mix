@@ -5,31 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Master" ID="{62B0F1F9-7DE3-48CC-AD25-2322E0BEE838}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Stop_All" ID="{32DEDBA2-D909-40D2-A160-461D3E8B5D07}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="ForceSet_GameState_Town_Day" ID="{C0EA8BF3-9B79-4142-9437-3665C0D6FCEC}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Stinger_Item_Collection" ID="{B709D4E6-75F3-414B-B9D4-F8B60F8AA2B3}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Set_GameState_Town_Night" ID="{141DE395-D6F5-42A3-A9DB-778961ED5340}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_Day_Melody_01" ID="{1C47B633-BB45-4303-A21D-4C169D3BBF0A}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Night_Melody" ID="{846EB9D6-A30C-4336-A0A7-7CB5A9CCCFFC}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_Day_Melody_03" ID="{A02CA359-4E31-440B-AAAB-CDF554584C9F}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_Night_Melody_02" ID="{45560CE6-0C85-445C-AE78-2E594B8FC12D}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_Night_Melody_03" ID="{2B72ECE9-1879-4462-A3E2-39F023223CA9}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Day_Melody_02" ID="{F2A05489-6229-44A8-A4CC-18A3F80CB557}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Night_Arp" ID="{D27B313F-CCA2-4506-ABB5-A9F4F395DB89}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_Night_Arp" ID="{9C3056A1-11C6-4781-AF5A-D5CF21164EFD}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="HardStop_Day_Melody_01" ID="{C21441C5-EB72-47B6-8CDB-5A6CAEA6DF63}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Night_Countermelody" ID="{F24306F6-EF47-47EB-8600-CCC10A8975EE}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_Day_Melody_02" ID="{898726D1-5B32-488A-B289-34FE3F616911}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Global Mix Change Events" ID="{B48A005F-87E8-493B-A0E1-80AF4AAE1DD0}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_Night_Melody_01" ID="{B7D1DEB7-EEC7-49D9-99FE-4A134BCC3A40}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Day_Melody_03" ID="{B1DD57BE-8EE8-4AFC-9868-E2F420303E68}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="PlayMusicStart" ID="{5EB94324-7922-4BB8-8126-912EA861862F}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Set_GameState_Town_Day" ID="{EF45C5F7-F4EA-4CB4-A865-E8C8C2CE7D52}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="ForceSet_GameState_Town_Night" ID="{ABEC5FFF-53DD-4D19-9009-A3DA285ED4B5}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="HardStop_Day_Melody_02" ID="{2C5FB90B-63DA-4D59-970F-1E2BD7E9F1A7}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_Night_Melody_04" ID="{12940C6F-86F5-4DBB-81A2-FE0F901B4FC2}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Day_Melody_01" ID="{183847E5-306B-4E51-8FEA-67B9CF27BBA4}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="HardStop_Day_Melody_03" ID="{615585D2-588D-4F0C-BB23-48069AB1F248}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{D0D94787-055C-40D2-8653-88018A9A90DA}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

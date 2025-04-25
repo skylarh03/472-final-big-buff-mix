@@ -1,18 +1,23 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	1206868862	Combat_Tension			\Default Work Unit\Combat_Tension	
-	3427946127	TownStates			\Default Work Unit\TownStates	
-	3482212766	ExplorationStates			\Default Work Unit\ExplorationStates	
+	1069915969	CombatTension			\Default Work Unit\CombatTension	
+	3725838539	AtBeach			\Default Work Unit\AtBeach	
+	3729505769	TimeOfDay			\Default Work Unit\TimeOfDay	
+	4091656514	GameState			\Default Work Unit\GameState	
 
 State	ID	Name	State Group			Notes
-	376032185	LowTension	Combat_Tension			
-	748895195	None	Combat_Tension			
-	4033417077	HighTension	Combat_Tension			
-	377176802	Town_Day	TownStates			
-	748895195	None	TownStates			
-	3205202438	Town_Night	TownStates			
-	748895195	None	ExplorationStates			
-	3608744671	Exploration_Day	ExplorationStates			
-	3817056875	Exploration_Night	ExplorationStates			
+	545371365	Low	CombatTension			
+	748895195	None	CombatTension			
+	3550808449	High	CombatTension			
+	748895195	None	AtBeach			
+	2452206122	False	AtBeach			
+	3053630529	True	AtBeach			
+	311764537	Day	TimeOfDay			
+	748895195	None	TimeOfDay			
+	1011622525	Night	TimeOfDay			
+	748895195	None	GameState			
+	2582085496	Exploration	GameState			
+	2764240573	Combat	GameState			
+	3091570009	Town	GameState			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
@@ -27,7 +32,6 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	2928161104	Curtains			\Factory Acoustic Textures\Textures\Curtains	
 	3195498748	Cork_Tiles			\Factory Acoustic Textures\Textures\Cork_Tiles	
 	3670307564	Drywall			\Factory Acoustic Textures\Textures\Drywall	
-	3725838539	AtBeach			\Default Work Unit\AtBeach	
 	4168643977	Acoustic_Banner			\Factory Acoustic Textures\Textures\Acoustic_Banner	
 	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
 
@@ -37,7 +41,6 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Effect plug-ins	ID	Name	Type				Notes
-	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 	2675251108	New_Peak_Limiter	Wwise Peak Limiter			
 
 Audio Devices	ID	Name	Type				Notes

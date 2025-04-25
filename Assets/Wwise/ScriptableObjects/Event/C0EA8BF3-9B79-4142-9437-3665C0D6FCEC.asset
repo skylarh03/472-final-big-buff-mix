@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 713b8a995f76bb8408585033b84518e9, type: 3}
   m_Name: C0EA8BF3-9B79-4142-9437-3665C0D6FCEC
   m_EditorClassIdentifier: 
-  objectName: ForceSet_GameState_Town_Day
-  id: 3775452854
+  objectName: ForceSet_TimeOfDay_Day
+  id: 1866332930
   guid: C0EA8BF3-9B79-4142-9437-3665C0D6FCEC

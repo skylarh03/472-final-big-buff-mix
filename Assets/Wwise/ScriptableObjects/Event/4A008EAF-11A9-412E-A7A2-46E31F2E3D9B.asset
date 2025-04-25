@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 713b8a995f76bb8408585033b84518e9, type: 3}
-  m_Name: EF45C5F7-F4EA-4CB4-A865-E8C8C2CE7D52
+  m_Name: 4A008EAF-11A9-412E-A7A2-46E31F2E3D9B
   m_EditorClassIdentifier: 
-  objectName: Set_TimeOfDay_Day
-  id: 753784447
-  guid: EF45C5F7-F4EA-4CB4-A865-E8C8C2CE7D52
+  objectName: Set_GameState_Combat
+  id: 2438311370
+  guid: 4A008EAF-11A9-412E-A7A2-46E31F2E3D9B
