@@ -39,25 +39,6 @@
 						<State Name="Low" ID="{4F472619-ABF5-46F8-A870-1F512C5B19B0}"/>
 					</ChildrenList>
 				</StateGroup>
-				<StateGroup Name="AtBeach" ID="{9491D525-CF23-46AC-96EE-A75BEB723AF0}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="19"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<State Name="None" ID="{77D0893C-5C4E-45E6-AD53-E1F18F3354E7}"/>
-						<State Name="True" ID="{E35EF895-F940-44D2-9AD4-66EB54D1F5A0}"/>
-						<State Name="False" ID="{9B7CA706-99B9-4BED-8F26-7725E59C7183}"/>
-					</ChildrenList>
-					<TransitionList>
-						<Transition>
-							<StartState Name="False" ID="{9B7CA706-99B9-4BED-8F26-7725E59C7183}"/>
-							<EndState Name="True" ID="{E35EF895-F940-44D2-9AD4-66EB54D1F5A0}"/>
-							<Time>3</Time>
-							<IsShared>false</IsShared>
-						</Transition>
-					</TransitionList>
-				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

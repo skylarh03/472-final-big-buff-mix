@@ -10,8 +10,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1057837593	Play_Night_Countermelody			\Default Work Unit\Town_MusicEvents\Play_Night_Countermelody	
 	1068983008	PlayMusicStart			\Default Work Unit\Global_MusicEvents\PlayMusicStart	
 	1092604815	Set_CombatTension_High			\Default Work Unit\Combat_MusicEvents\Set_CombatTension_High	
-	1120071521	Set_AtBeach_True			\Default Work Unit\Global_MusicEvents\Set_AtBeach_True	
-	1153877450	Set_AtBeach_False			\Default Work Unit\Global_MusicEvents\Set_AtBeach_False	
+	1109613271	Play_Stinger_EnterCombat			\Default Work Unit\Stingers\Play_Stinger_EnterCombat	
 	1359923209	Stop_Day_Melody_01			\Default Work Unit\Town_MusicEvents\Stop_Day_Melody_01	
 	1359923210	Stop_Day_Melody_02			\Default Work Unit\Town_MusicEvents\Stop_Day_Melody_02	
 	1359923211	Stop_Day_Melody_03			\Default Work Unit\Town_MusicEvents\Stop_Day_Melody_03	
@@ -26,16 +25,17 @@ Event	ID	Name			Wwise Object Path	Notes
 	2122435667	Set_Tension_High_33Percent			\Default Work Unit\Combat_MusicEvents\Set_Tension_High_33Percent	
 	2392457068	Stop_Night_Arp			\Default Work Unit\Town_MusicEvents\Stop_Night_Arp	
 	2438311370	Set_GameState_Combat			\Default Work Unit\Global_MusicEvents\Set_GameState_Combat	
+	2730318483	Play_Stinger_Player_GoToBed			\Default Work Unit\Stingers\Play_Stinger_Player_GoToBed	
 	2957603579	Set_CombatTension_Low			\Default Work Unit\Combat_MusicEvents\Set_CombatTension_Low	
 	2995852670	Set_GameState_Town			\Default Work Unit\Global_MusicEvents\Set_GameState_Town	
 	3095270484	HardStop_Day_Melody_03			\Default Work Unit\Town_MusicEvents\HardStop_Day_Melody_03	
 	3095270485	HardStop_Day_Melody_02			\Default Work Unit\Town_MusicEvents\HardStop_Day_Melody_02	
 	3095270486	HardStop_Day_Melody_01			\Default Work Unit\Town_MusicEvents\HardStop_Day_Melody_01	
 	3155474038	Play_Combat_Music			\Default Work Unit\Combat_MusicEvents\Play_Combat_Music	
+	4268407383	Play_Stinger_ExitCombat			\Default Work Unit\Stingers\Play_Stinger_ExitCombat	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1069915969	CombatTension			\Default Work Unit\CombatTension	
-	3725838539	AtBeach			\Default Work Unit\AtBeach	
 	3729505769	TimeOfDay			\Default Work Unit\TimeOfDay	
 	4091656514	GameState			\Default Work Unit\GameState	
 
@@ -43,9 +43,6 @@ State	ID	Name	State Group			Notes
 	545371365	Low	CombatTension			
 	748895195	None	CombatTension			
 	3550808449	High	CombatTension			
-	748895195	None	AtBeach			
-	2452206122	False	AtBeach			
-	3053630529	True	AtBeach			
 	311764537	Day	TimeOfDay			
 	748895195	None	TimeOfDay			
 	1011622525	Night	TimeOfDay			
@@ -55,6 +52,7 @@ State	ID	Name	State Group			Notes
 	3091570009	Town	GameState			
 
 Trigger	ID	Name			Wwise Object Path	Notes
+	1659302645	Player_GoToBed			\Default Work Unit\Player_GoToBed	
 	3868165313	Collect_Item			\Default Work Unit\Collect_Item	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
@@ -96,6 +94,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	238184512	stinger_item_collection_178	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\stinger_item_collection_178_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\stinger_item_collection_178\stinger_item_collection_178		817896
 	251137450	day_base_178_27	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_27_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_27\day_base_178_27		1115876
 	271798309	day_base_178_25	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_25_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_25\day_base_178_25		1106436
+	273381887	stinger_exitCombat_160bpm	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\stinger_exitCombat_160bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\stinger_exitCombat_160bpm\stinger_exitCombat_160bpm		696240
 	281573393	day_base_178_12	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_12_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_12\day_base_178_12		1029584
 	282622018	BASE_05	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\exploration_base_05_116bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_05\BASE_05		3410008
 	289746657	night_base_140_01	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_01\night_base_140_01		734716
@@ -109,8 +108,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	374036014	day_base_178_30	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_30_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_30\day_base_178_30		1096996
 	377478711	day_base_178_43	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_43_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_38\day_base_178_43		1065312
 	380013376	night_base_140_05	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_05_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_05\night_base_140_05		1027000
+	395166052	stinger_bedtime	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\stinger_bedtime_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\stinger_bedtime\stinger_bedtime		1658580
 	395189598	night_base_140_43	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_43_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_43\night_base_140_43		1138428
 	395898495	night_base_140_26	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_26_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_26\night_base_140_26		989288
+	396260002	DAY_01	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\strings_section7_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_07\DAY_01		6951820
 	396784195	night_base_140_12	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_12_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_12\night_base_140_12		978144
 	401265481	day_base_178_01	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_01\day_base_178_01		1070032
 	415952063	night_base_140_28	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_28_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_28\night_base_140_28		989288
@@ -119,6 +120,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	428081969	day_base_178_38	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_38_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_35\day_base_178_38		1235200
 	439275008	NIGHT_03	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\exploration_nighttime_03_116bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_03a\NIGHT_03		917860
 	446199776	NIGHT_01	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\exploration_nighttime_01_116bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_01\NIGHT_01		4103288
+	448221340	DAY_01	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\strings_section3_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_04\DAY_01		1685288
 	467411968	DAY_01	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\exploration_daytime_01_116bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_01\DAY_01		4143632
 	473494768	night_to_day_01	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_to_day_01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town_Day_Night_Transitions\night_to_day_01\night_to_day_01		3196384
 	488021391	night_base_140_06	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_06_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_06\night_base_140_06		998716
@@ -136,6 +138,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	549288315	day_base_178_09	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_09_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_09\day_base_178_09		991156
 	560716799	night_base_140_11	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_11_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_11\night_base_140_11		983288
 	566291254	day_base_178_08	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_08_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_08\day_base_178_08		1014076
+	569253995	DAY_02	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\strings_section1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_01\DAY_02		4165912
 	585935115	day_base_178_21	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_21_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_21\day_base_178_21		1056548
 	615664298	day_to_night_02	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_to_night_02_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town_Day_Night_Transitions\day_to_night_02\day_to_night_02		3246952
 	618961823	stinger_toCombat_160pm	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\stinger_toCombat_160pm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\stinger_toCombat_160pm\stinger_toCombat_160pm		1153008
@@ -153,6 +156,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	691258793	night_base_140_40	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_40_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_40\night_base_140_40		1848144
 	706194213	day_base_178_39	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_39_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_36\day_base_178_39		1103740
 	710583631	day_base_178_51	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_51_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_43\day_base_178_51		1090932
+	722163879	DAY_01	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\strings_section5_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_05\DAY_01		1888836
 	726749935	day_base_178_47	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_47_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_40\day_base_178_47		1066660
 	730055901	night_base_140_31	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_31_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_31\night_base_140_31		985860
 	756705463	night_base_140_09	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_09_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_09\night_base_140_09		979860
@@ -174,6 +178,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	822859217	night_base_140_32	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_32_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_32\night_base_140_32		981572
 	839586856	day_base_178_02	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_02_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_02\day_base_178_02		1096996
 	851351988	DAY_03	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\exploration_daytime_03a_116bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_03b\DAY_03		939584
+	863307812	DAY_01	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\strings_section2_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_02\DAY_01		5117840
 	872005110	day_base_178_13	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_13_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_13\day_base_178_13		1018120
 	881231503	night_base_140_35	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_35_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_35\night_base_140_35		1811288
 	888840302	night_base_140_18	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_18_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_18\night_base_140_18		991860

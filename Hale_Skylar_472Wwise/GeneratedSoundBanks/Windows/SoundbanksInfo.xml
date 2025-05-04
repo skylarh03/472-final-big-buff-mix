@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{DAD0045B-94CF-ECAD-6A65-6ED0B8CBA72A}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{6331217C-7BC8-A4BE-3F21-B870DD087D10}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -50,13 +50,6 @@
 						<State Id="545371365" Name="Low"/>
 						<State Id="748895195" Name="None"/>
 						<State Id="3550808449" Name="High"/>
-					</States>
-				</StateGroup>
-				<StateGroup Id="3725838539" Name="AtBeach">
-					<States>
-						<State Id="748895195" Name="None"/>
-						<State Id="2452206122" Name="False"/>
-						<State Id="3053630529" Name="True"/>
 					</States>
 				</StateGroup>
 				<StateGroup Id="3729505769" Name="TimeOfDay">
@@ -204,7 +197,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{AB68955C-01D1-FF17-1467-1BB8ADA318E7}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{AF4B0435-FFFC-9408-BB8B-F75F7D867E0F}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
@@ -360,6 +353,10 @@
 					<ShortName>day_base_178_25.wav</ShortName>
 					<CachePath>SFX/day_base_178_25_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="273381887" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>stinger_exitCombat_160bpm.wav</ShortName>
+					<CachePath>SFX/stinger_exitCombat_160bpm_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="281573393" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_base_178_12.wav</ShortName>
 					<CachePath>SFX/day_base_178_12_FBC78EF0.wem</CachePath>
@@ -412,6 +409,10 @@
 					<ShortName>night_base_140_05.wav</ShortName>
 					<CachePath>SFX/night_base_140_05_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="395166052" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>stinger_bedtime.wav</ShortName>
+					<CachePath>SFX/stinger_bedtime_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="395189598" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>night_base_140_43.wav</ShortName>
 					<CachePath>SFX/night_base_140_43_FBC78EF0.wem</CachePath>
@@ -419,6 +420,10 @@
 				<File Id="395898495" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>night_base_140_26.wav</ShortName>
 					<CachePath>SFX/night_base_140_26_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="396260002" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>strings_section7.wav</ShortName>
+					<CachePath>SFX/strings_section7_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="396784195" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>night_base_140_12.wav</ShortName>
@@ -451,6 +456,10 @@
 				<File Id="446199776" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>exploration_nighttime_01_116bpm.wav</ShortName>
 					<CachePath>SFX/exploration_nighttime_01_116bpm_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="448221340" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>strings_section3.wav</ShortName>
+					<CachePath>SFX/strings_section3_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="467411968" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>exploration_daytime_01_116bpm.wav</ShortName>
@@ -520,6 +529,10 @@
 					<ShortName>day_base_178_08.wav</ShortName>
 					<CachePath>SFX/day_base_178_08_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="569253995" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>strings_section1.wav</ShortName>
+					<CachePath>SFX/strings_section1_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="585935115" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_base_178_21.wav</ShortName>
 					<CachePath>SFX/day_base_178_21_FBC78EF0.wem</CachePath>
@@ -587,6 +600,10 @@
 				<File Id="710583631" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_base_178_51.wav</ShortName>
 					<CachePath>SFX/day_base_178_51_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="722163879" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>strings_section5.wav</ShortName>
+					<CachePath>SFX/strings_section5_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="726749935" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_base_178_47.wav</ShortName>
@@ -671,6 +688,10 @@
 				<File Id="851351988" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>exploration_daytime_03a_116bpm.wav</ShortName>
 					<CachePath>SFX/exploration_daytime_03a_116bpm_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="863307812" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>strings_section2.wav</ShortName>
+					<CachePath>SFX/strings_section2_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="872005110" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_base_178_13.wav</ShortName>
@@ -772,6 +793,9 @@
 			<Events>
 				<Event Id="1866332930" Name="ForceSet_TimeOfDay_Day" DurationType="Infinite">
 					<MediaRefs>
+						<MediaRef Id="238184512"/>
+						<MediaRef Id="273381887"/>
+						<MediaRef Id="395166052"/>
 						<MediaRef Id="618961823"/>
 					</MediaRefs>
 					<SwitchContainers>
@@ -784,6 +808,8 @@
 										<MediaRef Id="60913488"/>
 										<MediaRef Id="81823009"/>
 										<MediaRef Id="199413999"/>
+										<MediaRef Id="238184512"/>
+										<MediaRef Id="395166052"/>
 										<MediaRef Id="762152233"/>
 									</MediaRefs>
 								</SwitchContainer>
@@ -812,13 +838,18 @@
 								<MediaRef Id="318861569"/>
 								<MediaRef Id="342724911"/>
 								<MediaRef Id="362472852"/>
+								<MediaRef Id="396260002"/>
 								<MediaRef Id="439275008"/>
 								<MediaRef Id="446199776"/>
+								<MediaRef Id="448221340"/>
 								<MediaRef Id="467411968"/>
+								<MediaRef Id="569253995"/>
 								<MediaRef Id="659517811"/>
 								<MediaRef Id="677298004"/>
+								<MediaRef Id="722163879"/>
 								<MediaRef Id="778326249"/>
 								<MediaRef Id="851351988"/>
+								<MediaRef Id="863307812"/>
 								<MediaRef Id="895121328"/>
 								<MediaRef Id="912333014"/>
 							</MediaRefs>
@@ -827,6 +858,7 @@
 							<SwitchValue GroupType="State" GroupId="4091656514" Id="3091570009"/>
 							<MediaRefs>
 								<MediaRef Id="238184512"/>
+								<MediaRef Id="395166052"/>
 								<MediaRef Id="473494768"/>
 								<MediaRef Id="511836074"/>
 								<MediaRef Id="615664298"/>
@@ -859,6 +891,7 @@
 										<MediaRef Id="369973815"/>
 										<MediaRef Id="374036014"/>
 										<MediaRef Id="377478711"/>
+										<MediaRef Id="395166052"/>
 										<MediaRef Id="401265481"/>
 										<MediaRef Id="428081969"/>
 										<MediaRef Id="489348864"/>
@@ -916,6 +949,7 @@
 										<MediaRef Id="289746657"/>
 										<MediaRef Id="292962377"/>
 										<MediaRef Id="380013376"/>
+										<MediaRef Id="395166052"/>
 										<MediaRef Id="395189598"/>
 										<MediaRef Id="395898495"/>
 										<MediaRef Id="396784195"/>
@@ -968,6 +1002,9 @@
 				</Event>
 				<Event Id="1700992294" Name="ForceSet_TimeOfDay_Night" DurationType="Infinite">
 					<MediaRefs>
+						<MediaRef Id="238184512"/>
+						<MediaRef Id="273381887"/>
+						<MediaRef Id="395166052"/>
 						<MediaRef Id="618961823"/>
 					</MediaRefs>
 					<SwitchContainers>
@@ -980,6 +1017,8 @@
 										<MediaRef Id="60913488"/>
 										<MediaRef Id="81823009"/>
 										<MediaRef Id="199413999"/>
+										<MediaRef Id="238184512"/>
+										<MediaRef Id="395166052"/>
 										<MediaRef Id="762152233"/>
 									</MediaRefs>
 								</SwitchContainer>
@@ -1008,13 +1047,18 @@
 								<MediaRef Id="318861569"/>
 								<MediaRef Id="342724911"/>
 								<MediaRef Id="362472852"/>
+								<MediaRef Id="396260002"/>
 								<MediaRef Id="439275008"/>
 								<MediaRef Id="446199776"/>
+								<MediaRef Id="448221340"/>
 								<MediaRef Id="467411968"/>
+								<MediaRef Id="569253995"/>
 								<MediaRef Id="659517811"/>
 								<MediaRef Id="677298004"/>
+								<MediaRef Id="722163879"/>
 								<MediaRef Id="778326249"/>
 								<MediaRef Id="851351988"/>
+								<MediaRef Id="863307812"/>
 								<MediaRef Id="895121328"/>
 								<MediaRef Id="912333014"/>
 							</MediaRefs>
@@ -1023,6 +1067,7 @@
 							<SwitchValue GroupType="State" GroupId="4091656514" Id="3091570009"/>
 							<MediaRefs>
 								<MediaRef Id="238184512"/>
+								<MediaRef Id="395166052"/>
 								<MediaRef Id="473494768"/>
 								<MediaRef Id="511836074"/>
 								<MediaRef Id="615664298"/>
@@ -1055,6 +1100,7 @@
 										<MediaRef Id="369973815"/>
 										<MediaRef Id="374036014"/>
 										<MediaRef Id="377478711"/>
+										<MediaRef Id="395166052"/>
 										<MediaRef Id="401265481"/>
 										<MediaRef Id="428081969"/>
 										<MediaRef Id="489348864"/>
@@ -1112,6 +1158,7 @@
 										<MediaRef Id="289746657"/>
 										<MediaRef Id="292962377"/>
 										<MediaRef Id="380013376"/>
+										<MediaRef Id="395166052"/>
 										<MediaRef Id="395189598"/>
 										<MediaRef Id="395898495"/>
 										<MediaRef Id="396784195"/>
@@ -1164,6 +1211,10 @@
 				<Event Id="3095270485" Name="HardStop_Day_Melody_02" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3095270484" Name="HardStop_Day_Melody_03" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3155474038" Name="Play_Combat_Music" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="238184512"/>
+						<MediaRef Id="395166052"/>
+					</MediaRefs>
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="1069915969" Id="545371365"/>
@@ -1171,6 +1222,8 @@
 								<MediaRef Id="60913488"/>
 								<MediaRef Id="81823009"/>
 								<MediaRef Id="199413999"/>
+								<MediaRef Id="238184512"/>
+								<MediaRef Id="395166052"/>
 								<MediaRef Id="762152233"/>
 							</MediaRefs>
 						</SwitchContainer>
@@ -1186,6 +1239,7 @@
 				<Event Id="2117048067" Name="Play_Day_Melody_01" DurationType="OneShot" DurationMin="25.617603" DurationMax="25.617603">
 					<MediaRefs>
 						<MediaRef Id="238184512"/>
+						<MediaRef Id="395166052"/>
 						<MediaRef Id="958960343"/>
 						<MediaRef Id="1067407073"/>
 					</MediaRefs>
@@ -1193,6 +1247,7 @@
 				<Event Id="2117048064" Name="Play_Day_Melody_02" DurationType="OneShot" DurationMin="27.570229" DurationMax="27.570229">
 					<MediaRefs>
 						<MediaRef Id="238184512"/>
+						<MediaRef Id="395166052"/>
 						<MediaRef Id="801830846"/>
 						<MediaRef Id="806420609"/>
 						<MediaRef Id="1025300550"/>
@@ -1201,6 +1256,7 @@
 				<Event Id="2117048065" Name="Play_Day_Melody_03" DurationType="OneShot" DurationMin="51.23523" DurationMax="51.23523">
 					<MediaRefs>
 						<MediaRef Id="238184512"/>
+						<MediaRef Id="395166052"/>
 						<MediaRef Id="907772810"/>
 					</MediaRefs>
 				</Event>
@@ -1208,27 +1264,48 @@
 					<MediaRefs>
 						<MediaRef Id="102290091"/>
 						<MediaRef Id="238184512"/>
+						<MediaRef Id="395166052"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1057837593" Name="Play_Night_Countermelody" DurationType="OneShot" DurationMin="17.196438" DurationMax="17.196438">
 					<MediaRefs>
 						<MediaRef Id="238184512"/>
+						<MediaRef Id="395166052"/>
 						<MediaRef Id="626125282"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2032307683" Name="Play_Night_Melody" DurationType="OneShot" DurationMin="168.13394" DurationMax="168.13394">
 					<MediaRefs>
 						<MediaRef Id="238184512"/>
+						<MediaRef Id="395166052"/>
 						<MediaRef Id="502036796"/>
 					</MediaRefs>
+				</Event>
+				<Event Id="1109613271" Name="Play_Stinger_EnterCombat" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="2334212825" Name="EnterCombat"/>
+					</ActionTrigger>
+				</Event>
+				<Event Id="4268407383" Name="Play_Stinger_ExitCombat" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="755913789" Name="ExitCombat"/>
+					</ActionTrigger>
 				</Event>
 				<Event Id="2049735205" Name="Play_Stinger_Item_Collection" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionTrigger>
 						<ActionTriggerEntry Id="3868165313" Name="Collect_Item"/>
 					</ActionTrigger>
 				</Event>
+				<Event Id="2730318483" Name="Play_Stinger_Player_GoToBed" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="1659302645" Name="Player_GoToBed"/>
+					</ActionTrigger>
+				</Event>
 				<Event Id="1068983008" Name="PlayMusicStart" DurationType="Infinite">
 					<MediaRefs>
+						<MediaRef Id="238184512"/>
+						<MediaRef Id="273381887"/>
+						<MediaRef Id="395166052"/>
 						<MediaRef Id="618961823"/>
 					</MediaRefs>
 					<SwitchContainers>
@@ -1241,6 +1318,8 @@
 										<MediaRef Id="60913488"/>
 										<MediaRef Id="81823009"/>
 										<MediaRef Id="199413999"/>
+										<MediaRef Id="238184512"/>
+										<MediaRef Id="395166052"/>
 										<MediaRef Id="762152233"/>
 									</MediaRefs>
 								</SwitchContainer>
@@ -1269,13 +1348,18 @@
 								<MediaRef Id="318861569"/>
 								<MediaRef Id="342724911"/>
 								<MediaRef Id="362472852"/>
+								<MediaRef Id="396260002"/>
 								<MediaRef Id="439275008"/>
 								<MediaRef Id="446199776"/>
+								<MediaRef Id="448221340"/>
 								<MediaRef Id="467411968"/>
+								<MediaRef Id="569253995"/>
 								<MediaRef Id="659517811"/>
 								<MediaRef Id="677298004"/>
+								<MediaRef Id="722163879"/>
 								<MediaRef Id="778326249"/>
 								<MediaRef Id="851351988"/>
+								<MediaRef Id="863307812"/>
 								<MediaRef Id="895121328"/>
 								<MediaRef Id="912333014"/>
 							</MediaRefs>
@@ -1284,6 +1368,7 @@
 							<SwitchValue GroupType="State" GroupId="4091656514" Id="3091570009"/>
 							<MediaRefs>
 								<MediaRef Id="238184512"/>
+								<MediaRef Id="395166052"/>
 								<MediaRef Id="473494768"/>
 								<MediaRef Id="511836074"/>
 								<MediaRef Id="615664298"/>
@@ -1316,6 +1401,7 @@
 										<MediaRef Id="369973815"/>
 										<MediaRef Id="374036014"/>
 										<MediaRef Id="377478711"/>
+										<MediaRef Id="395166052"/>
 										<MediaRef Id="401265481"/>
 										<MediaRef Id="428081969"/>
 										<MediaRef Id="489348864"/>
@@ -1373,6 +1459,7 @@
 										<MediaRef Id="289746657"/>
 										<MediaRef Id="292962377"/>
 										<MediaRef Id="380013376"/>
+										<MediaRef Id="395166052"/>
 										<MediaRef Id="395189598"/>
 										<MediaRef Id="395898495"/>
 										<MediaRef Id="396784195"/>
@@ -1415,18 +1502,7 @@
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="3729505769" Id="311764537" Name="Day"/>
 						<ActionSetStateEntry GroupId="1069915969" Id="545371365" Name="Low"/>
-						<ActionSetStateEntry GroupId="3725838539" Id="2452206122" Name="False"/>
 						<ActionSetStateEntry GroupId="4091656514" Id="3091570009" Name="Town"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="1153877450" Name="Set_AtBeach_False" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<ActionSetState>
-						<ActionSetStateEntry GroupId="3725838539" Id="2452206122" Name="False"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="1120071521" Name="Set_AtBeach_True" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<ActionSetState>
-						<ActionSetStateEntry GroupId="3725838539" Id="3053630529" Name="True"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="1092604815" Name="Set_CombatTension_High" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
@@ -1454,7 +1530,12 @@
 						<ActionSetStateEntry GroupId="4091656514" Id="3091570009" Name="Town"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="2122435667" Name="Set_Tension_High_33Percent" DurationType="OneShot" DurationMin="0" DurationMax="0.375"/>
+				<Event Id="2122435667" Name="Set_Tension_High_33Percent" DurationType="OneShot" DurationMin="0" DurationMax="0.375">
+					<MediaRefs>
+						<MediaRef Id="238184512"/>
+						<MediaRef Id="395166052"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="753784447" Name="Set_TimeOfDay_Day" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="3729505769" Id="311764537" Name="Day"/>
@@ -1483,13 +1564,6 @@
 						<State Id="3550808449" Name="High"/>
 					</States>
 				</StateGroup>
-				<StateGroup Id="3725838539" Name="AtBeach">
-					<States>
-						<State Id="748895195" Name="None"/>
-						<State Id="2452206122" Name="False"/>
-						<State Id="3053630529" Name="True"/>
-					</States>
-				</StateGroup>
 				<StateGroup Id="3729505769" Name="TimeOfDay">
 					<States>
 						<State Id="311764537" Name="Day"/>
@@ -1507,9 +1581,12 @@
 				</StateGroup>
 			</StateGroups>
 			<Triggers>
+				<Trigger Id="755913789" Name="ExitCombat"/>
+				<Trigger Id="1659302645" Name="Player_GoToBed"/>
+				<Trigger Id="2334212825" Name="EnterCombat"/>
 				<Trigger Id="3868165313" Name="Collect_Item"/>
 			</Triggers>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2888E53A-5D2F-A277-6176-66F8F8866817}</FileHash>
+	<FileHash>{D18AF59B-1389-4445-1211-00E13BAEBF53}</FileHash>
 </SoundBanksInfo>

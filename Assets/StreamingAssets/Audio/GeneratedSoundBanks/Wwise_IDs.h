@@ -25,10 +25,11 @@ namespace AK
         static const AkUniqueID PLAY_NIGHT_ARP = 76591114U;
         static const AkUniqueID PLAY_NIGHT_COUNTERMELODY = 1057837593U;
         static const AkUniqueID PLAY_NIGHT_MELODY = 2032307683U;
+        static const AkUniqueID PLAY_STINGER_ENTERCOMBAT = 1109613271U;
+        static const AkUniqueID PLAY_STINGER_EXITCOMBAT = 4268407383U;
         static const AkUniqueID PLAY_STINGER_ITEM_COLLECTION = 2049735205U;
+        static const AkUniqueID PLAY_STINGER_PLAYER_GOTOBED = 2730318483U;
         static const AkUniqueID PLAYMUSICSTART = 1068983008U;
-        static const AkUniqueID SET_ATBEACH_FALSE = 1153877450U;
-        static const AkUniqueID SET_ATBEACH_TRUE = 1120071521U;
         static const AkUniqueID SET_COMBATTENSION_HIGH = 1092604815U;
         static const AkUniqueID SET_COMBATTENSION_LOW = 2957603579U;
         static const AkUniqueID SET_GAMESTATE_COMBAT = 2438311370U;
@@ -50,18 +51,6 @@ namespace AK
 
     namespace STATES
     {
-        namespace ATBEACH
-        {
-            static const AkUniqueID GROUP = 3725838539U;
-
-            namespace STATE
-            {
-                static const AkUniqueID FALSE = 2452206122U;
-                static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID TRUE = 3053630529U;
-            } // namespace STATE
-        } // namespace ATBEACH
-
         namespace COMBATTENSION
         {
             static const AkUniqueID GROUP = 1069915969U;
@@ -118,6 +107,9 @@ namespace AK
     namespace TRIGGERS
     {
         static const AkUniqueID COLLECT_ITEM = 3868165313U;
+        static const AkUniqueID ENTERCOMBAT = 2334212825U;
+        static const AkUniqueID EXITCOMBAT = 755913789U;
+        static const AkUniqueID PLAYER_GOTOBED = 1659302645U;
     } // namespace TRIGGERS
 
     namespace BANKS

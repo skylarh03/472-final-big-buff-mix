@@ -1,6 +1,5 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	1069915969	CombatTension			\Default Work Unit\CombatTension	
-	3725838539	AtBeach			\Default Work Unit\AtBeach	
 	3729505769	TimeOfDay			\Default Work Unit\TimeOfDay	
 	4091656514	GameState			\Default Work Unit\GameState	
 
@@ -8,9 +7,6 @@ State	ID	Name	State Group			Notes
 	545371365	Low	CombatTension			
 	748895195	None	CombatTension			
 	3550808449	High	CombatTension			
-	748895195	None	AtBeach			
-	2452206122	False	AtBeach			
-	3053630529	True	AtBeach			
 	311764537	Day	TimeOfDay			
 	748895195	None	TimeOfDay			
 	1011622525	Night	TimeOfDay			

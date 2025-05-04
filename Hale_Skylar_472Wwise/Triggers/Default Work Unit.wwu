@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{81C89151-725B-4771-98F9-2B308A2ABA1F}" PersistMode="Standalone">
 			<ChildrenList>
 				<Trigger Name="Collect_Item" ID="{2700040D-1C3A-40EC-88C7-93A9072A2A78}"/>
+				<Trigger Name="Player_GoToBed" ID="{0383B6FB-AD08-4C1D-9757-A4EEF181C8C1}"/>
+				<Trigger Name="ExitCombat" ID="{BE38F96A-8A82-4FDD-91B7-46D8428AB14A}"/>
+				<Trigger Name="EnterCombat" ID="{D9844E62-8BB5-4D3C-BE00-BB03D1CE729D}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Triggers>

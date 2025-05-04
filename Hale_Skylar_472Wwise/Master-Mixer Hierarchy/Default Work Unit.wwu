@@ -12,7 +12,6 @@
 					<ChildrenList>
 						<Bus Name="Music" ID="{1F87B96C-E2CF-421D-9AE2-841D10671525}"/>
 						<Bus Name="Stingers" ID="{F089BAD8-28D5-44AC-AE40-DDA9CC4CAD84}"/>
-						<Bus Name="Ambience" ID="{8534584C-4439-439C-BBD1-09C6B34DB3CE}"/>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="Effects">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo>
-	<Project Name="Hale_Skylar_472Wwise" GUID="{4782D28A-04A5-4750-956C-0E8D645BF517}" Generator="2023.1.4.8496"/>
+	<Project Name="Hale_Skylar_Wwise_472Wwise" GUID="{4782D28A-04A5-4750-956C-0E8D645BF517}" Generator="2023.1.4.8496"/>
 	<CacheRoot>../../../../Hale_Skylar_472Wwise/.cache</CacheRoot>
 	<Platforms>
 		<Platform Name="Mac" GUID="{2834577B-71D4-49AD-B6BC-42383DD64C98}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../Hale_Skylar_472Wwise/GeneratedSoundBanks/Mac"/>
@@ -9,5 +9,5 @@
 	<Languages>
 		<Language Name="English(US)" Id="684519430" GUID="{B2F4E982-2BC7-43E3-AE34-A864E21CA7CD}" Default="true" UseAsStandIn="true"/>
 	</Languages>
-	<FileHash>{0BD8FDA4-D3E7-DF44-E195-0C60B5E82BFE}</FileHash>
+	<FileHash>{C8BB83CF-7594-0257-29B7-5E8104D9AA69}</FileHash>
 </ProjectInfo>
