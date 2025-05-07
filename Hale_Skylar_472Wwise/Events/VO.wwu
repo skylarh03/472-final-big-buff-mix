@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BAED23DD-8BAC-4100-9A6B-ED0FE7EA9401}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="VO" ID="{BAED23DD-8BAC-4100-9A6B-ED0FE7EA9401}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_DialogueLoop" ID="{3E8083AA-6B7E-4191-A5B9-C77AE4B85459}">
+					<ChildrenList>
+						<Action Name="" ID="{ECA5D488-D296-4766-9F6C-33699283249F}" ShortID="168748910">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="vo_dialogueLoop" ID="{A8E33B13-2B16-48A5-B1AD-1392BB212702}" WorkUnitID="{159B5E7E-52AD-41BD-A81C-95FD2EE18C8F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Monologue" ID="{BF2A004C-F9B3-4676-8FEC-659A6538B4DD}">
+					<ChildrenList>
+						<Action Name="" ID="{2F6C5652-8560-43B0-882A-57EBE13DEDE8}" ShortID="874706888">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Monologue" ID="{442BBDEF-DDE5-4EFD-A1DD-40E1478D522E}" WorkUnitID="{159B5E7E-52AD-41BD-A81C-95FD2EE18C8F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

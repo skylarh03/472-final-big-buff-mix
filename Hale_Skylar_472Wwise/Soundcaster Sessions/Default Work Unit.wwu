@@ -97,6 +97,21 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
+				<SoundcasterSession Name="VO Test" ID="{0329461F-FC57-43B5-B8D9-D0ACB344018F}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_DialogueLoop" ID="{3E8083AA-6B7E-4191-A5B9-C77AE4B85459}" WorkUnitID="{BAED23DD-8BAC-4100-9A6B-ED0FE7EA9401}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Monologue" ID="{BF2A004C-F9B3-4676-8FEC-659A6538B4DD}" WorkUnitID="{BAED23DD-8BAC-4100-9A6B-ED0FE7EA9401}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>
