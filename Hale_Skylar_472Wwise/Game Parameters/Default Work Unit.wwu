@@ -3,7 +3,21 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{641D1E10-9339-45CB-8064-2A5E4AC0EC54}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="isRaining" ID="{937FCD20-673C-49EB-918A-366DF79B5279}"/>
+				<GameParameter Name="isRaining" ID="{937FCD20-673C-49EB-918A-366DF79B5279}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="20"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="20"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Sidechaining" ID="{864882C8-9388-4B3C-A984-158775314E71}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

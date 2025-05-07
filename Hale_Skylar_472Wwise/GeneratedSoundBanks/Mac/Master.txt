@@ -1,22 +1,28 @@
 Event	ID	Name			Wwise Object Path	Notes
-	71469835	Set_TimeOfDay_Night			\Default Work Unit\Global_MusicEvents\Set_TimeOfDay_Night	
+	43599987	Play_UI_Button			\AMB\Play_UI_Button	
+	71469835	Set_TimeOfDay_Night			\Default Work Unit\Global_Events\Set_TimeOfDay_Night	
 	76591114	Play_Night_Arp			\Default Work Unit\Town_MusicEvents\Play_Night_Arp	
 	252313120	Stop_Night_Melody_04			\Default Work Unit\Town_MusicEvents\Stop_Night_Melody_04	
 	252313125	Stop_Night_Melody_01			\Default Work Unit\Town_MusicEvents\Stop_Night_Melody_01	
 	252313126	Stop_Night_Melody_02			\Default Work Unit\Town_MusicEvents\Stop_Night_Melody_02	
 	252313127	Stop_Night_Melody_03			\Default Work Unit\Town_MusicEvents\Stop_Night_Melody_03	
-	452547817	Stop_All			\Default Work Unit\Global_MusicEvents\Stop_All	
-	753784447	Set_TimeOfDay_Day			\Default Work Unit\Global_MusicEvents\Set_TimeOfDay_Day	
+	318432063	Play_Emitter_Seals			\AMB\Emitters\Play_Emitter_Seals	
+	452547817	Stop_All			\Default Work Unit\Global_Events\Stop_All	
+	753784447	Set_TimeOfDay_Day			\Default Work Unit\Global_Events\Set_TimeOfDay_Day	
+	876452814	Play_Emitter_Crowd			\AMB\Emitters\Play_Emitter_Crowd	
 	1057837593	Play_Night_Countermelody			\Default Work Unit\Town_MusicEvents\Play_Night_Countermelody	
-	1068983008	PlayMusicStart			\Default Work Unit\Global_MusicEvents\PlayMusicStart	
 	1092604815	Set_CombatTension_High			\Default Work Unit\Combat_MusicEvents\Set_CombatTension_High	
 	1109613271	Play_Stinger_EnterCombat			\Default Work Unit\Stingers\Play_Stinger_EnterCombat	
+	1316191055	StartAmbience			\AMB\StartAmbience	
 	1359923209	Stop_Day_Melody_01			\Default Work Unit\Town_MusicEvents\Stop_Day_Melody_01	
 	1359923210	Stop_Day_Melody_02			\Default Work Unit\Town_MusicEvents\Stop_Day_Melody_02	
 	1359923211	Stop_Day_Melody_03			\Default Work Unit\Town_MusicEvents\Stop_Day_Melody_03	
-	1544625833	Set_GameState_Exploration			\Default Work Unit\Global_MusicEvents\Set_GameState_Exploration	
-	1700992294	ForceSet_TimeOfDay_Night			\Default Work Unit\Global_MusicEvents\ForceSet_TimeOfDay_Night	
-	1866332930	ForceSet_TimeOfDay_Day			\Default Work Unit\Global_MusicEvents\ForceSet_TimeOfDay_Day	
+	1490057868	Set_RTPC_Rain_100			\AMB\Set_RTPC_Rain_100	
+	1544625833	Set_GameState_Exploration			\Default Work Unit\Global_Events\Set_GameState_Exploration	
+	1611901679	Play_Emitter_Waterfall			\AMB\Emitters\Play_Emitter_Waterfall	
+	1700992294	ForceSet_TimeOfDay_Night			\Default Work Unit\Global_Events\ForceSet_TimeOfDay_Night	
+	1703876944	Set_Underwater_True			\Default Work Unit\Global_Events\Set_Underwater_True	
+	1866332930	ForceSet_TimeOfDay_Day			\Default Work Unit\Global_Events\ForceSet_TimeOfDay_Day	
 	2032307683	Play_Night_Melody			\Default Work Unit\Town_MusicEvents\Play_Night_Melody	
 	2049735205	Play_Stinger_Item_Collection			\Default Work Unit\Stingers\Play_Stinger_Item_Collection	
 	2117048064	Play_Day_Melody_02			\Default Work Unit\Town_MusicEvents\Play_Day_Melody_02	
@@ -24,18 +30,28 @@ Event	ID	Name			Wwise Object Path	Notes
 	2117048067	Play_Day_Melody_01			\Default Work Unit\Town_MusicEvents\Play_Day_Melody_01	
 	2122435667	Set_Tension_High_33Percent			\Default Work Unit\Combat_MusicEvents\Set_Tension_High_33Percent	
 	2392457068	Stop_Night_Arp			\Default Work Unit\Town_MusicEvents\Stop_Night_Arp	
-	2438311370	Set_GameState_Combat			\Default Work Unit\Global_MusicEvents\Set_GameState_Combat	
+	2424015369	Set_Underwater_False			\Default Work Unit\Global_Events\Set_Underwater_False	
+	2438311370	Set_GameState_Combat			\Default Work Unit\Global_Events\Set_GameState_Combat	
 	2730318483	Play_Stinger_Player_GoToBed			\Default Work Unit\Stingers\Play_Stinger_Player_GoToBed	
 	2957603579	Set_CombatTension_Low			\Default Work Unit\Combat_MusicEvents\Set_CombatTension_Low	
-	2995852670	Set_GameState_Town			\Default Work Unit\Global_MusicEvents\Set_GameState_Town	
+	2995852670	Set_GameState_Town			\Default Work Unit\Global_Events\Set_GameState_Town	
 	3095270484	HardStop_Day_Melody_03			\Default Work Unit\Town_MusicEvents\HardStop_Day_Melody_03	
 	3095270485	HardStop_Day_Melody_02			\Default Work Unit\Town_MusicEvents\HardStop_Day_Melody_02	
 	3095270486	HardStop_Day_Melody_01			\Default Work Unit\Town_MusicEvents\HardStop_Day_Melody_01	
 	3155474038	Play_Combat_Music			\Default Work Unit\Combat_MusicEvents\Play_Combat_Music	
+	3208730517	Play_Monologue			\VO\Play_Monologue	
+	3248879779	Set_GameState_Beach			\Default Work Unit\Global_Events\Set_GameState_Beach	
+	3352186862	Play_DialogueLoop			\VO\Play_DialogueLoop	
+	3483057933	Set_RTPC_Rain_0			\AMB\Set_RTPC_Rain_0	
+	3937140874	Set_Inside_False			\Default Work Unit\Global_Events\Set_Inside_False	
+	4058101365	GameStart			\Default Work Unit\Global_Events\GameStart	
+	4081663009	Set_Inside_True			\Default Work Unit\Global_Events\Set_Inside_True	
 	4268407383	Play_Stinger_ExitCombat			\Default Work Unit\Stingers\Play_Stinger_ExitCombat	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1069915969	CombatTension			\Default Work Unit\CombatTension	
+	2213237662	Underwater			\Default Work Unit\Underwater	
+	3553349781	Inside			\Default Work Unit\Inside	
 	3729505769	TimeOfDay			\Default Work Unit\TimeOfDay	
 	4091656514	GameState			\Default Work Unit\GameState	
 
@@ -43,6 +59,12 @@ State	ID	Name	State Group			Notes
 	545371365	Low	CombatTension			
 	748895195	None	CombatTension			
 	3550808449	High	CombatTension			
+	748895195	None	Underwater			
+	2452206122	False	Underwater			
+	3053630529	True	Underwater			
+	748895195	None	Inside			
+	2452206122	False	Inside			
+	3053630529	True	Inside			
 	311764537	Day	TimeOfDay			
 	748895195	None	TimeOfDay			
 	1011622525	Night	TimeOfDay			
@@ -50,10 +72,17 @@ State	ID	Name	State Group			Notes
 	2582085496	Exploration	GameState			
 	2764240573	Combat	GameState			
 	3091570009	Town	GameState			
+	4075332698	Beach	GameState			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	844393037	isRaining			\Default Work Unit\isRaining	
 
 Trigger	ID	Name			Wwise Object Path	Notes
 	1659302645	Player_GoToBed			\Default Work Unit\Player_GoToBed	
 	3868165313	Collect_Item			\Default Work Unit\Collect_Item	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	374890108	Silence	Wwise Silence		\Actor-Mixer Hierarchy\AMB\AmbienceMaster\Ocean\emitter_seagull\New Silence\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	794478	BASE_01	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\exploration_base_01_116bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_01\BASE_01		4120872
@@ -62,17 +91,23 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	13440826	combat_05_160bpm	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\combat_05_160bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Combat\Combat_HighTension\combat_05_160bpm\combat_05_160bpm		6464504
 	21414237	day_base_178_26	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_26_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_26\day_base_178_26		1096996
 	27508784	day_base_178_15	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_15_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_15\day_base_178_15		1063292
+	30695796	amb_emitter_crowd	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_crowd_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\amb_emitter_crowd		12288096
 	30947667	night_base_140_30	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_30_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_30\night_base_140_30		989288
 	34395155	BASE_06	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\exploration_base_06_116bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_06\BASE_06		3863032
 	34431315	night_base_140_14	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_14_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_14\night_base_140_14		961860
+	43862565	amb_emitter_seagull_3	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_seagull_3_66A3348F.wem		\Actor-Mixer Hierarchy\AMB\AmbienceMaster\Ocean\emitter_seagull\amb_emitter_seagull_3		486060
 	56913998	BASE_03b	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\exploration_base_03b_116bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_03b\BASE_03b		948892
 	57729547	night_base_140_13	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_13_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_13\night_base_140_13		979860
 	60913488	combat_04_160bpm	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\combat_04_160bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Combat\Combat_Playlist\combat_04_160bpm_firstLoop\combat_04_160bpm		4167816
 	63685387	night_base_140_08	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_08_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_08\night_base_140_08		981572
 	68647566	day_base_178_37	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_37_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_35\day_base_178_37		1296548
+	73479292	amb_emitter_frog_5	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_frog_5_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\AmbienceMaster\Marsh\emitter_frog\amb_emitter_frog_5		120096
 	74883050	BASE_03a	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\exploration_base_03a_116bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_03a\BASE_03a		933376
 	75886366	day_base_178_04	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_04_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_04\day_base_178_04		1093628
 	81823009	combat_03_160bpm	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\combat_03_160bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Combat\Combat_Playlist\combat_03_160bpm_alternateCues\combat_03_160bpm		4569576
+	85929563	amb_emitter_seal__1	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_seal__1_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\amb_emitter_seal\amb_emitter_seal__1		125092
+	91663302	amb_emitter_seal__5	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_seal__5_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\amb_emitter_seal\amb_emitter_seal__5		168928
+	94244807	vo_monologue_09	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\vo_monologue_09_818F3B66.wem		\Actor-Mixer Hierarchy\VO\Monologue\vo_monologue_09		477376
 	99715958	night_base_140_02	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_02_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_02\night_base_140_02		955860
 	101232745	night_base_140_19	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_19_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_19\night_base_140_19		990144
 	102290091	night_arp	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_arp_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_arp_playlist\night_arp\night_arp		11850144
@@ -87,19 +122,25 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	193395013	day_base_178_35	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_35_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_34\day_base_178_35		1065312
 	199413999	combat_02_160bpm	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\combat_02_160bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Combat\Combat_Playlist\combat_02_160bpm\combat_02_160bpm		5021552
 	200019902	day_base_178_07	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_07_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_07\day_base_178_07		1078120
+	201619559	amb_emitter_seagull_2	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_seagull_2_E90C223A.wem		\Actor-Mixer Hierarchy\AMB\AmbienceMaster\Ocean\emitter_seagull\amb_emitter_seagull_2		555228
 	214825501	day_base_178_52	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_52_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_44\day_base_178_52		1093628
 	219832523	DAY_02	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\exploration_daytime_02_116bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_02\DAY_02		5228676
 	221073331	day_base_178_50	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_50_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_42\day_base_178_50		1096996
 	236492864	night_base_140_07	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_07_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_07\night_base_140_07		992716
 	238184512	stinger_item_collection_178	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\stinger_item_collection_178_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\stinger_item_collection_178\stinger_item_collection_178		817896
 	251137450	day_base_178_27	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_27_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_27\day_base_178_27		1115876
+	255082433	amb_emitter_frog_4	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_frog_4_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\AmbienceMaster\Marsh\emitter_frog\amb_emitter_frog_4		140330
 	271798309	day_base_178_25	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_25_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_25\day_base_178_25		1106436
 	273381887	stinger_exitCombat_160bpm	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\stinger_exitCombat_160bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\stinger_exitCombat_160bpm\stinger_exitCombat_160bpm		696240
 	281573393	day_base_178_12	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_12_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_12\day_base_178_12		1029584
 	282622018	BASE_05	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\exploration_base_05_116bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_05\BASE_05		3410008
 	289746657	night_base_140_01	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_01\night_base_140_01		734716
 	292962377	night_base_140_44	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_44_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_44\night_base_140_44		1087000
+	305331709	vo_monologue_04	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\vo_monologue_04_818F3B66.wem		\Actor-Mixer Hierarchy\VO\Monologue\vo_monologue_04		919528
+	305771341	vo_monologue_08	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\vo_monologue_08_818F3B66.wem		\Actor-Mixer Hierarchy\VO\Monologue\vo_monologue_08		332452
+	313035181	amb_emitter_seagull_1	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_seagull_1_DDC6A584.wem		\Actor-Mixer Hierarchy\AMB\AmbienceMaster\Ocean\emitter_seagull\amb_emitter_seagull_1		737896
 	318861569	BASE_04	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\exploration_base_04_116bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_04\BASE_04		1220960
+	322578607	amb_emitter_seal_	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_seal__818F3B66.wem		\Actor-Mixer Hierarchy\AMB\amb_emitter_seal\amb_emitter_seal_		187160
 	342615801	day_base_178_03	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_03_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_03\day_base_178_03		1080144
 	342724911	DAY_06	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\exploration_daytime_06_116bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_06\DAY_06		3826824
 	350898139	day_base_178_49	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_49_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_41\day_base_178_49		1070032
@@ -108,6 +149,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	374036014	day_base_178_30	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_30_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_30\day_base_178_30		1096996
 	377478711	day_base_178_43	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_43_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_38\day_base_178_43		1065312
 	380013376	night_base_140_05	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_05_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_05\night_base_140_05		1027000
+	386520637	amb_emitter_seal__7	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_seal__7_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\amb_emitter_seal\amb_emitter_seal__7		139460
 	395166052	stinger_bedtime	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\stinger_bedtime_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\stinger_bedtime\stinger_bedtime		1658580
 	395189598	night_base_140_43	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_43_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_43\night_base_140_43		1138428
 	395898495	night_base_140_26	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_26_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_26\night_base_140_26		989288
@@ -115,51 +157,70 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	396784195	night_base_140_12	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_12_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_12\night_base_140_12		978144
 	401265481	day_base_178_01	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_01\day_base_178_01		1070032
 	415952063	night_base_140_28	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_28_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_28\night_base_140_28		989288
+	418536052	amb_emitter_dog_2	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_dog_2_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\AmbienceMaster\Town\emitter_dog\amb_emitter_dog_2		555104
 	419981500	night_base_140_15	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_15_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_15\night_base_140_15		983288
 	422935936	night_base_140_25	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_25_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_25\night_base_140_25		1027000
 	428081969	day_base_178_38	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_38_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_35\day_base_178_38		1235200
 	439275008	NIGHT_03	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\exploration_nighttime_03_116bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_03a\NIGHT_03		917860
 	446199776	NIGHT_01	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\exploration_nighttime_01_116bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_01\NIGHT_01		4103288
 	448221340	DAY_01	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\strings_section3_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_04\DAY_01		1685288
+	451637440	amb_emitter_frog_2	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_frog_2_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\AmbienceMaster\Marsh\emitter_frog\amb_emitter_frog_2		75280
 	467411968	DAY_01	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\exploration_daytime_01_116bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_01\DAY_01		4143632
+	469517424	amb_emitter_dog	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_dog_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\AmbienceMaster\Town\emitter_dog\amb_emitter_dog		233880
 	473494768	night_to_day_01	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_to_day_01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town_Day_Night_Transitions\night_to_day_01\night_to_day_01		3196384
 	488021391	night_base_140_06	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_06_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_06\night_base_140_06		998716
 	489348864	day_base_178_40	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_40_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_36\day_base_178_40		1169132
+	491642465	vo_monologue_07	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\vo_monologue_07_818F3B66.wem		\Actor-Mixer Hierarchy\VO\Monologue\vo_monologue_07		743220
 	493651152	night_base_140_33	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_33_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_33\night_base_140_33		1828428
+	493966743	amb_emitter_seagull	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_seagull_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\AmbienceMaster\Ocean\emitter_seagull\amb_emitter_seagull		909984
 	498843853	day_base_178_29	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_29_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_29\day_base_178_29		1070032
 	499031677	night_base_140_24	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_24_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_24\night_base_140_24		996144
+	500015075	amb_emitter_seal__3	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_seal__3_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\amb_emitter_seal\amb_emitter_seal__3		255692
 	502036796	night_melody	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_melody_live_guitar_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_melody_playlist\night_melody\night_melody		31269572
 	511836074	day_to_night_04	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_to_night_04_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town_Day_Night_Transitions\day_to_night_04\day_to_night_04		3246952
 	522239975	night_base_140_21	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_21_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_21\night_base_140_21		990144
 	524824347	day_base_178_18	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_18_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_18\day_base_178_18		1025536
 	532846205	day_base_178_22	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_22_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_22\day_base_178_22		1069356
 	534545070	night_base_140_17	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_17_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_17\night_base_140_17		990144
+	541539182	amb_emitter_waterfall	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_waterfall_FBC78EF0.wem		\Actor-Mixer Hierarchy\AMB\amb_emitter_waterfall		14976096
 	545135810	night_base_140_04	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_04_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_04\night_base_140_04		955860
+	548923576	amb_emitter_frog	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_frog_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\AmbienceMaster\Marsh\emitter_frog\amb_emitter_frog		181280
 	549288315	day_base_178_09	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_09_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_09\day_base_178_09		991156
 	560716799	night_base_140_11	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_11_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_11\night_base_140_11		983288
 	566291254	day_base_178_08	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_08_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_08\day_base_178_08		1014076
 	569253995	DAY_02	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\strings_section1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_01\DAY_02		4165912
+	582659551	vo_dialogueLoop	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\vo_dialogueLoop_FBC78EF0.wem		\Actor-Mixer Hierarchy\VO\vo_dialogueLoop		1396760
 	585935115	day_base_178_21	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_21_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_21\day_base_178_21		1056548
+	603770072	amb_emitter_frog_7	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_frog_7_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\AmbienceMaster\Marsh\emitter_frog\amb_emitter_frog_7		99280
 	615664298	day_to_night_02	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_to_night_02_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town_Day_Night_Transitions\day_to_night_02\day_to_night_02		3246952
 	618961823	stinger_toCombat_160pm	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\stinger_toCombat_160pm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\stinger_toCombat_160pm\stinger_toCombat_160pm		1153008
+	625503037	amb_bed_ocean	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_bed_ocean_07B32793.wem		\Actor-Mixer Hierarchy\AMB\AmbienceMaster\Ocean\amb_bed_ocean		28532976
 	626125282	night_countermelody	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_countermelody_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_countermelody_playlist\night_countermelody\night_countermelody		3301860
 	633752390	day_base_178_48	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_48_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_40\day_base_178_48		1144864
 	634345249	night_base_140_29	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_29_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_29\night_base_140_29		1027000
+	636581562	vo_monologue_06	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\vo_monologue_06_818F3B66.wem		\Actor-Mixer Hierarchy\VO\Monologue\vo_monologue_06		695220
 	649449689	night_base_140_22	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_22_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_22\night_base_140_22		1003000
 	654652539	night_base_140_03	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_03_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_03\night_base_140_03		932716
 	659517811	DAY_05	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\exploration_daytime_05_116bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_05\DAY_05		3597248
+	660505983	amb_emitter_frog_1	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_frog_1_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\AmbienceMaster\Marsh\emitter_frog\amb_emitter_frog_1		88096
+	665952263	amb_emitter_frog_3	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_frog_3_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\AmbienceMaster\Marsh\emitter_frog\amb_emitter_frog_3		84096
 	677298004	NIGHT_07	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\exploration_nighttime_07_116bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_07\NIGHT_07		6158692
 	677423853	day_to_night_03	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_to_night_03_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town_Day_Night_Transitions\day_to_night_03\day_to_night_03		3246952
 	677697525	night_base_140_42	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_42_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_42\night_base_140_42		1148716
 	679572453	day_base_178_10	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_10_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_10\day_base_178_10		1014076
+	679943488	sfx_ui_button	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\sfx_ui_button_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_ui_button		31528
 	685247425	night_base_140_20	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_20_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_20\night_base_140_20		1000428
 	691258793	night_base_140_40	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_40_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_40\night_base_140_40		1848144
+	704461876	amb_emitter_seal__8	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_seal__8_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\amb_emitter_seal\amb_emitter_seal__8		122260
 	706194213	day_base_178_39	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_39_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_36\day_base_178_39		1103740
 	710583631	day_base_178_51	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_51_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_43\day_base_178_51		1090932
 	722163879	DAY_01	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\strings_section5_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_05\DAY_01		1888836
+	726599396	vo_monologue_03	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\vo_monologue_03_818F3B66.wem		\Actor-Mixer Hierarchy\VO\Monologue\vo_monologue_03		221684
 	726749935	day_base_178_47	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_47_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_40\day_base_178_47		1066660
 	730055901	night_base_140_31	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_31_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_31\night_base_140_31		985860
+	752204542	vo_monologue_01	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\vo_monologue_01_818F3B66.wem		\Actor-Mixer Hierarchy\VO\Monologue\vo_monologue_01		1215836
 	756705463	night_base_140_09	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_09_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_09\night_base_140_09		979860
+	758120459	amb_bed_marsh_night	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_bed_marsh_night_FBC78EF0.wem		\Actor-Mixer Hierarchy\AMB\AmbienceMaster\Marsh\amb_bed_marsh_night		14208096
 	758594629	day_base_178_14	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_14_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_14\day_base_178_14		1028232
 	762152233	New Music Track	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\combat_01_160bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Combat\Combat_HighTension\combat_05_160bpm\New Music Track		4287112
 	762283761	day_base_178_31	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_31_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_31\day_base_178_31		1095648
@@ -176,7 +237,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	809074364	day_base_178_42	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_42_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_37\day_base_178_42		1198796
 	822567085	day_base_178_34	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_34_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_33\day_base_178_34		1099696
 	822859217	night_base_140_32	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_32_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_32\night_base_140_32		981572
+	831348941	amb_bed_rain	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_bed_rain_5EA2D72F.wem		\Actor-Mixer Hierarchy\AMB\amb_bed_rain		28532976
+	834815469	amb_emitter_seal__2	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_seal__2_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\amb_emitter_seal\amb_emitter_seal__2		184628
 	839586856	day_base_178_02	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_02_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_02\day_base_178_02		1096996
+	844607603	amb_emitter_frog_8	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_frog_8_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\AmbienceMaster\Marsh\emitter_frog\amb_emitter_frog_8		132096
 	851351988	DAY_03	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\exploration_daytime_03a_116bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_03b\DAY_03		939584
 	863307812	DAY_01	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\strings_section2_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Exploration\Exploration_Playlist\Exploration_02\DAY_01		5117840
 	872005110	day_base_178_13	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_13_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_13\day_base_178_13		1018120
@@ -191,16 +255,25 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	932945889	day_base_178_45	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_45_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_39\day_base_178_45		1145536
 	935526073	night_base_140_27	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_27_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_27\night_base_140_27		985860
 	939101413	day_base_178_24	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_24_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_24\day_base_178_24		1084864
+	956533400	amb_bed_marsh_day	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_bed_marsh_day_FBC78EF0.wem		\Actor-Mixer Hierarchy\AMB\AmbienceMaster\Marsh\amb_bed_marsh_day		13440096
 	957087349	night_base_140_39	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_39_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_39\night_base_140_39		1837860
 	958960343	day_melody_178_01_track	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_melody_178_01_02_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_lead_playlist_01\day_melody_178_01\day_melody_178_01_track		4532504
+	966127502	amb_emitter_seal__4	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_seal__4_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\amb_emitter_seal\amb_emitter_seal__4		186260
 	967358011	day_base_178_36	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_36_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_34\day_base_178_36		1088908
 	971491809	day_base_178_19	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_19_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_19\day_base_178_19		1036996
 	986619097	day_base_178_23	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_23_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_23\day_base_178_23		1082168
+	988766355	amb_emitter_frog_6	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_frog_6_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\AmbienceMaster\Marsh\emitter_frog\amb_emitter_frog_6		204096
 	992133268	day_base_178_33	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_33_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_33\day_base_178_33		1076100
+	1010975177	amb_emitter_seal__6	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_seal__6_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\amb_emitter_seal\amb_emitter_seal__6		211228
+	1015312959	vo_monologue_02	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\vo_monologue_02_818F3B66.wem		\Actor-Mixer Hierarchy\VO\Monologue\vo_monologue_02		668452
+	1015984969	vo_monologue_05	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\vo_monologue_05_818F3B66.wem		\Actor-Mixer Hierarchy\VO\Monologue\vo_monologue_05		700760
+	1019690041	amb_emitter_dog_1	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_dog_1_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\AmbienceMaster\Town\emitter_dog\amb_emitter_dog_1		348004
 	1025300550	day_melody_178_02_track	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_melody_178_02_01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_lead_playlist_02\day_melody_178_02\day_melody_178_02_track		5178348
 	1037519569	night_base_140_16	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\night_base_140_16_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\nighttime_base_playlist\night_base_140_16\night_base_140_16		978144
 	1043263696	day_base_178_06	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_06_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_06\day_base_178_06		1084864
+	1044857390	amb_emitter_seal__9	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_emitter_seal__9_818F3B66.wem		\Actor-Mixer Hierarchy\AMB\amb_emitter_seal\amb_emitter_seal__9		420300
 	1049700512	day_to_night_01	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_to_night_01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town_Day_Night_Transitions\day_to_night_01\day_to_night_01		3246856
 	1057963268	day_base_178_32	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_base_178_32_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_base_playlist\day_base_178_32\day_base_178_32		1258796
 	1067407073	day_melody_178_01_track	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\day_melody_178_01_01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMaster\Town\daytime_lead_playlist_01\day_melody_178_01\day_melody_178_01_track		4918676
+	1071862539	amb_bed_town	C:\Users\super\OneDrive\Documents\GitHub\472-final-big-buff-mix\Hale_Skylar_472Wwise\.cache\Mac\SFX\amb_bed_town_FBC78EF0.wem		\Actor-Mixer Hierarchy\AMB\AmbienceMaster\Town\amb_bed_town		15360096
 

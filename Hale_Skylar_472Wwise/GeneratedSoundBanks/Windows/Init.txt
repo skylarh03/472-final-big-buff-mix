@@ -1,5 +1,7 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	1069915969	CombatTension			\Default Work Unit\CombatTension	
+	2213237662	Underwater			\Default Work Unit\Underwater	
+	3553349781	Inside			\Default Work Unit\Inside	
 	3729505769	TimeOfDay			\Default Work Unit\TimeOfDay	
 	4091656514	GameState			\Default Work Unit\GameState	
 
@@ -7,6 +9,12 @@ State	ID	Name	State Group			Notes
 	545371365	Low	CombatTension			
 	748895195	None	CombatTension			
 	3550808449	High	CombatTension			
+	748895195	None	Underwater			
+	2452206122	False	Underwater			
+	3053630529	True	Underwater			
+	748895195	None	Inside			
+	2452206122	False	Inside			
+	3053630529	True	Inside			
 	311764537	Day	TimeOfDay			
 	748895195	None	TimeOfDay			
 	1011622525	Night	TimeOfDay			
@@ -14,6 +22,7 @@ State	ID	Name	State Group			Notes
 	2582085496	Exploration	GameState			
 	2764240573	Combat	GameState			
 	3091570009	Town	GameState			
+	4075332698	Beach	GameState			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
@@ -28,15 +37,27 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	2928161104	Curtains			\Factory Acoustic Textures\Textures\Curtains	
 	3195498748	Cork_Tiles			\Factory Acoustic Textures\Textures\Cork_Tiles	
 	3670307564	Drywall			\Factory Acoustic Textures\Textures\Drywall	
+	4120525729	Sidechaining			\Default Work Unit\Sidechaining	
 	4168643977	Acoustic_Banner			\Factory Acoustic Textures\Textures\Acoustic_Banner	
 	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	348963605	Reverb			\Default Work Unit\Master Audio Bus\Reverb	
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	1117531639	AMB			\Default Work Unit\Master Audio Bus\AMB	
+	1534528548	VO			\Default Work Unit\Master Audio Bus\VO	
 	2940432316	Stingers			\Default Work Unit\Master Audio Bus\Stingers	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	603224157	Reverb_Indoor			\Default Work Unit\Master Audio Bus\Reverb\Reverb_Indoor	
+	1578973140	Reverb_Outdoor			\Default Work Unit\Master Audio Bus\Reverb\Reverb_Outdoor	
+
 Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	599376110	RoomVerb (Custom)	Wwise RoomVerb			
+	870337971	Meter (Custom)	Wwise Meter			
 	2675251108	New_Peak_Limiter	Wwise Peak Limiter			
 
 Audio Devices	ID	Name	Type				Notes

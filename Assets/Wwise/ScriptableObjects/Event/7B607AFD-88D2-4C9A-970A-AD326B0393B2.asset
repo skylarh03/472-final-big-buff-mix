@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 713b8a995f76bb8408585033b84518e9, type: 3}
-  m_Name: 5EB94324-7922-4BB8-8126-912EA861862F
+  m_Name: 7B607AFD-88D2-4C9A-970A-AD326B0393B2
   m_EditorClassIdentifier: 
-  objectName: GameStart
-  id: 4058101365
-  guid: 5EB94324-7922-4BB8-8126-912EA861862F
+  objectName: Set_RTPC_Rain_0
+  id: 3483057933
+  guid: 7B607AFD-88D2-4C9A-970A-AD326B0393B2

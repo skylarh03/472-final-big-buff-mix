@@ -40,6 +40,28 @@
 						<State Name="Low" ID="{4F472619-ABF5-46F8-A870-1F512C5B19B0}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Inside" ID="{5AF6EA72-B1EB-408A-8AF4-85B7E188F8E2}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="21"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{91133C15-C5FA-4823-9C70-E0664AB5830B}"/>
+						<State Name="True" ID="{3F9BC447-B1FF-4E52-AE37-CED9529785B7}"/>
+						<State Name="False" ID="{F4742879-D415-43DB-9A4C-CE0A06B505BA}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Underwater" ID="{D4D90656-EB3E-47B3-BABB-5C9E84FA17A5}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="21"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{C8A9AA79-3A38-4C9D-B8FC-D1D79BCE45B5}"/>
+						<State Name="True" ID="{FE48C335-1E4C-4AF1-B7ED-522B6F6FC8AC}"/>
+						<State Name="False" ID="{A01DDE6E-383A-4A15-9ABF-C48223CA1DE4}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

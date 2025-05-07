@@ -2,6 +2,10 @@
 <WwiseDocument Type="WorkUnit" ID="{BAED23DD-8BAC-4100-9A6B-ED0FE7EA9401}" SchemaVersion="119">
 	<Events>
 		<WorkUnit Name="VO" ID="{BAED23DD-8BAC-4100-9A6B-ED0FE7EA9401}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<Event Name="Play_DialogueLoop" ID="{3E8083AA-6B7E-4191-A5B9-C77AE4B85459}">
 					<ChildrenList>

@@ -6,7 +6,7 @@
 				<SoundcasterSession Name="Feb 12 Draft" ID="{01A018E1-89A6-4D58-B12F-50C5869120A1}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="PlayMusicStart" ID="{5EB94324-7922-4BB8-8126-912EA861862F}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<ObjectRef Name="GameStart" ID="{5EB94324-7922-4BB8-8126-912EA861862F}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
@@ -42,18 +42,26 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
-				<SoundcasterSession Name="Full Music Test" ID="{335AF64A-28C8-49BC-899B-6030C6C60445}">
+				<SoundcasterSession Name="Full Test" ID="{335AF64A-28C8-49BC-899B-6030C6C60445}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="PlayMusicStart" ID="{5EB94324-7922-4BB8-8126-912EA861862F}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<ObjectRef Name="GameStart" ID="{5EB94324-7922-4BB8-8126-912EA861862F}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Set_TimeOfDay_Day" ID="{EF45C5F7-F4EA-4CB4-A865-E8C8C2CE7D52}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<ObjectRef Name="Play_DialogueLoop" ID="{3E8083AA-6B7E-4191-A5B9-C77AE4B85459}" WorkUnitID="{BAED23DD-8BAC-4100-9A6B-ED0FE7EA9401}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_Inside_True" ID="{036EB537-132A-4D43-9836-162261A4FC44}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Stinger_Item_Collection" ID="{B709D4E6-75F3-414B-B9D4-F8B60F8AA2B3}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<ObjectRef Name="Set_Underwater_True" ID="{280EFF35-38A9-4C7E-BD38-F659186BECD0}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Emitter_Crowd" ID="{B498E5F7-CB3D-441B-9A47-40019A5DD36C}" WorkUnitID="{F38A9F3E-6DDD-4CD9-8F45-B1975A822849}"/>
 							<Position X="0" Y="4"/>
 						</Module>
 						<Module>
@@ -61,15 +69,39 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Set_TimeOfDay_Night" ID="{141DE395-D6F5-42A3-A9DB-778961ED5340}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<ObjectRef Name="Play_Monologue" ID="{BF2A004C-F9B3-4676-8FEC-659A6538B4DD}" WorkUnitID="{BAED23DD-8BAC-4100-9A6B-ED0FE7EA9401}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_Inside_False" ID="{D6713F94-FF4E-4CAF-ADB0-91740EC07CA2}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Stinger_Player_GoToBed" ID="{1D743E1C-1B5F-4921-AE48-503B63AF5588}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<ObjectRef Name="Set_Underwater_False" ID="{9C6D3CD5-F801-4B22-AC06-42BAFB683851}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Emitter_Seals" ID="{15E0F714-DA8C-4AA8-BF2E-A847AF7E4A97}" WorkUnitID="{F38A9F3E-6DDD-4CD9-8F45-B1975A822849}"/>
 							<Position X="1" Y="4"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Stinger_EnterCombat" ID="{FC635EF7-3DE1-4A41-AED8-7C8AD76BF791}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<ObjectRef Name="Set_TimeOfDay_Day" ID="{EF45C5F7-F4EA-4CB4-A865-E8C8C2CE7D52}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_TimeOfDay_Night" ID="{141DE395-D6F5-42A3-A9DB-778961ED5340}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Stinger_Item_Collection" ID="{B709D4E6-75F3-414B-B9D4-F8B60F8AA2B3}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Stinger_Player_GoToBed" ID="{1D743E1C-1B5F-4921-AE48-503B63AF5588}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Emitter_Waterfall" ID="{7E557A32-2A16-4CC1-B6B9-F18330B6C781}" WorkUnitID="{F38A9F3E-6DDD-4CD9-8F45-B1975A822849}"/>
 							<Position X="2" Y="4"/>
 						</Module>
 						<Module>
@@ -85,15 +117,30 @@
 							<Position X="3" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Stinger_ExitCombat" ID="{D90F5D41-1CDA-4E90-BAE9-EAF2A63E678F}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
-							<Position X="3" Y="4"/>
+							<ObjectRef Name="Set_RTPC_Rain_0" ID="{7B607AFD-88D2-4C9A-970A-AD326B0393B2}" WorkUnitID="{F38A9F3E-6DDD-4CD9-8F45-B1975A822849}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_RTPC_Rain_100" ID="{7CA460AB-4E43-4D7D-A4EC-510D6DBD58F4}" WorkUnitID="{F38A9F3E-6DDD-4CD9-8F45-B1975A822849}"/>
+							<Position X="4" Y="1"/>
 						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="isRaining" ID="{937FCD20-673C-49EB-918A-366DF79B5279}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Sidechaining" ID="{864882C8-9388-4B3C-A984-158775314E71}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="False" ID="{F4742879-D415-43DB-9A4C-CE0A06B505BA}"/>
 						<CurrentStateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+						<CurrentStateRef Name="False" ID="{A01DDE6E-383A-4A15-9ABF-C48223CA1DE4}"/>
 						<CurrentStateRef Name="Low" ID="{4F472619-ABF5-46F8-A870-1F512C5B19B0}"/>
-						<CurrentStateRef Name="Town" ID="{2478A35C-5EEB-4CE7-A31F-E6181DA77410}"/>
+						<CurrentStateRef Name="Exploration" ID="{CDE166DA-E50A-4F86-A0B2-0495C843848F}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

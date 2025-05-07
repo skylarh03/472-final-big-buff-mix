@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F38A9F3E-6DDD-4CD9-8F45-B1975A822849}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="AMB" ID="{F38A9F3E-6DDD-4CD9-8F45-B1975A822849}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="StartAmbience" ID="{F402E1B7-BD8C-4D1B-9B2E-35ABC3FFDDC6}">
+					<ChildrenList>
+						<Action Name="" ID="{1507BF76-B306-422F-A3C4-8A8B33E514C7}" ShortID="1002430152">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="isRaining" ID="{937FCD20-673C-49EB-918A-366DF79B5279}" WorkUnitID="{641D1E10-9339-45CB-8064-2A5E4AC0EC54}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2AFF7FF5-E876-45AF-9FBD-D1F768D0298B}" ShortID="63327370">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Town" ID="{2478A35C-5EEB-4CE7-A31F-E6181DA77410}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0974DFB8-1092-421A-A438-86AB975E5497}" ShortID="703009615">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="False" ID="{F4742879-D415-43DB-9A4C-CE0A06B505BA}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4EA10457-6D5B-4CB6-82CF-A0F0A45401DC}" ShortID="833243538">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6BCFECAA-ABD4-42FF-94D8-448B1FDA8669}" ShortID="926975816">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="False" ID="{A01DDE6E-383A-4A15-9ABF-C48223CA1DE4}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{1F67CEAC-ADDE-4EB2-B353-3682526F8F72}" ShortID="407813747">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AmbienceMaster" ID="{2F162EE1-275B-4712-A0E6-A647785469D3}" WorkUnitID="{AF1DA394-9209-4D6E-8ABC-580D4535FB61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8B0D6C66-2B04-42BD-BFC8-49F5ED98A2BD}" ShortID="65951855">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="amb_bed_rain" ID="{CE14BA7E-3A84-4465-9C86-36D13CD5AC31}" WorkUnitID="{AF1DA394-9209-4D6E-8ABC-580D4535FB61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_RTPC_Rain_0" ID="{7B607AFD-88D2-4C9A-970A-AD326B0393B2}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{1BFF91F5-A601-4DA4-A0F6-F2C11C6A17D3}" ShortID="257863917">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="isRaining" ID="{937FCD20-673C-49EB-918A-366DF79B5279}" WorkUnitID="{641D1E10-9339-45CB-8064-2A5E4AC0EC54}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_RTPC_Rain_100" ID="{7CA460AB-4E43-4D7D-A4EC-510D6DBD58F4}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{721CC5CF-965D-4A80-90F5-F3825652AB78}" ShortID="567840882">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="isRaining" ID="{937FCD20-673C-49EB-918A-366DF79B5279}" WorkUnitID="{641D1E10-9339-45CB-8064-2A5E4AC0EC54}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Emitters" ID="{C6061A2E-BC64-49BB-9902-397287AA8D49}" ShortID="795259744">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="Play_Emitter_Seals" ID="{15E0F714-DA8C-4AA8-BF2E-A847AF7E4A97}">
+							<ChildrenList>
+								<Action Name="" ID="{18E6BD3A-0E9C-4E04-BF16-5F6649381574}" ShortID="369182998">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="amb_emitter_seal" ID="{0531CAD3-F08E-4A43-83C9-D2647D98402B}" WorkUnitID="{AF1DA394-9209-4D6E-8ABC-580D4535FB61}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Emitter_Crowd" ID="{B498E5F7-CB3D-441B-9A47-40019A5DD36C}">
+							<ChildrenList>
+								<Action Name="" ID="{AC866A1D-8AB6-4820-A666-26721399E198}" ShortID="463773445">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="amb_emitter_crowd" ID="{01A095F0-E807-48E9-B4AA-87F15ED72A8F}" WorkUnitID="{AF1DA394-9209-4D6E-8ABC-580D4535FB61}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Emitter_Waterfall" ID="{7E557A32-2A16-4CC1-B6B9-F18330B6C781}">
+							<ChildrenList>
+								<Action Name="" ID="{8D6CF4EA-6C0B-4E08-9BFA-22D42FCA3B9A}" ShortID="317173461">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="amb_emitter_waterfall" ID="{4F6B6F3F-F825-4D6D-9A80-0F4936AA269C}" WorkUnitID="{AF1DA394-9209-4D6E-8ABC-580D4535FB61}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Play_UI_Button" ID="{7164ED40-255D-4D38-A01B-AC6D56A8AA98}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{8F6BDFC8-177F-4F17-95E7-6E67380AE0E4}" ShortID="512199950">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_ui_button" ID="{BBE4BA7B-AA36-4FE5-A3BF-E56B4AAA30A5}" WorkUnitID="{CB1A47B4-6E74-42A5-A3BB-88F0F7E7F67B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

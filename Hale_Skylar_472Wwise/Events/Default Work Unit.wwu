@@ -455,6 +455,20 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{4DC94C11-A85C-4F2E-B329-2AC069ECFB54}" ShortID="576465071">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="FadeInCurve" Type="int16" Value="1"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB" ID="{B1A0C875-8407-467A-8D53-99A80AD4DAE3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{7882DA7F-11EF-4EF0-A5A4-504E976FF546}" ShortID="560668725">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="35"/>
@@ -520,7 +534,7 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Global_MusicEvents" ID="{190B2B7E-7D27-46E2-860F-3778AB8705DD}" ShortID="403457530">
+				<Folder Name="Global_Events" ID="{190B2B7E-7D27-46E2-860F-3778AB8705DD}" ShortID="403457530">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="19"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -585,7 +599,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="PlayMusicStart" ID="{5EB94324-7922-4BB8-8126-912EA861862F}">
+						<Event Name="GameStart" ID="{5EB94324-7922-4BB8-8126-912EA861862F}">
 							<PropertyList>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
@@ -636,6 +650,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Music" ID="{1F87B96C-E2CF-421D-9AE2-841D10671525}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AA865393-5540-49E4-AEBC-DE2E83F11069}" ShortID="609958419">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="StartAmbience" ID="{F402E1B7-BD8C-4D1B-9B2E-35ABC3FFDDC6}" WorkUnitID="{F38A9F3E-6DDD-4CD9-8F45-B1975A822849}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1000,6 +1024,119 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="MusicMaster" ID="{7250CE40-61E7-4ABF-8BAD-9FABFA0422DD}" WorkUnitID="{04025AD0-EDBA-4E6A-80E7-8DBC44329C8D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Inside_True" ID="{036EB537-132A-4D43-9836-162261A4FC44}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="21"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{E5CBE694-2379-4C64-A75F-6C519D81C727}" ShortID="97164215">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="True" ID="{3F9BC447-B1FF-4E52-AE37-CED9529785B7}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Inside_False" ID="{D6713F94-FF4E-4CAF-ADB0-91740EC07CA2}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="21"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{00F6FD7C-619C-4989-8FEE-D1EDD9917AF3}" ShortID="51759717">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="False" ID="{F4742879-D415-43DB-9A4C-CE0A06B505BA}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Underwater_True" ID="{280EFF35-38A9-4C7E-BD38-F659186BECD0}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="21"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{9270B830-883D-4854-A043-2A849C28BE36}" ShortID="585493444">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="True" ID="{FE48C335-1E4C-4AF1-B7ED-522B6F6FC8AC}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Underwater_False" ID="{9C6D3CD5-F801-4B22-AC06-42BAFB683851}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="21"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{66680F63-F6B2-4EB4-A858-212E6E5816E3}" ShortID="218434943">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="False" ID="{A01DDE6E-383A-4A15-9ABF-C48223CA1DE4}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_GameState_Beach" ID="{C724A5A5-44D9-4641-B300-CCC3703307D7}">
+							<ChildrenList>
+								<Action Name="" ID="{EB27F9B9-1A39-4A55-82B6-40F9E5BD863B}" ShortID="1006992012">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Beach" ID="{7ABA4F97-B04B-4FDB-BC37-3FCF5DB8F521}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{ECD1A7FC-A0BA-4608-B037-BBA612C9A625}" ShortID="1048420034">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="11"/>
+										<Property Name="FadeInCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{1F87B96C-E2CF-421D-9AE2-841D10671525}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{1AFB0401-F384-4AFE-8827-AFB2FFA74B20}" ShortID="560003755">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="11"/>
+										<Property Name="Delay" Type="Real64" Value="5"/>
+										<Property Name="FadeInCurve" Type="int16" Value="1"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{1F87B96C-E2CF-421D-9AE2-841D10671525}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

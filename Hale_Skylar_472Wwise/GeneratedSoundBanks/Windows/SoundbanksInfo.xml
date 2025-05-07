@@ -9,11 +9,16 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{6331217C-7BC8-A4BE-3F21-B870DD087D10}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A228E558-90A8-EEF9-329C-21D7D59E59FD}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<Custom>
+					<Plugin Id="599376110" Name="RoomVerb (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="870337971" Name="Meter (Custom)" LibName="Wwise Meter" LibId="8454147"/>
+				</Custom>
 				<ShareSets>
+					<Plugin Id="48620415" Name="Have_U_Ever_Been_Outside" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="2675251108" Name="New_Peak_Limiter" LibName="Wwise Peak Limiter" LibId="7208963"/>
 				</ShareSets>
 				<AudioDevices>
@@ -22,6 +27,25 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="348963605" Name="Reverb"/>
+				<Bus Id="393239870" Name="SFX"/>
+				<Bus Id="1117531639" Name="AMB">
+					<AuxBusRefs>
+						<AuxBusRef Id="603224157" Name="Reverb_Indoor"/>
+						<AuxBusRef Id="1578973140" Name="Reverb_Outdoor"/>
+					</AuxBusRefs>
+				</Bus>
+				<Bus Id="1534528548" Name="VO">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="870337971"/>
+						</Custom>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="603224157" Name="Reverb_Indoor"/>
+						<AuxBusRef Id="1578973140" Name="Reverb_Outdoor"/>
+					</AuxBusRefs>
+				</Bus>
 				<Bus Id="2940432316" Name="Stingers"/>
 				<Bus Id="3803692087" Name="Master Audio Bus">
 					<PluginRefs>
@@ -32,8 +56,25 @@
 				</Bus>
 				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="603224157" Name="Reverb_Indoor">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="599376110"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="1578973140" Name="Reverb_Outdoor">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="48620415"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="822163944" Name="SS_Air_RPM"/>
+				<GameParameter Id="844393037" Name="isRaining"/>
 				<GameParameter Id="1029930033" Name="SS_Air_Fury"/>
 				<GameParameter Id="1351367891" Name="SS_Air_Fear"/>
 				<GameParameter Id="2648548617" Name="SS_Air_Month"/>
@@ -42,6 +83,7 @@
 				<GameParameter Id="3203397129" Name="SS_Air_TimeOfDay"/>
 				<GameParameter Id="3715662592" Name="SS_Air_Storm"/>
 				<GameParameter Id="3847924954" Name="SS_Air_Presence"/>
+				<GameParameter Id="4120525729" Name="Sidechaining"/>
 				<GameParameter Id="4160247818" Name="SS_Air_Turbulence"/>
 			</GameParameters>
 			<StateGroups>
@@ -50,6 +92,20 @@
 						<State Id="545371365" Name="Low"/>
 						<State Id="748895195" Name="None"/>
 						<State Id="3550808449" Name="High"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2213237662" Name="Underwater">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="2452206122" Name="False"/>
+						<State Id="3053630529" Name="True"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3553349781" Name="Inside">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="2452206122" Name="False"/>
+						<State Id="3053630529" Name="True"/>
 					</States>
 				</StateGroup>
 				<StateGroup Id="3729505769" Name="TimeOfDay">
@@ -65,6 +121,7 @@
 						<State Id="2582085496" Name="Exploration"/>
 						<State Id="2764240573" Name="Combat"/>
 						<State Id="3091570009" Name="Town"/>
+						<State Id="4075332698" Name="Beach"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
@@ -197,7 +254,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{AF4B0435-FFFC-9408-BB8B-F75F7D867E0F}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{2897C5F1-1691-4EB6-6345-ACCC918434AD}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
@@ -225,6 +282,10 @@
 					<ShortName>day_base_178_15.wav</ShortName>
 					<CachePath>SFX/day_base_178_15_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="30695796" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_crowd.wav</ShortName>
+					<CachePath>SFX/amb_emitter_crowd_818F3B66.wem</CachePath>
+				</File>
 				<File Id="30947667" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>night_base_140_30.wav</ShortName>
 					<CachePath>SFX/night_base_140_30_FBC78EF0.wem</CachePath>
@@ -236,6 +297,10 @@
 				<File Id="34431315" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>night_base_140_14.wav</ShortName>
 					<CachePath>SFX/night_base_140_14_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="43862565" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_seagull_3.wav</ShortName>
+					<CachePath>SFX/amb_emitter_seagull_3_66A3348F.wem</CachePath>
 				</File>
 				<File Id="56913998" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>exploration_base_03b_116bpm.wav</ShortName>
@@ -257,6 +322,10 @@
 					<ShortName>day_base_178_37.wav</ShortName>
 					<CachePath>SFX/day_base_178_37_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="73479292" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_frog_5.wav</ShortName>
+					<CachePath>SFX/amb_emitter_frog_5_818F3B66.wem</CachePath>
+				</File>
 				<File Id="74883050" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>exploration_base_03a_116bpm.wav</ShortName>
 					<CachePath>SFX/exploration_base_03a_116bpm_FBC78EF0.wem</CachePath>
@@ -268,6 +337,18 @@
 				<File Id="81823009" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>combat_03_160bpm.wav</ShortName>
 					<CachePath>SFX/combat_03_160bpm_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="85929563" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_seal__1.wav</ShortName>
+					<CachePath>SFX/amb_emitter_seal__1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="91663302" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_seal__5.wav</ShortName>
+					<CachePath>SFX/amb_emitter_seal__5_818F3B66.wem</CachePath>
+				</File>
+				<File Id="94244807" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vo_monologue_09.wav</ShortName>
+					<CachePath>SFX/vo_monologue_09_818F3B66.wem</CachePath>
 				</File>
 				<File Id="99715958" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>night_base_140_02.wav</ShortName>
@@ -325,6 +406,10 @@
 					<ShortName>day_base_178_07.wav</ShortName>
 					<CachePath>SFX/day_base_178_07_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="201619559" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_seagull_2.wav</ShortName>
+					<CachePath>SFX/amb_emitter_seagull_2_E90C223A.wem</CachePath>
+				</File>
 				<File Id="214825501" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_base_178_52.wav</ShortName>
 					<CachePath>SFX/day_base_178_52_FBC78EF0.wem</CachePath>
@@ -348,6 +433,10 @@
 				<File Id="251137450" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_base_178_27.wav</ShortName>
 					<CachePath>SFX/day_base_178_27_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="255082433" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_frog_4.wav</ShortName>
+					<CachePath>SFX/amb_emitter_frog_4_818F3B66.wem</CachePath>
 				</File>
 				<File Id="271798309" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_base_178_25.wav</ShortName>
@@ -373,9 +462,25 @@
 					<ShortName>night_base_140_44.wav</ShortName>
 					<CachePath>SFX/night_base_140_44_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="305331709" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vo_monologue_04.wav</ShortName>
+					<CachePath>SFX/vo_monologue_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="305771341" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vo_monologue_08.wav</ShortName>
+					<CachePath>SFX/vo_monologue_08_818F3B66.wem</CachePath>
+				</File>
+				<File Id="313035181" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_seagull_1.wav</ShortName>
+					<CachePath>SFX/amb_emitter_seagull_1_DDC6A584.wem</CachePath>
+				</File>
 				<File Id="318861569" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>exploration_base_04_116bpm.wav</ShortName>
 					<CachePath>SFX/exploration_base_04_116bpm_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="322578607" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_seal_.wav</ShortName>
+					<CachePath>SFX/amb_emitter_seal__818F3B66.wem</CachePath>
 				</File>
 				<File Id="342615801" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_base_178_03.wav</ShortName>
@@ -409,6 +514,10 @@
 					<ShortName>night_base_140_05.wav</ShortName>
 					<CachePath>SFX/night_base_140_05_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="386520637" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_seal__7.wav</ShortName>
+					<CachePath>SFX/amb_emitter_seal__7_818F3B66.wem</CachePath>
+				</File>
 				<File Id="395166052" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>stinger_bedtime.wav</ShortName>
 					<CachePath>SFX/stinger_bedtime_FBC78EF0.wem</CachePath>
@@ -437,6 +546,10 @@
 					<ShortName>night_base_140_28.wav</ShortName>
 					<CachePath>SFX/night_base_140_28_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="418536052" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_dog_2.wav</ShortName>
+					<CachePath>SFX/amb_emitter_dog_2_818F3B66.wem</CachePath>
+				</File>
 				<File Id="419981500" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>night_base_140_15.wav</ShortName>
 					<CachePath>SFX/night_base_140_15_FBC78EF0.wem</CachePath>
@@ -461,9 +574,17 @@
 					<ShortName>strings_section3.wav</ShortName>
 					<CachePath>SFX/strings_section3_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="451637440" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_frog_2.wav</ShortName>
+					<CachePath>SFX/amb_emitter_frog_2_818F3B66.wem</CachePath>
+				</File>
 				<File Id="467411968" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>exploration_daytime_01_116bpm.wav</ShortName>
 					<CachePath>SFX/exploration_daytime_01_116bpm_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="469517424" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_dog.wav</ShortName>
+					<CachePath>SFX/amb_emitter_dog_818F3B66.wem</CachePath>
 				</File>
 				<File Id="473494768" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>night_to_day_01.wav</ShortName>
@@ -477,9 +598,17 @@
 					<ShortName>day_base_178_40.wav</ShortName>
 					<CachePath>SFX/day_base_178_40_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="491642465" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vo_monologue_07.wav</ShortName>
+					<CachePath>SFX/vo_monologue_07_818F3B66.wem</CachePath>
+				</File>
 				<File Id="493651152" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>night_base_140_33.wav</ShortName>
 					<CachePath>SFX/night_base_140_33_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="493966743" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_seagull.wav</ShortName>
+					<CachePath>SFX/amb_emitter_seagull_818F3B66.wem</CachePath>
 				</File>
 				<File Id="498843853" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_base_178_29.wav</ShortName>
@@ -488,6 +617,10 @@
 				<File Id="499031677" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>night_base_140_24.wav</ShortName>
 					<CachePath>SFX/night_base_140_24_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="500015075" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_seal__3.wav</ShortName>
+					<CachePath>SFX/amb_emitter_seal__3_818F3B66.wem</CachePath>
 				</File>
 				<File Id="502036796" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>night_melody_live_guitar.wav</ShortName>
@@ -513,9 +646,17 @@
 					<ShortName>night_base_140_17.wav</ShortName>
 					<CachePath>SFX/night_base_140_17_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="541539182" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_waterfall.wav</ShortName>
+					<CachePath>SFX/amb_emitter_waterfall_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="545135810" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>night_base_140_04.wav</ShortName>
 					<CachePath>SFX/night_base_140_04_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="548923576" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_frog.wav</ShortName>
+					<CachePath>SFX/amb_emitter_frog_818F3B66.wem</CachePath>
 				</File>
 				<File Id="549288315" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_base_178_09.wav</ShortName>
@@ -533,9 +674,17 @@
 					<ShortName>strings_section1.wav</ShortName>
 					<CachePath>SFX/strings_section1_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="582659551" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vo_dialogueLoop.wav</ShortName>
+					<CachePath>SFX/vo_dialogueLoop_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="585935115" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_base_178_21.wav</ShortName>
 					<CachePath>SFX/day_base_178_21_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="603770072" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_frog_7.wav</ShortName>
+					<CachePath>SFX/amb_emitter_frog_7_818F3B66.wem</CachePath>
 				</File>
 				<File Id="615664298" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_to_night_02.wav</ShortName>
@@ -544,6 +693,10 @@
 				<File Id="618961823" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>stinger_toCombat_160pm.wav</ShortName>
 					<CachePath>SFX/stinger_toCombat_160pm_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="625503037" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_bed_ocean.wav</ShortName>
+					<CachePath>SFX/amb_bed_ocean_07B32793.wem</CachePath>
 				</File>
 				<File Id="626125282" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>night_countermelody.wav</ShortName>
@@ -557,6 +710,10 @@
 					<ShortName>night_base_140_29.wav</ShortName>
 					<CachePath>SFX/night_base_140_29_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="636581562" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vo_monologue_06.wav</ShortName>
+					<CachePath>SFX/vo_monologue_06_818F3B66.wem</CachePath>
+				</File>
 				<File Id="649449689" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>night_base_140_22.wav</ShortName>
 					<CachePath>SFX/night_base_140_22_FBC78EF0.wem</CachePath>
@@ -568,6 +725,14 @@
 				<File Id="659517811" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>exploration_daytime_05_116bpm.wav</ShortName>
 					<CachePath>SFX/exploration_daytime_05_116bpm_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="660505983" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_frog_1.wav</ShortName>
+					<CachePath>SFX/amb_emitter_frog_1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="665952263" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_frog_3.wav</ShortName>
+					<CachePath>SFX/amb_emitter_frog_3_818F3B66.wem</CachePath>
 				</File>
 				<File Id="677298004" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>exploration_nighttime_07_116bpm.wav</ShortName>
@@ -585,6 +750,10 @@
 					<ShortName>day_base_178_10.wav</ShortName>
 					<CachePath>SFX/day_base_178_10_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="679943488" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_ui_button.wav</ShortName>
+					<CachePath>SFX/sfx_ui_button_818F3B66.wem</CachePath>
+				</File>
 				<File Id="685247425" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>night_base_140_20.wav</ShortName>
 					<CachePath>SFX/night_base_140_20_FBC78EF0.wem</CachePath>
@@ -592,6 +761,10 @@
 				<File Id="691258793" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>night_base_140_40.wav</ShortName>
 					<CachePath>SFX/night_base_140_40_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="704461876" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_seal__8.wav</ShortName>
+					<CachePath>SFX/amb_emitter_seal__8_818F3B66.wem</CachePath>
 				</File>
 				<File Id="706194213" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_base_178_39.wav</ShortName>
@@ -605,6 +778,10 @@
 					<ShortName>strings_section5.wav</ShortName>
 					<CachePath>SFX/strings_section5_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="726599396" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vo_monologue_03.wav</ShortName>
+					<CachePath>SFX/vo_monologue_03_818F3B66.wem</CachePath>
+				</File>
 				<File Id="726749935" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_base_178_47.wav</ShortName>
 					<CachePath>SFX/day_base_178_47_FBC78EF0.wem</CachePath>
@@ -613,9 +790,17 @@
 					<ShortName>night_base_140_31.wav</ShortName>
 					<CachePath>SFX/night_base_140_31_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="752204542" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vo_monologue_01.wav</ShortName>
+					<CachePath>SFX/vo_monologue_01_818F3B66.wem</CachePath>
+				</File>
 				<File Id="756705463" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>night_base_140_09.wav</ShortName>
 					<CachePath>SFX/night_base_140_09_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="758120459" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_bed_marsh_night.wav</ShortName>
+					<CachePath>SFX/amb_bed_marsh_night_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="758594629" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_base_178_14.wav</ShortName>
@@ -681,9 +866,21 @@
 					<ShortName>night_base_140_32.wav</ShortName>
 					<CachePath>SFX/night_base_140_32_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="831348941" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_bed_rain.wav</ShortName>
+					<CachePath>SFX/amb_bed_rain_5EA2D72F.wem</CachePath>
+				</File>
+				<File Id="834815469" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_seal__2.wav</ShortName>
+					<CachePath>SFX/amb_emitter_seal__2_818F3B66.wem</CachePath>
+				</File>
 				<File Id="839586856" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_base_178_02.wav</ShortName>
 					<CachePath>SFX/day_base_178_02_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="844607603" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_frog_8.wav</ShortName>
+					<CachePath>SFX/amb_emitter_frog_8_818F3B66.wem</CachePath>
 				</File>
 				<File Id="851351988" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>exploration_daytime_03a_116bpm.wav</ShortName>
@@ -741,6 +938,10 @@
 					<ShortName>day_base_178_24.wav</ShortName>
 					<CachePath>SFX/day_base_178_24_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="956533400" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_bed_marsh_day.wav</ShortName>
+					<CachePath>SFX/amb_bed_marsh_day_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="957087349" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>night_base_140_39.wav</ShortName>
 					<CachePath>SFX/night_base_140_39_FBC78EF0.wem</CachePath>
@@ -748,6 +949,10 @@
 				<File Id="958960343" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_melody_178_01_02.wav</ShortName>
 					<CachePath>SFX/day_melody_178_01_02_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="966127502" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_seal__4.wav</ShortName>
+					<CachePath>SFX/amb_emitter_seal__4_818F3B66.wem</CachePath>
 				</File>
 				<File Id="967358011" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_base_178_36.wav</ShortName>
@@ -761,9 +966,29 @@
 					<ShortName>day_base_178_23.wav</ShortName>
 					<CachePath>SFX/day_base_178_23_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="988766355" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_frog_6.wav</ShortName>
+					<CachePath>SFX/amb_emitter_frog_6_818F3B66.wem</CachePath>
+				</File>
 				<File Id="992133268" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_base_178_33.wav</ShortName>
 					<CachePath>SFX/day_base_178_33_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="1010975177" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_seal__6.wav</ShortName>
+					<CachePath>SFX/amb_emitter_seal__6_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1015312959" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vo_monologue_02.wav</ShortName>
+					<CachePath>SFX/vo_monologue_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1015984969" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vo_monologue_05.wav</ShortName>
+					<CachePath>SFX/vo_monologue_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1019690041" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_dog_1.wav</ShortName>
+					<CachePath>SFX/amb_emitter_dog_1_818F3B66.wem</CachePath>
 				</File>
 				<File Id="1025300550" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_melody_178_02_01.wav</ShortName>
@@ -777,6 +1002,10 @@
 					<ShortName>day_base_178_06.wav</ShortName>
 					<CachePath>SFX/day_base_178_06_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="1044857390" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_emitter_seal__9.wav</ShortName>
+					<CachePath>SFX/amb_emitter_seal__9_818F3B66.wem</CachePath>
+				</File>
 				<File Id="1049700512" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>day_to_night_01.wav</ShortName>
 					<CachePath>SFX/day_to_night_01_FBC78EF0.wem</CachePath>
@@ -789,7 +1018,16 @@
 					<ShortName>day_melody_178_01_01.wav</ShortName>
 					<CachePath>SFX/day_melody_178_01_01_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="1071862539" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_bed_town.wav</ShortName>
+					<CachePath>SFX/amb_bed_town_FBC78EF0.wem</CachePath>
+				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="374890108" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+				</Custom>
+			</Plugins>
 			<Events>
 				<Event Id="1866332930" Name="ForceSet_TimeOfDay_Day" DurationType="Infinite">
 					<MediaRefs>
@@ -1207,101 +1445,7 @@
 						<ActionSetStateEntry GroupId="3729505769" Id="1011622525" Name="Night"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="3095270486" Name="HardStop_Day_Melody_01" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3095270485" Name="HardStop_Day_Melody_02" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3095270484" Name="HardStop_Day_Melody_03" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3155474038" Name="Play_Combat_Music" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="238184512"/>
-						<MediaRef Id="395166052"/>
-					</MediaRefs>
-					<SwitchContainers>
-						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="1069915969" Id="545371365"/>
-							<MediaRefs>
-								<MediaRef Id="60913488"/>
-								<MediaRef Id="81823009"/>
-								<MediaRef Id="199413999"/>
-								<MediaRef Id="238184512"/>
-								<MediaRef Id="395166052"/>
-								<MediaRef Id="762152233"/>
-							</MediaRefs>
-						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="1069915969" Id="3550808449"/>
-							<MediaRefs>
-								<MediaRef Id="13440826"/>
-								<MediaRef Id="762152233"/>
-							</MediaRefs>
-						</SwitchContainer>
-					</SwitchContainers>
-				</Event>
-				<Event Id="2117048067" Name="Play_Day_Melody_01" DurationType="OneShot" DurationMin="25.617603" DurationMax="25.617603">
-					<MediaRefs>
-						<MediaRef Id="238184512"/>
-						<MediaRef Id="395166052"/>
-						<MediaRef Id="958960343"/>
-						<MediaRef Id="1067407073"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="2117048064" Name="Play_Day_Melody_02" DurationType="OneShot" DurationMin="27.570229" DurationMax="27.570229">
-					<MediaRefs>
-						<MediaRef Id="238184512"/>
-						<MediaRef Id="395166052"/>
-						<MediaRef Id="801830846"/>
-						<MediaRef Id="806420609"/>
-						<MediaRef Id="1025300550"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="2117048065" Name="Play_Day_Melody_03" DurationType="OneShot" DurationMin="51.23523" DurationMax="51.23523">
-					<MediaRefs>
-						<MediaRef Id="238184512"/>
-						<MediaRef Id="395166052"/>
-						<MediaRef Id="907772810"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="76591114" Name="Play_Night_Arp" DurationType="OneShot" DurationMin="61.71875" DurationMax="61.71875">
-					<MediaRefs>
-						<MediaRef Id="102290091"/>
-						<MediaRef Id="238184512"/>
-						<MediaRef Id="395166052"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1057837593" Name="Play_Night_Countermelody" DurationType="OneShot" DurationMin="17.196438" DurationMax="17.196438">
-					<MediaRefs>
-						<MediaRef Id="238184512"/>
-						<MediaRef Id="395166052"/>
-						<MediaRef Id="626125282"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="2032307683" Name="Play_Night_Melody" DurationType="OneShot" DurationMin="168.13394" DurationMax="168.13394">
-					<MediaRefs>
-						<MediaRef Id="238184512"/>
-						<MediaRef Id="395166052"/>
-						<MediaRef Id="502036796"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1109613271" Name="Play_Stinger_EnterCombat" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<ActionTrigger>
-						<ActionTriggerEntry Id="2334212825" Name="EnterCombat"/>
-					</ActionTrigger>
-				</Event>
-				<Event Id="4268407383" Name="Play_Stinger_ExitCombat" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<ActionTrigger>
-						<ActionTriggerEntry Id="755913789" Name="ExitCombat"/>
-					</ActionTrigger>
-				</Event>
-				<Event Id="2049735205" Name="Play_Stinger_Item_Collection" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<ActionTrigger>
-						<ActionTriggerEntry Id="3868165313" Name="Collect_Item"/>
-					</ActionTrigger>
-				</Event>
-				<Event Id="2730318483" Name="Play_Stinger_Player_GoToBed" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<ActionTrigger>
-						<ActionTriggerEntry Id="1659302645" Name="Player_GoToBed"/>
-					</ActionTrigger>
-				</Event>
-				<Event Id="1068983008" Name="PlayMusicStart" DurationType="Infinite">
+				<Event Id="4058101365" Name="GameStart" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="238184512"/>
 						<MediaRef Id="273381887"/>
@@ -1499,11 +1643,155 @@
 							</Children>
 						</SwitchContainer>
 					</SwitchContainers>
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="1316191055" Name="StartAmbience"/>
+					</ActionPostEvent>
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="3729505769" Id="311764537" Name="Day"/>
 						<ActionSetStateEntry GroupId="1069915969" Id="545371365" Name="Low"/>
 						<ActionSetStateEntry GroupId="4091656514" Id="3091570009" Name="Town"/>
 					</ActionSetState>
+				</Event>
+				<Event Id="3095270486" Name="HardStop_Day_Melody_01" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3095270485" Name="HardStop_Day_Melody_02" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3095270484" Name="HardStop_Day_Melody_03" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3155474038" Name="Play_Combat_Music" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="238184512"/>
+						<MediaRef Id="395166052"/>
+					</MediaRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1069915969" Id="545371365"/>
+							<MediaRefs>
+								<MediaRef Id="60913488"/>
+								<MediaRef Id="81823009"/>
+								<MediaRef Id="199413999"/>
+								<MediaRef Id="238184512"/>
+								<MediaRef Id="395166052"/>
+								<MediaRef Id="762152233"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1069915969" Id="3550808449"/>
+							<MediaRefs>
+								<MediaRef Id="13440826"/>
+								<MediaRef Id="762152233"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="2117048067" Name="Play_Day_Melody_01" DurationType="OneShot" DurationMin="25.617603" DurationMax="25.617603">
+					<MediaRefs>
+						<MediaRef Id="238184512"/>
+						<MediaRef Id="395166052"/>
+						<MediaRef Id="958960343"/>
+						<MediaRef Id="1067407073"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2117048064" Name="Play_Day_Melody_02" DurationType="OneShot" DurationMin="27.570229" DurationMax="27.570229">
+					<MediaRefs>
+						<MediaRef Id="238184512"/>
+						<MediaRef Id="395166052"/>
+						<MediaRef Id="801830846"/>
+						<MediaRef Id="806420609"/>
+						<MediaRef Id="1025300550"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2117048065" Name="Play_Day_Melody_03" DurationType="OneShot" DurationMin="51.23523" DurationMax="51.23523">
+					<MediaRefs>
+						<MediaRef Id="238184512"/>
+						<MediaRef Id="395166052"/>
+						<MediaRef Id="907772810"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3352186862" Name="Play_DialogueLoop" MaxAttenuation="100" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="582659551"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="876452814" Name="Play_Emitter_Crowd" MaxAttenuation="75" DurationType="OneShot" DurationMin="64" DurationMax="64">
+					<MediaRefs>
+						<MediaRef Id="30695796"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="318432063" Name="Play_Emitter_Seals" MaxAttenuation="100" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="85929563"/>
+						<MediaRef Id="91663302"/>
+						<MediaRef Id="322578607"/>
+						<MediaRef Id="386520637"/>
+						<MediaRef Id="500015075"/>
+						<MediaRef Id="704461876"/>
+						<MediaRef Id="834815469"/>
+						<MediaRef Id="966127502"/>
+						<MediaRef Id="1010975177"/>
+						<MediaRef Id="1044857390"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1611901679" Name="Play_Emitter_Waterfall" MaxAttenuation="125" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="541539182"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3208730517" Name="Play_Monologue" DurationType="OneShot" DurationMin="1.1538541" DurationMax="6.331729">
+					<MediaRefs>
+						<MediaRef Id="94244807"/>
+						<MediaRef Id="305331709"/>
+						<MediaRef Id="305771341"/>
+						<MediaRef Id="491642465"/>
+						<MediaRef Id="636581562"/>
+						<MediaRef Id="726599396"/>
+						<MediaRef Id="752204542"/>
+						<MediaRef Id="1015312959"/>
+						<MediaRef Id="1015984969"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="76591114" Name="Play_Night_Arp" DurationType="OneShot" DurationMin="61.71875" DurationMax="61.71875">
+					<MediaRefs>
+						<MediaRef Id="102290091"/>
+						<MediaRef Id="238184512"/>
+						<MediaRef Id="395166052"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1057837593" Name="Play_Night_Countermelody" DurationType="OneShot" DurationMin="17.196438" DurationMax="17.196438">
+					<MediaRefs>
+						<MediaRef Id="238184512"/>
+						<MediaRef Id="395166052"/>
+						<MediaRef Id="626125282"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2032307683" Name="Play_Night_Melody" DurationType="OneShot" DurationMin="168.13394" DurationMax="168.13394">
+					<MediaRefs>
+						<MediaRef Id="238184512"/>
+						<MediaRef Id="395166052"/>
+						<MediaRef Id="502036796"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1109613271" Name="Play_Stinger_EnterCombat" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="2334212825" Name="EnterCombat"/>
+					</ActionTrigger>
+				</Event>
+				<Event Id="4268407383" Name="Play_Stinger_ExitCombat" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="755913789" Name="ExitCombat"/>
+					</ActionTrigger>
+				</Event>
+				<Event Id="2049735205" Name="Play_Stinger_Item_Collection" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="3868165313" Name="Collect_Item"/>
+					</ActionTrigger>
+				</Event>
+				<Event Id="2730318483" Name="Play_Stinger_Player_GoToBed" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="1659302645" Name="Player_GoToBed"/>
+					</ActionTrigger>
+				</Event>
+				<Event Id="43599987" Name="Play_UI_Button" DurationType="OneShot" DurationMin="0.16345833" DurationMax="0.16345833">
+					<MediaRefs>
+						<MediaRef Id="679943488"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="1092604815" Name="Set_CombatTension_High" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
@@ -1513,6 +1801,11 @@
 				<Event Id="2957603579" Name="Set_CombatTension_Low" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="1069915969" Id="545371365" Name="Low"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3248879779" Name="Set_GameState_Beach" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="4091656514" Id="4075332698" Name="Beach"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="2438311370" Name="Set_GameState_Combat" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
@@ -1530,6 +1823,18 @@
 						<ActionSetStateEntry GroupId="4091656514" Id="3091570009" Name="Town"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="3937140874" Name="Set_Inside_False" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3553349781" Id="2452206122" Name="False"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="4081663009" Name="Set_Inside_True" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3553349781" Id="3053630529" Name="True"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3483057933" Name="Set_RTPC_Rain_0" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1490057868" Name="Set_RTPC_Rain_100" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2122435667" Name="Set_Tension_High_33Percent" DurationType="OneShot" DurationMin="0" DurationMax="0.375">
 					<MediaRefs>
 						<MediaRef Id="238184512"/>
@@ -1546,6 +1851,68 @@
 						<ActionSetStateEntry GroupId="3729505769" Id="1011622525" Name="Night"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="2424015369" Name="Set_Underwater_False" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="2213237662" Id="2452206122" Name="False"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1703876944" Name="Set_Underwater_True" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="2213237662" Id="3053630529" Name="True"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1316191055" Name="StartAmbience" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="831348941"/>
+					</MediaRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="4091656514" Id="3091570009" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="418536052"/>
+								<MediaRef Id="469517424"/>
+								<MediaRef Id="1019690041"/>
+								<MediaRef Id="1071862539"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="4091656514" Id="4075332698"/>
+							<MediaRefs>
+								<MediaRef Id="43862565"/>
+								<MediaRef Id="201619559"/>
+								<MediaRef Id="313035181"/>
+								<MediaRef Id="493966743"/>
+								<MediaRef Id="625503037"/>
+							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="374890108"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="4091656514" Id="2582085496"/>
+							<MediaRefs>
+								<MediaRef Id="73479292"/>
+								<MediaRef Id="255082433"/>
+								<MediaRef Id="451637440"/>
+								<MediaRef Id="548923576"/>
+								<MediaRef Id="603770072"/>
+								<MediaRef Id="660505983"/>
+								<MediaRef Id="665952263"/>
+								<MediaRef Id="758120459"/>
+								<MediaRef Id="844607603"/>
+								<MediaRef Id="956533400"/>
+								<MediaRef Id="988766355"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3729505769" Id="311764537" Name="Day"/>
+						<ActionSetStateEntry GroupId="3553349781" Id="2452206122" Name="False"/>
+						<ActionSetStateEntry GroupId="4091656514" Id="3091570009" Name="Town"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="452547817" Name="Stop_All" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1359923209" Name="Stop_Day_Melody_01" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1359923210" Name="Stop_Day_Melody_02" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
@@ -1556,12 +1923,29 @@
 				<Event Id="252313127" Name="Stop_Night_Melody_03" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="252313120" Name="Stop_Night_Melody_04" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="844393037" Name="isRaining"/>
+			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="1069915969" Name="CombatTension">
 					<States>
 						<State Id="545371365" Name="Low"/>
 						<State Id="748895195" Name="None"/>
 						<State Id="3550808449" Name="High"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2213237662" Name="Underwater">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="2452206122" Name="False"/>
+						<State Id="3053630529" Name="True"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3553349781" Name="Inside">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="2452206122" Name="False"/>
+						<State Id="3053630529" Name="True"/>
 					</States>
 				</StateGroup>
 				<StateGroup Id="3729505769" Name="TimeOfDay">
@@ -1577,6 +1961,7 @@
 						<State Id="2582085496" Name="Exploration"/>
 						<State Id="2764240573" Name="Combat"/>
 						<State Id="3091570009" Name="Town"/>
+						<State Id="4075332698" Name="Beach"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
@@ -1588,5 +1973,5 @@
 			</Triggers>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D18AF59B-1389-4445-1211-00E13BAEBF53}</FileHash>
+	<FileHash>{CD3A2BEB-985B-C7CF-6A40-F55627707013}</FileHash>
 </SoundBanksInfo>

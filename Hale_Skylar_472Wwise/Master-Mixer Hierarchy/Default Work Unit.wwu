@@ -10,8 +10,363 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="Music" ID="{1F87B96C-E2CF-421D-9AE2-841D10671525}"/>
-						<Bus Name="Stingers" ID="{F089BAD8-28D5-44AC-AE40-DDA9CC4CAD84}"/>
+						<Bus Name="Music" ID="{1F87B96C-E2CF-421D-9AE2-841D10671525}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>6353158</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Underwater" ID="{D4D90656-EB3E-47B3-BABB-5C9E84FA17A5}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="False" ID="{A01DDE6E-383A-4A15-9ABF-C48223CA1DE4}"/>
+										<CustomState Name="" ID="{A6319A0D-0A8E-4D73-988B-AB58E00A1C9B}" ShortID="930967994"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="True" ID="{FE48C335-1E4C-4AF1-B7ED-522B6F6FC8AC}"/>
+										<CustomState Name="" ID="{635E96F6-CEC3-4D9D-BF00-9E0762BD7A34}" ShortID="971356825">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="55"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{CC585F60-A20E-4397-94C3-8EB6510E9154}" ShortID="260093806">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Sidechaining" ID="{864882C8-9388-4B3C-A984-158775314E71}" WorkUnitID="{641D1E10-9339-45CB-8064-2A5E4AC0EC54}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{B31CB04D-9544-4A5A-B434-AA0B301144A5}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-48</XPos>
+																		<YPos>-0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>-41.16239</XPos>
+																		<YPos>0.08431</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+						<Bus Name="Stingers" ID="{F089BAD8-28D5-44AC-AE40-DDA9CC4CAD84}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>6353158</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
+						<Bus Name="VO" ID="{2D41E1D8-F90D-4182-984B-34F44BA75A41}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>6353158</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_Outdoor" ID="{4060D6E1-2CB0-4986-AB98-57F30EB2EA5A}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+								<Reference Name="UserAuxSend1">
+									<ObjectRef Name="Reverb_Indoor" ID="{D0AF4B2F-021E-4F97-945F-D9E766E63268}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+							</ReferenceList>
+							<StateInfo>
+								<StatePropertyList>
+									<Property Name="BusVolume"/>
+									<Property Name="UserAuxSendVolume0"/>
+									<Property Name="UserAuxSendVolume1"/>
+								</StatePropertyList>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Inside" ID="{5AF6EA72-B1EB-408A-8AF4-85B7E188F8E2}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="False" ID="{F4742879-D415-43DB-9A4C-CE0A06B505BA}"/>
+										<CustomState Name="" ID="{FDA5EE58-697D-4BFF-9D5B-79D5F238A692}" ShortID="925050245">
+											<PropertyList>
+												<Property Name="UserAuxSendVolume1" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="True" ID="{3F9BC447-B1FF-4E52-AE37-CED9529785B7}"/>
+										<CustomState Name="" ID="{ED072555-F078-4959-A15E-7ACC7677441F}" ShortID="148638825">
+											<PropertyList>
+												<Property Name="UserAuxSendVolume0" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{F1A83D20-7F0E-4C1E-9016-237F3B0B4B68}" ShortID="166120937">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Meter (Custom)" ID="{52AFDE9F-8A22-48EF-B2DB-A71D8AE3D490}" ShortID="870337971" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+																<PropertyList>
+																	<Property Name="AttackTime" Type="Real32" Value="0.1"/>
+																	<Property Name="Hold" Type="Real32" Value="0.4"/>
+																	<Property Name="ReleaseTime" Type="Real32" Value="2"/>
+																</PropertyList>
+																<PluginData>
+	<GameParameter Name="Sidechaining" ID="{864882C8-9388-4B3C-A984-158775314E71}"/>
+</PluginData>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+												<StateInfo>
+													<CustomStateList>
+														<CustomState>
+															<StateRef Name="False" ID="{F4742879-D415-43DB-9A4C-CE0A06B505BA}"/>
+															<CustomState Name="" ID="{86B6D7CF-D140-4080-856F-B88CF025E88C}" ShortID="789698007"/>
+														</CustomState>
+														<CustomState>
+															<StateRef Name="True" ID="{3F9BC447-B1FF-4E52-AE37-CED9529785B7}"/>
+															<CustomState Name="" ID="{6F1712BC-B7E1-4042-877C-F80B497F47FE}" ShortID="512960585"/>
+														</CustomState>
+													</CustomStateList>
+												</StateInfo>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+						<Bus Name="SFX" ID="{83FC9631-87A5-495E-A95F-49B8E2033289}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>6353158</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
+						<Bus Name="AMB" ID="{B1A0C875-8407-467A-8D53-99A80AD4DAE3}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>6353158</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_Outdoor" ID="{4060D6E1-2CB0-4986-AB98-57F30EB2EA5A}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+								<Reference Name="UserAuxSend1">
+									<ObjectRef Name="Reverb_Indoor" ID="{D0AF4B2F-021E-4F97-945F-D9E766E63268}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+							</ReferenceList>
+							<StateInfo>
+								<StatePropertyList>
+									<Property Name="BusVolume"/>
+									<Property Name="Highpass"/>
+									<Property Name="Lowpass"/>
+									<Property Name="Pitch"/>
+									<Property Name="UserAuxSendVolume0"/>
+									<Property Name="UserAuxSendVolume1"/>
+									<Property Name="Volume"/>
+								</StatePropertyList>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Inside" ID="{5AF6EA72-B1EB-408A-8AF4-85B7E188F8E2}"/>
+									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="Underwater" ID="{D4D90656-EB3E-47B3-BABB-5C9E84FA17A5}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="False" ID="{F4742879-D415-43DB-9A4C-CE0A06B505BA}"/>
+										<CustomState Name="" ID="{A7D9C619-4DC9-4872-89FB-98DF2FA46F59}" ShortID="643985722">
+											<PropertyList>
+												<Property Name="UserAuxSendVolume1" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="False" ID="{A01DDE6E-383A-4A15-9ABF-C48223CA1DE4}"/>
+										<CustomState Name="" ID="{CFFE9035-0023-495A-9CE3-BA89FF72F058}" ShortID="834084493"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="True" ID="{FE48C335-1E4C-4AF1-B7ED-522B6F6FC8AC}"/>
+										<CustomState Name="" ID="{86CD227A-F9D1-45EE-A567-7D0160C1B4FF}" ShortID="449889675">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="66"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="True" ID="{3F9BC447-B1FF-4E52-AE37-CED9529785B7}"/>
+										<CustomState Name="" ID="{A739F610-DA69-480B-8D8D-B21CADC1344A}" ShortID="100335150">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="35"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64" Value="-108"/>
+												<Property Name="Volume" Type="Real64" Value="-3"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{C09A1918-1E0D-4754-9E78-CB1A83689374}" ShortID="775924572">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Sidechaining" ID="{864882C8-9388-4B3C-A984-158775314E71}" WorkUnitID="{641D1E10-9339-45CB-8064-2A5E4AC0EC54}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{8C0CCA30-B516-402B-82D0-A29229015985}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-48</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>-36.99145</XPos>
+																		<YPos>0.15908</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+						<Bus Name="Reverb" ID="{B00A5AEC-F68B-4920-B1A8-2CE9C6E61066}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>6353158</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ChildrenList>
+								<AuxBus Name="Reverb_Outdoor" ID="{4060D6E1-2CB0-4986-AB98-57F30EB2EA5A}">
+									<PropertyList>
+										<Property Name="BusChannelConfig" Type="int32">
+											<ValueList>
+												<Value>6353158</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{E74BEB32-DBF9-4F36-A40B-FB4052BB393D}" ShortID="523700137">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
+								<AuxBus Name="Reverb_Indoor" ID="{D0AF4B2F-021E-4F97-945F-D9E766E63268}">
+									<PropertyList>
+										<Property Name="BusChannelConfig" Type="int32">
+											<ValueList>
+												<Value>6353158</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{2B6A224B-C998-4EB8-9A09-107A88AA3354}" ShortID="762328955">
+														<ReferenceList>
+															<Reference Name="Effect">
+																<Custom>
+																	<Effect Name="RoomVerb (Custom)" ID="{FD3702ED-1E79-44EF-964D-D26A1E159CE7}" ShortID="599376110" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																		<PropertyList>
+																			<Property Name="DecayTime" Type="Real32" Value="0.5"/>
+																			<Property Name="Density" Type="Real32" Value="51"/>
+																			<Property Name="ERPattern" Type="int32" Value="25"/>
+																			<Property Name="HFDamping" Type="Real32" Value="1.4"/>
+																		</PropertyList>
+																	</Effect>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
+							</ChildrenList>
+						</Bus>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="Effects">

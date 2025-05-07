@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 713b8a995f76bb8408585033b84518e9, type: 3}
-  m_Name: 5EB94324-7922-4BB8-8126-912EA861862F
+  m_Name: BF2A004C-F9B3-4676-8FEC-659A6538B4DD
   m_EditorClassIdentifier: 
-  objectName: GameStart
-  id: 4058101365
-  guid: 5EB94324-7922-4BB8-8126-912EA861862F
+  objectName: Play_Monologue
+  id: 3208730517
+  guid: BF2A004C-F9B3-4676-8FEC-659A6538B4DD
