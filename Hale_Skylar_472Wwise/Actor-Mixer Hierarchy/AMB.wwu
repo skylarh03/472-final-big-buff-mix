@@ -1,0 +1,1426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AF1DA394-9209-4D6E-8ABC-580D4535FB61}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="AMB" ID="{AF1DA394-9209-4D6E-8ABC-580D4535FB61}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="emitter_seal" ID="{0531CAD3-F08E-4A43-83C9-D2647D98402B}" ShortID="195033258">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{56DE9AF6-CC6A-404E-8964-24E961F2CF98}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="NPC" ID="{801894A1-3A6F-4EF7-8DC1-E0915C6FE56A}" WorkUnitID="{A804C1A0-6935-40CD-8BD8-C90C3EAC68F2}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="amb_emitter_seal_" ID="{58A62365-4FA7-40B5-9399-A5FABC3F4D2B}" ShortID="930595238">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="amb_emitter_seal_" ID="{F5A375E8-47AE-4170-9B06-F8068A242497}">
+									<Language>SFX</Language>
+									<AudioFile>amb_emitter_seal_.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="322578607"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="amb_emitter_seal_" ID="{F5A375E8-47AE-4170-9B06-F8068A242497}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="amb_emitter_seal__1" ID="{F27DF7E8-255C-4E9D-8257-C080BAF6A61C}" ShortID="927886830">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="amb_emitter_seal__1" ID="{D354F231-7CE7-42A7-84F6-BD3AD5044137}">
+									<Language>SFX</Language>
+									<AudioFile>amb_emitter_seal__1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="85929563"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="amb_emitter_seal__1" ID="{D354F231-7CE7-42A7-84F6-BD3AD5044137}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="amb_emitter_seal__2" ID="{B6778C66-B6C2-4988-BB2D-5A23C554329A}" ShortID="93148956">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="amb_emitter_seal__2" ID="{645B860A-3F0A-4E48-A8D2-9AFEC67AB006}">
+									<Language>SFX</Language>
+									<AudioFile>amb_emitter_seal__2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="834815469"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="amb_emitter_seal__2" ID="{645B860A-3F0A-4E48-A8D2-9AFEC67AB006}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="amb_emitter_seal__3" ID="{BC922BBE-EF95-4BC9-A12E-819EE3368279}" ShortID="972840782">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="amb_emitter_seal__3" ID="{D1199644-D946-4A67-A6FD-ABCD765B6209}">
+									<Language>SFX</Language>
+									<AudioFile>amb_emitter_seal__3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="500015075"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="amb_emitter_seal__3" ID="{D1199644-D946-4A67-A6FD-ABCD765B6209}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="amb_emitter_seal__4" ID="{01F99ECE-9731-4806-B5AF-12FCF6C18594}" ShortID="227415221">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="amb_emitter_seal__4" ID="{43BAA5AC-C7D9-4840-89BA-5B92C1721659}">
+									<Language>SFX</Language>
+									<AudioFile>amb_emitter_seal__4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="966127502"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="amb_emitter_seal__4" ID="{43BAA5AC-C7D9-4840-89BA-5B92C1721659}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="amb_emitter_seal__5" ID="{2FB83535-7FE2-4897-A334-1C6C535E2238}" ShortID="507652887">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="amb_emitter_seal__5" ID="{68CEA060-8DEB-4EBD-AEF4-0B3A64CA6DDF}">
+									<Language>SFX</Language>
+									<AudioFile>amb_emitter_seal__5.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="91663302"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="amb_emitter_seal__5" ID="{68CEA060-8DEB-4EBD-AEF4-0B3A64CA6DDF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="amb_emitter_seal__6" ID="{A27CE659-9CDA-4B49-83AD-0D9062CCC11E}" ShortID="767711028">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="amb_emitter_seal__6" ID="{E7EA13B4-B416-47CF-A921-B4FCF034A709}">
+									<Language>SFX</Language>
+									<AudioFile>amb_emitter_seal__6.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1010975177"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="amb_emitter_seal__6" ID="{E7EA13B4-B416-47CF-A921-B4FCF034A709}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="amb_emitter_seal__7" ID="{FD7F95D1-9898-422D-A856-219450064C38}" ShortID="156815692">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="amb_emitter_seal__7" ID="{307F8350-0241-41D1-97E9-561B612DEDD4}">
+									<Language>SFX</Language>
+									<AudioFile>amb_emitter_seal__7.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="386520637"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="amb_emitter_seal__7" ID="{307F8350-0241-41D1-97E9-561B612DEDD4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="amb_emitter_seal__8" ID="{8F0FE92A-20F4-4373-A102-67068A4E30EC}" ShortID="555184795">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="amb_emitter_seal__8" ID="{92457CAA-E556-46A6-83D5-6DA13CB42999}">
+									<Language>SFX</Language>
+									<AudioFile>amb_emitter_seal__8.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="704461876"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="amb_emitter_seal__8" ID="{92457CAA-E556-46A6-83D5-6DA13CB42999}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="amb_emitter_seal__9" ID="{71250114-9FD2-4A6F-ACAE-E624FB0D04DA}" ShortID="386229131">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="amb_emitter_seal__9" ID="{56EF8CB0-B8BE-450B-B77F-896DFE2DB05D}">
+									<Language>SFX</Language>
+									<AudioFile>amb_emitter_seal__9.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1044857390"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="amb_emitter_seal__9" ID="{56EF8CB0-B8BE-450B-B77F-896DFE2DB05D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<SwitchContainer Name="Ocean" ID="{C6746AF4-C927-4D2E-AFB5-DDB94561C987}" ShortID="272041398">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-15</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Beach" ID="{7ABA4F97-B04B-4FDB-BC37-3FCF5DB8F521}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="GameState" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="emitter_seagull" ID="{206BA1D5-00F4-4FF9-BF85-0B27D27B722A}" ShortID="372460366">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{222CD7A5-E2C4-48E3-BF79-5B7CB2E36385}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.5"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="amb_emitter_seagull" ID="{2FEC72EA-5372-42AE-9A45-615D9DBE11BE}" ShortID="979885980">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_emitter_seagull" ID="{081A7C0E-A19E-4235-A9BC-C300031C0FC0}">
+											<Language>SFX</Language>
+											<AudioFile>amb_emitter_seagull.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="493966743"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_emitter_seagull" ID="{081A7C0E-A19E-4235-A9BC-C300031C0FC0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_emitter_seagull_1" ID="{B8DF767C-9C7D-4451-8BFB-FDD1694CAF43}" ShortID="420195127">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_emitter_seagull_1" ID="{6D758C00-B40C-418D-88B1-42A0EC3FF917}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.54320624151967"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>amb_emitter_seagull_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="313035181"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_emitter_seagull_1" ID="{6D758C00-B40C-418D-88B1-42A0EC3FF917}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_emitter_seagull_2" ID="{3C51A676-143F-4F6B-80DC-B3DF8BC7F1FF}" ShortID="476770242">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_emitter_seagull_2" ID="{23608FB4-048D-42D8-88DC-A6BC7975B0DC}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.133369459520579"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>amb_emitter_seagull_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="201619559"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_emitter_seagull_2" ID="{23608FB4-048D-42D8-88DC-A6BC7975B0DC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_emitter_seagull_3" ID="{2E2FBB9F-A33A-434A-96CA-335E025339DD}" ShortID="480691167">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_emitter_seagull_3" ID="{6C396096-30B8-42D7-8749-6ECD13825598}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0858456298055179"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>amb_emitter_seagull_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="43862565"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_emitter_seagull_3" ID="{6C396096-30B8-42D7-8749-6ECD13825598}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="New Silence" ID="{D5EDB2D6-1D0F-4CB3-8DB5-5B1BE2B453CD}" ShortID="850543321">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Silence" ID="{A8FDEB10-735B-4E04-B532-1D85B12060C6}" ShortID="374890108" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="2"/>
+												<Property Name="LengthMax" Type="Real32" Value="1"/>
+												<Property Name="LengthMin" Type="Real32" Value="-2"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Silence" ID="{A8FDEB10-735B-4E04-B532-1D85B12060C6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{8032513F-C518-4472-843A-1D2003B6B3A5}">
+									<PropertyList>
+										<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="emitter_seagull_Path" ID="{D38B0BC8-68FA-4EC4-BEA9-9A152276999B}">
+											<PointList>
+												<Point>
+													<XPos>51.26904</XPos>
+													<YPos>50.56497</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="emitter_seagull_Path_01" ID="{257BC1E9-2C5D-42D4-AF3C-2BFD3A514DE0}">
+											<PointList>
+												<Point>
+													<XPos>45.17766</XPos>
+													<YPos>-46.0452</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="emitter_seagull_Path_02" ID="{9AB7A6C9-2389-409A-9251-FAB8AA1769DA}">
+											<PointList>
+												<Point>
+													<XPos>-51.26904</XPos>
+													<YPos>-48.30508</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="emitter_seagull_Path_03" ID="{98C68D09-5046-4910-8EF3-ADBC8D744249}">
+											<PointList>
+												<Point>
+													<XPos>-56.85279</XPos>
+													<YPos>56.21469</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="emitter_seagull_Path_04" ID="{28DA90C8-270F-4906-9EFD-A62232B20431}">
+											<PointList>
+												<Point>
+													<XPos>46.70051</XPos>
+													<YPos>52.82486</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-49.746192893401</XPos>
+													<YPos>-43.5028248587571</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="emitter_seagull_Path_05" ID="{CD48FD65-4AD2-46A8-A325-A5E432F532FE}">
+											<PointList>
+												<Point>
+													<XPos>44.67005</XPos>
+													<YPos>-44.91525</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-49.238578680203</XPos>
+													<YPos>51.4124293785311</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="emitter_seagull_Path_06" ID="{4663D1F5-95C4-4D19-B6B3-CDAF0BCCE0E7}">
+											<PointList>
+												<Point>
+													<XPos>-57.36041</XPos>
+													<YPos>-51.12994</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>45.1776649746193</XPos>
+													<YPos>45.1977401129944</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="emitter_seagull_Path_07" ID="{A95745B6-1D6D-481F-B420-FA55FE93F583}">
+											<PointList>
+												<Point>
+													<XPos>-54.31472</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>47.7157360406091</XPos>
+													<YPos>-44.0677966101695</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{85972678-FD2C-4F98-9790-7AADF2C8D20E}" ShortID="53158123">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="isRaining" ID="{937FCD20-673C-49EB-918A-366DF79B5279}" WorkUnitID="{641D1E10-9339-45CB-8064-2A5E4AC0EC54}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{F9011A25-9E0D-41CA-BB1F-AE1BA2BA636E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-6.06109</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</RandomSequenceContainer>
+						<Sound Name="amb_bed_ocean" ID="{26B8F6BE-9C16-48E3-9539-F86CA84E375E}" ShortID="664391348">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="amb_bed_ocean" ID="{F2D3CA8C-A745-4317-BAA9-B74776546BA1}">
+									<PropertyList>
+										<Property Name="LoopEnd" Type="Real64" Value="73.9149611180796"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>amb_bed_ocean.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="625503037"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="amb_bed_ocean" ID="{F2D3CA8C-A745-4317-BAA9-B74776546BA1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="amb_bed_ocean" ID="{26B8F6BE-9C16-48E3-9539-F86CA84E375E}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="emitter_seagull" ID="{206BA1D5-00F4-4FF9-BF85-0B27D27B722A}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Beach" ID="{7ABA4F97-B04B-4FDB-BC37-3FCF5DB8F521}"/>
+								<ItemList>
+									<ItemRef Name="emitter_seagull" ID="{206BA1D5-00F4-4FF9-BF85-0B27D27B722A}"/>
+									<ItemRef Name="amb_bed_ocean" ID="{26B8F6BE-9C16-48E3-9539-F86CA84E375E}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<Sound Name="amb_bed_rain" ID="{CE14BA7E-3A84-4465-9C86-36D13CD5AC31}" ShortID="392447103">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="amb_bed_rain" ID="{82BF9965-1BA6-478E-A919-0ECB8DFAB805}">
+							<PropertyList>
+								<Property Name="LoopEnd" Type="Real64" Value="73.9859703007278"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>amb_bed_rain.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="831348941"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{B85451FA-7463-4B8A-ABA9-96F2E2E6352A}" ShortID="401368005">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="isRaining" ID="{937FCD20-673C-49EB-918A-366DF79B5279}" WorkUnitID="{641D1E10-9339-45CB-8064-2A5E4AC0EC54}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{97CE3FE7-8F83-473E-87C2-C9FD5E6B41D0}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{92EED702-5662-4DB4-ACE2-D313BD4721BB}" ShortID="245984186">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="isRaining" ID="{937FCD20-673C-49EB-918A-366DF79B5279}" WorkUnitID="{641D1E10-9339-45CB-8064-2A5E4AC0EC54}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{7896B962-4CEE-4A9E-9A27-5D2E1E4F6AF1}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>26</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="amb_bed_rain" ID="{82BF9965-1BA6-478E-A919-0ECB8DFAB805}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<SwitchContainer Name="Town" ID="{4559F33F-D330-46AB-B454-FD587AF9C155}" ShortID="246347609">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="amb_bed_town" ID="{0822FDCB-23B6-48A2-954B-CDDAD1F2814E}" ShortID="136903160">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="amb_bed_town" ID="{8D7E9693-EA13-4343-A626-A388A0A5B813}">
+									<Language>SFX</Language>
+									<AudioFile>amb_bed_town.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1071862539"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="amb_bed_town" ID="{8D7E9693-EA13-4343-A626-A388A0A5B813}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="emitter_dog" ID="{939E5C64-F2C9-4536-9D21-D969BE0287AE}" ShortID="572016351">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{FA5D151C-61CD-4149-BE9C-F1F621466DC7}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B34E52C5-1034-431E-8621-802C65F3327C}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="3.5"/>
+													<Property Name="Min" Type="Real64" Value="-0.5"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="amb_emitter_dog_1" ID="{67F2F46B-4EDD-4759-BC33-CA5E2CFB37BE}" ShortID="63656927">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_emitter_dog_1" ID="{2AB892EA-E2FB-4B4D-8248-F6AB453C95D7}">
+											<Language>SFX</Language>
+											<AudioFile>amb_emitter_dog_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1019690041"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_emitter_dog_1" ID="{2AB892EA-E2FB-4B4D-8248-F6AB453C95D7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_emitter_dog_2" ID="{E1036EA4-2433-48A4-8065-E64389BB5008}" ShortID="584148259">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_emitter_dog_2" ID="{04E95E35-D199-4940-88CB-C11455424D58}">
+											<Language>SFX</Language>
+											<AudioFile>amb_emitter_dog_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="418536052"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_emitter_dog_2" ID="{04E95E35-D199-4940-88CB-C11455424D58}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_emitter_dog" ID="{CF38886A-8FCE-4FA2-A1F7-35F291ACA644}" ShortID="635221349">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_emitter_dog" ID="{A9A1ACEF-69B7-47FF-82EE-00583C8E7EDC}">
+											<Language>SFX</Language>
+											<AudioFile>amb_emitter_dog.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="469517424"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_emitter_dog" ID="{A9A1ACEF-69B7-47FF-82EE-00583C8E7EDC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{24D66CE6-F1D0-4877-9DA5-0594FFBEFC14}">
+									<PropertyList>
+										<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="emitter_dog_Path" ID="{1BCE5C4F-3791-4404-9182-8D7010669F0D}">
+											<PointList>
+												<Point>
+													<XPos>100</XPos>
+													<YPos>100</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="emitter_dog_Path_01" ID="{B44E49E6-D1F6-45B7-8A2B-30DDAB3A9F84}">
+											<PointList>
+												<Point>
+													<XPos>100</XPos>
+													<YPos>-100</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="emitter_dog_Path_02" ID="{23483F9D-C674-47CB-AC60-26CD1E8B9D4A}">
+											<PointList>
+												<Point>
+													<XPos>-100</XPos>
+													<YPos>-100</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="emitter_dog_Path_03" ID="{EE0F85E4-FEDD-47C2-8F24-1F340BCDC39B}">
+											<PointList>
+												<Point>
+													<XPos>-100</XPos>
+													<YPos>100</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="emitter_dog" ID="{939E5C64-F2C9-4536-9D21-D969BE0287AE}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="amb_bed_town" ID="{0822FDCB-23B6-48A2-954B-CDDAD1F2814E}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<Sound Name="amb_emitter_crowd" ID="{01A095F0-E807-48E9-B4AA-87F15ED72A8F}" ShortID="254029318">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Market" ID="{8D6409C3-780F-4398-B4C5-644EF6A3B51D}" WorkUnitID="{A804C1A0-6935-40CD-8BD8-C90C3EAC68F2}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="amb_emitter_crowd" ID="{5F4FFFBF-5609-4C23-8E5B-184C0C6E5053}">
+							<Language>SFX</Language>
+							<AudioFile>amb_emitter_crowd.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="30695796"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="amb_emitter_crowd" ID="{5F4FFFBF-5609-4C23-8E5B-184C0C6E5053}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<SwitchContainer Name="Marsh" ID="{4290C040-1E7B-4F1B-B44B-57FC1F8016F9}" ShortID="952910492">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="None" ID="{1FA46F1D-0DB1-4CA0-A154-435A65E51B39}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}" WorkUnitID="{7F4FA795-E7FA-4FDA-BB1D-46FDF47A5840}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="amb_bed_marsh_day" ID="{A15B5DF6-012D-4558-9216-7CF53A9889AE}" ShortID="15146005">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="amb_bed_marsh_day" ID="{444D71CD-6342-42A6-B04F-C1592D3B7070}">
+									<Language>SFX</Language>
+									<AudioFile>amb_bed_marsh_day.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="956533400"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="amb_bed_marsh_day" ID="{444D71CD-6342-42A6-B04F-C1592D3B7070}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="amb_bed_marsh_night" ID="{344702CD-AEAB-4236-8AF8-C3CF00C03978}" ShortID="183731439">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="amb_bed_marsh_night" ID="{90F1B198-6AA2-4720-BD2F-5B75F18C8D74}">
+									<Language>SFX</Language>
+									<AudioFile>amb_bed_marsh_night.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="758120459"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="amb_bed_marsh_night" ID="{90F1B198-6AA2-4720-BD2F-5B75F18C8D74}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="emitter_frog" ID="{922DC963-2993-422C-845B-E6A5DBDCF988}" ShortID="1004483957">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9CB39E9A-28EC-421F-BB47-251235220926}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="4.5"/>
+													<Property Name="Min" Type="Real64" Value="-0.5"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="amb_emitter_frog" ID="{62A4B3E5-0A23-4333-9772-307E4286AD8B}" ShortID="690849017">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_emitter_frog" ID="{43D080BE-8D29-476A-98F4-61E9523E265B}">
+											<Language>SFX</Language>
+											<AudioFile>amb_emitter_frog.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="548923576"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_emitter_frog" ID="{43D080BE-8D29-476A-98F4-61E9523E265B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_emitter_frog_1" ID="{8ACEBA11-DC64-4D39-B853-F28AF215CBB8}" ShortID="211373805">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_emitter_frog_1" ID="{8F50B8D6-BAFF-4926-B426-2A366E06E0CF}">
+											<Language>SFX</Language>
+											<AudioFile>amb_emitter_frog_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="660505983"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_emitter_frog_1" ID="{8F50B8D6-BAFF-4926-B426-2A366E06E0CF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_emitter_frog_2" ID="{5990C5B3-AADD-4E8A-93C5-4E094B123DEE}" ShortID="982738265">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_emitter_frog_2" ID="{401D72D1-7469-43B8-A70C-94BFC4AAAC1F}">
+											<Language>SFX</Language>
+											<AudioFile>amb_emitter_frog_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="451637440"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_emitter_frog_2" ID="{401D72D1-7469-43B8-A70C-94BFC4AAAC1F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_emitter_frog_3" ID="{83F4EE81-E026-4F05-B233-336CC79D6888}" ShortID="128182893">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_emitter_frog_3" ID="{443C521D-ADE1-4D60-84D5-C0A19F75EA04}">
+											<Language>SFX</Language>
+											<AudioFile>amb_emitter_frog_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="665952263"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_emitter_frog_3" ID="{443C521D-ADE1-4D60-84D5-C0A19F75EA04}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_emitter_frog_4" ID="{3ECA78C7-6B4C-4C93-B0B4-073A2AE4A626}" ShortID="452693356">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_emitter_frog_4" ID="{0DEF3550-28A0-4A68-A897-1612679F4C5C}">
+											<Language>SFX</Language>
+											<AudioFile>amb_emitter_frog_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="255082433"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_emitter_frog_4" ID="{0DEF3550-28A0-4A68-A897-1612679F4C5C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_emitter_frog_5" ID="{D0168AA2-B920-4E29-9E42-77A5233F9A3F}" ShortID="184012324">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_emitter_frog_5" ID="{1650BA80-EDBB-4F1A-BAF7-D12903681971}">
+											<Language>SFX</Language>
+											<AudioFile>amb_emitter_frog_5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="73479292"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_emitter_frog_5" ID="{1650BA80-EDBB-4F1A-BAF7-D12903681971}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_emitter_frog_6" ID="{DF89D216-BB06-422C-82B0-444AD9271380}" ShortID="97869012">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_emitter_frog_6" ID="{EC6D5803-4347-4F04-B75E-2B1545081054}">
+											<Language>SFX</Language>
+											<AudioFile>amb_emitter_frog_6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="988766355"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_emitter_frog_6" ID="{EC6D5803-4347-4F04-B75E-2B1545081054}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_emitter_frog_7" ID="{ACAC7DEB-B660-4323-A86C-D6F9D0C9D907}" ShortID="586451933">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_emitter_frog_7" ID="{442E12FF-9A89-4636-8BE6-522D264B4E96}">
+											<Language>SFX</Language>
+											<AudioFile>amb_emitter_frog_7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="603770072"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_emitter_frog_7" ID="{442E12FF-9A89-4636-8BE6-522D264B4E96}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_emitter_frog_8" ID="{1E7F34CF-CAF7-4396-80BD-06BF2C690F9E}" ShortID="149943721">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_emitter_frog_8" ID="{6A653DF4-4AAD-4AEE-8EC8-4205C8D05D9B}">
+											<Language>SFX</Language>
+											<AudioFile>amb_emitter_frog_8.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="844607603"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_emitter_frog_8" ID="{6A653DF4-4AAD-4AEE-8EC8-4205C8D05D9B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{8BDC9E36-AFA2-4E6E-A187-039DF3B0B549}">
+									<PropertyList>
+										<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="emitter_frog_Path" ID="{6947E8B1-3566-4233-A8C0-64EF4E650381}">
+											<PointList>
+												<Point>
+													<XPos>100</XPos>
+													<YPos>100</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="emitter_frog_Path_01" ID="{F4171DFD-C93A-4511-9E9C-414EE81A23CE}">
+											<PointList>
+												<Point>
+													<XPos>100</XPos>
+													<YPos>-100</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="emitter_frog_Path_02" ID="{AB393FD0-2A4C-4062-9105-25ADA7B56FD0}">
+											<PointList>
+												<Point>
+													<XPos>-100</XPos>
+													<YPos>-100</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="emitter_frog_Path_03" ID="{4957B8CB-CB87-45C9-8186-5AB518A8A900}">
+											<PointList>
+												<Point>
+													<XPos>-100</XPos>
+													<YPos>100</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="emitter_frog" ID="{922DC963-2993-422C-845B-E6A5DBDCF988}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="amb_bed_marsh_night" ID="{344702CD-AEAB-4236-8AF8-C3CF00C03978}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="amb_bed_marsh_day" ID="{A15B5DF6-012D-4558-9216-7CF53A9889AE}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<Sound Name="amb_emitter_waterfall" ID="{4F6B6F3F-F825-4D6D-9A80-0F4936AA269C}" ShortID="444053162">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="amb_emitter_waterfall" ID="{C2030284-982F-4BFC-8945-6E1AB18B6D05}">
+							<Language>SFX</Language>
+							<AudioFile>amb_emitter_waterfall.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="541539182"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="amb_emitter_waterfall" ID="{C2030284-982F-4BFC-8945-6E1AB18B6D05}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
