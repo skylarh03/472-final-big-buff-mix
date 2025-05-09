@@ -13,6 +13,8 @@ public class PlayerMove : MonoBehaviour
     public CharacterController Controller;
     public Transform Cam;
 
+    public AK.Wwise.Event jumpEvent;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +50,7 @@ public class PlayerMove : MonoBehaviour
         {
             //Debug.Log("jump");
             isJump = true;
+            jumpEvent.Post(gameObject);
         }
 
         if (isJump)

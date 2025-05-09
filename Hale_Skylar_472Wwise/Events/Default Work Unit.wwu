@@ -1158,6 +1158,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_Player_Jump" ID="{B85D3EDF-6317-43D2-A917-7672F90CC0D9}">
+					<ChildrenList>
+						<Action Name="" ID="{F1FC3E4A-6A16-4331-971D-9D118BF71EE2}" ShortID="619756603">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_player_jump" ID="{0148FD2B-3253-4645-9A3E-7414B7C7AEC6}" WorkUnitID="{CB1A47B4-6E74-42A5-A3BB-88F0F7E7F67B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A6AD83FC-A304-7514-0014-2BDFDFEC4F73}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B706EFF8-20E2-886B-8386-5FBB60831DA7}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -254,7 +254,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{B7F49318-F7F6-9B87-9E73-805D649EE4C7}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{06803AD4-F60B-83DB-437D-D2446452532B}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
@@ -714,6 +714,10 @@
 					<ShortName>vo_monologue_06.wav</ShortName>
 					<CachePath>SFX/vo_monologue_06_818F3B66.wem</CachePath>
 				</File>
+				<File Id="648046209" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_player_jump.wav</ShortName>
+					<CachePath>SFX/sfx_player_jump_818F3B66.wem</CachePath>
+				</File>
 				<File Id="649449689" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>night_base_140_22.wav</ShortName>
 					<CachePath>SFX/night_base_140_22_FBC78EF0.wem</CachePath>
@@ -884,7 +888,7 @@
 				</File>
 				<File Id="858570250" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>sfx_windgust.wav</ShortName>
-					<CachePath>SFX/sfx_windgust_94176F0C.wem</CachePath>
+					<CachePath>SFX/sfx_windgust_2E96D691.wem</CachePath>
 				</File>
 				<File Id="863307812" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>strings_section2.wav</ShortName>
@@ -1767,6 +1771,11 @@
 						<MediaRef Id="502036796"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="562256996" Name="Play_Player_Jump" DurationType="OneShot" DurationMin="1.214415" DurationMax="1.2866278">
+					<MediaRefs>
+						<MediaRef Id="648046209"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1109613271" Name="Play_Stinger_EnterCombat" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionTrigger>
 						<ActionTriggerEntry Id="2334212825" Name="EnterCombat"/>
@@ -1987,5 +1996,5 @@
 			</Triggers>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{438BCFA1-A755-68FB-13B8-894FC9683650}</FileHash>
+	<FileHash>{F8470FC5-D42B-6F21-D706-4A288FDD08D9}</FileHash>
 </SoundBanksInfo>

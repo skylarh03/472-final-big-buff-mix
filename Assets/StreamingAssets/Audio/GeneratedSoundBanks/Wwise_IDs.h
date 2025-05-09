@@ -32,6 +32,7 @@ namespace AK
         static const AkUniqueID PLAY_NIGHT_ARP = 76591114U;
         static const AkUniqueID PLAY_NIGHT_COUNTERMELODY = 1057837593U;
         static const AkUniqueID PLAY_NIGHT_MELODY = 2032307683U;
+        static const AkUniqueID PLAY_PLAYER_JUMP = 562256996U;
         static const AkUniqueID PLAY_STINGER_ENTERCOMBAT = 1109613271U;
         static const AkUniqueID PLAY_STINGER_EXITCOMBAT = 4268407383U;
         static const AkUniqueID PLAY_STINGER_ITEM_COLLECTION = 2049735205U;
