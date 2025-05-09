@@ -150,6 +150,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_WindGust" ID="{051D675F-0E18-43A1-8764-7147938398BE}">
+							<ChildrenList>
+								<Action Name="" ID="{CBF73AC9-7AA1-4912-8AE0-6D3DDA037152}" ShortID="90072512">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_windgust" ID="{924924DB-D24E-4736-BF99-7675E7AACE38}" WorkUnitID="{CB1A47B4-6E74-42A5-A3BB-88F0F7E7F67B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UI" ID="{82775F5E-6E4D-4946-99D1-A37F7E078AF3}">
+							<ChildrenList>
+								<Action Name="" ID="{E2AB0C42-6CC9-411A-9195-28F783746AE6}" ShortID="643413071">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_ui_button" ID="{BBE4BA7B-AA36-4FE5-A3BF-E56B4AAA30A5}" WorkUnitID="{CB1A47B4-6E74-42A5-A3BB-88F0F7E7F67B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_UI_Button" ID="{7164ED40-255D-4D38-A01B-AC6D56A8AA98}">

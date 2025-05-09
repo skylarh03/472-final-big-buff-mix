@@ -26,6 +26,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="sfx_windgust" ID="{924924DB-D24E-4736-BF99-7675E7AACE38}" ShortID="760352029">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
@@ -36,6 +43,11 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="sfx_windgust" ID="{89C6A380-B923-412D-A94C-E6583E4E2E80}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="2.45892857142857"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="3.984375"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>sfx_windgust.wav</AudioFile>
 							<MediaIDList>

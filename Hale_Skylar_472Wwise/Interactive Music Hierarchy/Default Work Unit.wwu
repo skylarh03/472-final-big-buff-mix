@@ -1100,7 +1100,7 @@
 																</Reference>
 															</ReferenceList>
 															<TransitionInfo>
-																<TransitionObjectRef Name="day_to_night_03" ID="{329D2FC2-3DFD-4ADC-AC4F-409A1ACC9721}" WorkUnitID="{04025AD0-EDBA-4E6A-80E7-8DBC44329C8D}"/>
+																<TransitionObjectRef Name="day_to_night_03" ID="{78B69538-15B6-40A7-9C14-9450E2D95213}" WorkUnitID="{04025AD0-EDBA-4E6A-80E7-8DBC44329C8D}"/>
 															</TransitionInfo>
 														</MusicTransition>
 													</ChildrenList>
@@ -2013,6 +2013,11 @@
 									<PropertyList>
 										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 										<Property Name="Tempo" Type="Real64" Value="178"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -11182,6 +11187,11 @@
 									<PropertyList>
 										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 										<Property Name="Tempo" Type="Real64" Value="178"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -11412,6 +11422,11 @@
 									<PropertyList>
 										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 										<Property Name="Tempo" Type="Real64" Value="178"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -11570,6 +11585,27 @@
 																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																							</PropertyList>
 																							<AudioSourceRef Name="day_melody_178_02_03" ID="{D6A387A2-17A6-4F5F-99FD-49A5222BBD3F}"/>
+																							<PropertyCurveList>
+																								<PropertyCurve PropertyName="Volume">
+																									<Curve Name="" ID="{761DDCF8-1FB0-49D8-A7E9-4DC432D1947B}">
+																										<PropertyList>
+																											<Property Name="Flags" Type="int32" Value="3"/>
+																										</PropertyList>
+																										<PointList>
+																											<Point>
+																												<XPos>0</XPos>
+																												<YPos>-1.10739</YPos>
+																												<Flags>5</Flags>
+																											</Point>
+																											<Point>
+																												<XPos>27.5702291666667</XPos>
+																												<YPos>-1.21544</YPos>
+																												<Flags>37</Flags>
+																											</Point>
+																										</PointList>
+																									</Curve>
+																								</PropertyCurve>
+																							</PropertyCurveList>
 																						</MusicClip>
 																					</Local>
 																				</Reference>
@@ -11608,6 +11644,11 @@
 									<PropertyList>
 										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 										<Property Name="Tempo" Type="Real64" Value="178"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -12470,8 +12511,13 @@
 																								<PointList>
 																									<Point>
 																										<XPos>1.68378</XPos>
-																										<YPos>0</YPos>
+																										<YPos>-2.13185</YPos>
 																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>2.67991</XPos>
+																										<YPos>-2.21485</YPos>
+																										<Flags>0</Flags>
 																									</Point>
 																									<Point>
 																										<XPos>16.9099583333333</XPos>
@@ -12630,8 +12676,13 @@
 																								<PointList>
 																									<Point>
 																										<XPos>1.34831</XPos>
-																										<YPos>0</YPos>
+																										<YPos>-2.13185</YPos>
 																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>2.65881</XPos>
+																										<YPos>-2.168</YPos>
+																										<Flags>0</Flags>
 																									</Point>
 																									<Point>
 																										<XPos>16.9099583333333</XPos>
@@ -12678,104 +12729,6 @@
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
 															<Property Name="TimeMs" Type="Real64" Value="13483.1460674157"/>
-														</PropertyList>
-													</MusicCue>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicSegment>
-								<MusicSegment Name="day_to_night_03" ID="{329D2FC2-3DFD-4ADC-AC4F-409A1ACC9721}" ShortID="169639647">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="16909.9583333333"/>
-										<Property Name="Tempo" Type="Real64" Value="178"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<MusicTrack Name="day_to_night_03" ID="{A4FD40EC-49C9-478C-86FE-F71FEAFC9A69}" ShortID="538788635">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
-												</Reference>
-												<Reference Name="TransitionRoot">
-													<Custom>
-														<MusicTransition Name="Root" ID="{5099DA17-027A-4ED4-944B-A3BFD90C5B7A}">
-															<PropertyList>
-																<Property Name="IsFolder" Type="bool" Value="True"/>
-															</PropertyList>
-															<TransitionInfo/>
-														</MusicTransition>
-													</Custom>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="day_to_night_03" ID="{AEC52C09-09C9-4BC2-A7E5-0BA1D57629A8}">
-													<Language>SFX</Language>
-													<AudioFile>day_to_night_03.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="677423853"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists>
-												<ObjectList Name="Sequences">
-													<Reference>
-														<Local>
-															<MusicTrackSequence Name="" ID="{F2BCE4D5-B77F-4043-948D-AD07FF61398B}">
-																<ObjectLists>
-																	<ObjectList Name="Clips">
-																		<Reference>
-																			<Local>
-																				<MusicClip Name="day_to_night_03" ID="{400A4D1C-7BF9-474F-8715-EC986F2B53FB}">
-																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="16909.9583333333"/>
-																						<Property Name="FadeInMode" Type="int16" Value="0"/>
-																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																					</PropertyList>
-																					<AudioSourceRef Name="day_to_night_03" ID="{AEC52C09-09C9-4BC2-A7E5-0BA1D57629A8}"/>
-																				</MusicClip>
-																			</Local>
-																		</Reference>
-																		<Reference>
-																			<Local>
-																				<MusicEventCue Name="" ID="{D5AA5BE3-F279-4BBF-8BDC-BC989D6381C7}" ShortID="120048723">
-																					<ReferenceList>
-																						<Reference Name="PostEventTarget">
-																							<ObjectRef Name="Stop_Day_Melody_02" ID="{898726D1-5B32-488A-B289-34FE3F616911}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
-																						</Reference>
-																					</ReferenceList>
-																				</MusicEventCue>
-																			</Local>
-																		</Reference>
-																	</ObjectList>
-																</ObjectLists>
-															</MusicTrackSequence>
-														</Local>
-													</Reference>
-												</ObjectList>
-											</ObjectLists>
-										</MusicTrack>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Cues">
-											<Reference>
-												<Local>
-													<MusicCue Name="Entry Cue" ID="{9C3F707B-B3AE-430C-B02A-090AC635F94D}"/>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicCue Name="Exit Cue" ID="{5FEB12D6-241F-40B3-8564-7A7B9C2B918A}">
-														<PropertyList>
-															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="14831.4606741573"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -12838,6 +12791,32 @@
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
 																					<AudioSourceRef Name="night_to_day_01" ID="{6F3E7DD9-20FB-419F-BA9B-703195B4C5B4}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{F783C443-93B1-436F-B543-D1E93CD7E2C2}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>13.98675</XPos>
+																										<YPos>-2.2535</YPos>
+																										<Flags>0</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>16.6466666666667</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -12997,8 +12976,13 @@
 																								<PointList>
 																									<Point>
 																										<XPos>1.34831</XPos>
-																										<YPos>0</YPos>
+																										<YPos>-2.13185</YPos>
 																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>2.66984</XPos>
+																										<YPos>-2.04682</YPos>
+																										<Flags>0</Flags>
 																									</Point>
 																									<Point>
 																										<XPos>16.9099583333333</XPos>
@@ -13096,6 +13080,32 @@
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
 																					<AudioSourceRef Name="night_to_day_01" ID="{BC2F1274-17F6-4934-A4CB-D08F49C2D4E6}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{94C5AB4D-AD1F-425E-946D-FF3E7C324B3D}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>13.98675</XPos>
+																										<YPos>-2.13185</YPos>
+																										<Flags>0</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>16.6466666666667</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -13205,6 +13215,32 @@
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
 																					<AudioSourceRef Name="night_to_day_01" ID="{8C1D60AC-5146-4B61-ABB1-8DDD8A1D5047}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{F80E82E4-0EE2-4141-B479-7AD72E68BB27}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.00891</XPos>
+																										<YPos>-2.13185</YPos>
+																										<Flags>0</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>16.6466666666667</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -13303,6 +13339,32 @@
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
 																					<AudioSourceRef Name="night_to_day_01" ID="{47D568CA-F161-4416-BFBE-34A4598810F6}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{D9532306-6DCA-48A2-AF31-019FC3948479}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.03108</XPos>
+																										<YPos>-2.13185</YPos>
+																										<Flags>0</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>16.6466666666667</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -13401,6 +13463,32 @@
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
 																					<AudioSourceRef Name="night_to_day_01" ID="{A59D28F2-AFA7-4C94-9F3E-E6CA2395B811}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{4EA0A9D3-8D39-4F9E-83C1-423FFB957236}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.05324</XPos>
+																										<YPos>-2.01187</YPos>
+																										<Flags>0</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>16.6466666666667</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -13549,7 +13637,7 @@
 																								<PointList>
 																									<Point>
 																										<XPos>1.34831</XPos>
-																										<YPos>0</YPos>
+																										<YPos>-2.13185</YPos>
 																										<Flags>5</Flags>
 																									</Point>
 																									<Point>
@@ -13709,8 +13797,13 @@
 																								<PointList>
 																									<Point>
 																										<XPos>1.34831</XPos>
-																										<YPos>0</YPos>
+																										<YPos>-2.01187</YPos>
 																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>2.68538</XPos>
+																										<YPos>-2.17346</YPos>
+																										<Flags>0</Flags>
 																									</Point>
 																									<Point>
 																										<XPos>16.9099583333333</XPos>
@@ -13819,6 +13912,32 @@
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
 																					<AudioSourceRef Name="night_to_day_01" ID="{A306FBEB-EAC1-4B0A-A0B1-E90BF57F1CF1}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{08F2190A-D761-4FC7-AD93-D810C2D8964E}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.09758</XPos>
+																										<YPos>-2.13185</YPos>
+																										<Flags>0</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>16.6466666666667</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -13873,7 +13992,209 @@
 										</ObjectList>
 									</ObjectLists>
 								</MusicSegment>
+								<MusicSegment Name="day_to_night_03" ID="{78B69538-15B6-40A7-9C14-9450E2D95213}" ShortID="68493976">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="17247.0369850187"/>
+										<Property Name="Tempo" Type="Real64" Value="178"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="day_to_night_02" ID="{C9F354F2-63B6-4979-AB70-6BADE50D32CA}" ShortID="181458205">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{F82DC40D-CD74-4DF6-AB27-F0FA41BD3070}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="day_to_night_02" ID="{2F8657E6-E370-4D0D-BFF6-F86B67DAC36A}">
+													<Language>SFX</Language>
+													<AudioFile>day_to_night_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="615664298"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{3B886BD8-7200-41C3-92E7-6CDE05263491}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="day_to_night_02" ID="{EBD9A969-743D-4D9A-B883-D61694E14541}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="1348.31460674157"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="16909.9583333333"/>
+																						<Property Name="FadeInDuration" Type="Real64" Value="1250.91492127154"/>
+																						<Property Name="FadeInShape" Type="int16" Value="8"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-1348.31460674157"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="day_to_night_02" ID="{2F8657E6-E370-4D0D-BFF6-F86B67DAC36A}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{32EB77B6-63F4-4361-909B-45C24744E299}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>1.34831</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>16.9099583333333</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{72E43A3B-E9B3-4176-ACC2-BC0E6A4DDBED}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>1.34831</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>16.9099583333333</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{28D2BE19-E4CF-4F04-BEA9-42BC671D5C84}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>1.34831</XPos>
+																										<YPos>-2.13185</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>2.65881</XPos>
+																										<YPos>-2.168</YPos>
+																										<Flags>0</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>16.9099583333333</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																		<Reference>
+																			<Local>
+																				<MusicEventCue Name="" ID="{B9B2AEA6-127B-443A-904C-56BA14E69BFE}" ShortID="920868280">
+																					<ReferenceList>
+																						<Reference Name="PostEventTarget">
+																							<ObjectRef Name="Stop_Day_Melody_03" ID="{A02CA359-4E31-440B-AAAB-CDF554584C9F}" WorkUnitID="{D0D94787-055C-40D2-8653-88018A9A90DA}"/>
+																						</Reference>
+																					</ReferenceList>
+																				</MusicEventCue>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{F8B9C129-09D1-4655-A5EA-693BD2793C48}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{A61FD4DD-D09C-4A9C-80D5-02EAB2790E03}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="13483.1460674157"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="GameState" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Town" ID="{2478A35C-5EEB-4CE7-A31F-E6181DA77410}"/>
+										<CustomState Name="" ID="{261E1FC0-BF45-4CB6-B3BE-C372719B3E58}" ShortID="456139173"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Combat" ID="{4B6B9C84-A5B7-4D4B-B90A-A9A62FF750BA}"/>
+										<CustomState Name="" ID="{FDDB73C6-DE21-401E-BE19-B10D3E503C6D}" ShortID="124610823">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Exploration" ID="{CDE166DA-E50A-4F86-A0B2-0495C843848F}"/>
+										<CustomState Name="" ID="{F5174619-8E79-48D5-9FB0-D87A08394922}" ShortID="442041531">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Beach" ID="{7ABA4F97-B04B-4FDB-BC37-3FCF5DB8F521}"/>
+										<CustomState Name="" ID="{7CF4A79C-96CE-48A9-B342-39A58EEFFA07}" ShortID="868851156">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists>
 								<ObjectList Name="Stingers">
 									<Reference>
@@ -13899,6 +14220,11 @@
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="116"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-1.5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -17039,6 +17365,11 @@
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="160"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -19321,7 +19652,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-2</Value>
+										<Value>-3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -19598,7 +19929,7 @@
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-3</Value>
+										<Value>-4</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

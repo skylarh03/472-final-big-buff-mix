@@ -9,12 +9,12 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A228E558-90A8-EEF9-329C-21D7D59E59FD}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E823080A-3270-2FDD-97AA-3B6335673C62}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<Custom>
-					<Plugin Id="599376110" Name="RoomVerb (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="423697681" Name="Inside_My_Head (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="870337971" Name="Meter (Custom)" LibName="Wwise Meter" LibId="8454147"/>
 				</Custom>
 				<ShareSets>
@@ -60,7 +60,7 @@
 				<AuxBus Id="603224157" Name="Reverb_Indoor">
 					<PluginRefs>
 						<Custom>
-							<PluginRef Id="599376110"/>
+							<PluginRef Id="423697681"/>
 						</Custom>
 					</PluginRefs>
 				</AuxBus>
@@ -254,7 +254,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{2897C5F1-1691-4EB6-6345-ACCC918434AD}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{B7F49318-F7F6-9B87-9E73-805D649EE4C7}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
@@ -284,7 +284,7 @@
 				</File>
 				<File Id="30695796" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>amb_emitter_crowd.wav</ShortName>
-					<CachePath>SFX/amb_emitter_crowd_818F3B66.wem</CachePath>
+					<CachePath>SFX/amb_emitter_crowd_11A93380.wem</CachePath>
 				</File>
 				<File Id="30947667" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>night_base_140_30.wav</ShortName>
@@ -738,10 +738,6 @@
 					<ShortName>exploration_nighttime_07_116bpm.wav</ShortName>
 					<CachePath>SFX/exploration_nighttime_07_116bpm_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="677423853" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>day_to_night_03.wav</ShortName>
-					<CachePath>SFX/day_to_night_03_FBC78EF0.wem</CachePath>
-				</File>
 				<File Id="677697525" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>night_base_140_42.wav</ShortName>
 					<CachePath>SFX/night_base_140_42_FBC78EF0.wem</CachePath>
@@ -886,6 +882,10 @@
 					<ShortName>exploration_daytime_03a_116bpm.wav</ShortName>
 					<CachePath>SFX/exploration_daytime_03a_116bpm_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="858570250" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>sfx_windgust.wav</ShortName>
+					<CachePath>SFX/sfx_windgust_94176F0C.wem</CachePath>
+				</File>
 				<File Id="863307812" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>strings_section2.wav</ShortName>
 					<CachePath>SFX/strings_section2_FBC78EF0.wem</CachePath>
@@ -1026,6 +1026,7 @@
 			<Plugins>
 				<Custom>
 					<Plugin Id="374890108" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="480650188" Name="Parametric EQ (Custom)" LibName="Wwise Parametric EQ" LibId="6881283"/>
 				</Custom>
 			</Plugins>
 			<Events>
@@ -1100,7 +1101,6 @@
 								<MediaRef Id="473494768"/>
 								<MediaRef Id="511836074"/>
 								<MediaRef Id="615664298"/>
-								<MediaRef Id="677423853"/>
 								<MediaRef Id="795287142"/>
 								<MediaRef Id="1049700512"/>
 							</MediaRefs>
@@ -1309,7 +1309,6 @@
 								<MediaRef Id="473494768"/>
 								<MediaRef Id="511836074"/>
 								<MediaRef Id="615664298"/>
-								<MediaRef Id="677423853"/>
 								<MediaRef Id="795287142"/>
 								<MediaRef Id="1049700512"/>
 							</MediaRefs>
@@ -1445,6 +1444,7 @@
 						<ActionSetStateEntry GroupId="3729505769" Id="1011622525" Name="Night"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="2440680759" Name="ForceStop_Sidechain" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="4058101365" Name="GameStart" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="238184512"/>
@@ -1516,7 +1516,6 @@
 								<MediaRef Id="473494768"/>
 								<MediaRef Id="511836074"/>
 								<MediaRef Id="615664298"/>
-								<MediaRef Id="677423853"/>
 								<MediaRef Id="795287142"/>
 								<MediaRef Id="1049700512"/>
 							</MediaRefs>
@@ -1710,7 +1709,7 @@
 						<MediaRef Id="582659551"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="876452814" Name="Play_Emitter_Crowd" MaxAttenuation="75" DurationType="OneShot" DurationMin="64" DurationMax="64">
+				<Event Id="876452814" Name="Play_Emitter_Crowd" MaxAttenuation="75" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="30695796"/>
 					</MediaRefs>
@@ -1788,9 +1787,19 @@
 						<ActionTriggerEntry Id="1659302645" Name="Player_GoToBed"/>
 					</ActionTrigger>
 				</Event>
+				<Event Id="2044747472" Name="Play_UI" DurationType="OneShot" DurationMin="0.16345833" DurationMax="0.16345833">
+					<MediaRefs>
+						<MediaRef Id="679943488"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="43599987" Name="Play_UI_Button" DurationType="OneShot" DurationMin="0.16345833" DurationMax="0.16345833">
 					<MediaRefs>
 						<MediaRef Id="679943488"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3075857625" Name="Play_WindGust" DurationType="OneShot" DurationMin="3.984375" DurationMax="3.984375">
+					<MediaRefs>
+						<MediaRef Id="858570250"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1092604815" Name="Set_CombatTension_High" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
@@ -1874,6 +1883,11 @@
 								<MediaRef Id="1019690041"/>
 								<MediaRef Id="1071862539"/>
 							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="480650188"/>
+								</Custom>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="4091656514" Id="4075332698"/>
@@ -1973,5 +1987,5 @@
 			</Triggers>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{CD3A2BEB-985B-C7CF-6A40-F55627707013}</FileHash>
+	<FileHash>{B043D9E2-00E9-AF95-0EDA-F10A4229FC6F}</FileHash>
 </SoundBanksInfo>

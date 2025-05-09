@@ -56,7 +56,7 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
-	599376110	RoomVerb (Custom)	Wwise RoomVerb			
+	423697681	Inside_My_Head (Custom)	Wwise RoomVerb			
 	870337971	Meter (Custom)	Wwise Meter			
 	2675251108	New_Peak_Limiter	Wwise Peak Limiter			
 

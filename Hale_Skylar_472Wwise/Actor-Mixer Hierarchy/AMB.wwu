@@ -24,6 +24,11 @@
 						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -407,9 +412,10 @@
 				<Sound Name="amb_emitter_crowd" ID="{01A095F0-E807-48E9-B4AA-87F15ED72A8F}" ShortID="254029318">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>19</Value>
+								<Value>15</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -426,6 +432,9 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="amb_emitter_crowd" ID="{5F4FFFBF-5609-4C23-8E5B-184C0C6E5053}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>amb_emitter_crowd.wav</AudioFile>
 							<MediaIDList>
@@ -438,8 +447,19 @@
 							<StateGroupInfo>
 								<StateGroupRef Name="GameState" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}"/>
 							</StateGroupInfo>
+							<StateGroupInfo>
+								<StateGroupRef Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}"/>
+							</StateGroupInfo>
 						</StateGroupList>
 						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
+								<CustomState Name="" ID="{28706BEB-F51B-48CA-A13A-96A3D98E957E}" ShortID="527595435">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
 							<CustomState>
 								<StateRef Name="Town" ID="{2478A35C-5EEB-4CE7-A31F-E6181DA77410}"/>
 								<CustomState Name="" ID="{1B159DB1-672C-4E88-8E78-689F3C8E6ABD}" ShortID="57242893"/>
@@ -451,6 +471,10 @@
 										<Property Name="Volume" Type="Real64" Value="-108"/>
 									</PropertyList>
 								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+								<CustomState Name="" ID="{632EFB91-A891-4523-961F-0F85B5DC912C}" ShortID="177798446"/>
 							</CustomState>
 							<CustomState>
 								<StateRef Name="Exploration" ID="{CDE166DA-E50A-4F86-A0B2-0495C843848F}"/>
@@ -747,6 +771,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="amb_emitter_frog" ID="{62A4B3E5-0A23-4333-9772-307E4286AD8B}" ShortID="690849017">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
@@ -835,6 +866,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="amb_emitter_frog_4" ID="{3ECA78C7-6B4C-4C93-B0B4-073A2AE4A626}" ShortID="452693356">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
@@ -857,6 +895,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="amb_emitter_frog_5" ID="{D0168AA2-B920-4E29-9E42-77A5233F9A3F}" ShortID="184012324">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
@@ -879,6 +924,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="amb_emitter_frog_6" ID="{DF89D216-BB06-422C-82B0-444AD9271380}" ShortID="97869012">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
@@ -901,6 +953,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="amb_emitter_frog_7" ID="{ACAC7DEB-B660-4323-A86C-D6F9D0C9D907}" ShortID="586451933">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
@@ -923,6 +982,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="amb_emitter_frog_8" ID="{1E7F34CF-CAF7-4396-80BD-06BF2C690F9E}" ShortID="149943721">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
@@ -1499,7 +1565,7 @@
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-16</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1708,6 +1774,7 @@
 								<Sound Name="amb_bed_town" ID="{0822FDCB-23B6-48A2-954B-CDDAD1F2814E}" ShortID="136903160">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1738,11 +1805,7 @@
 										<CustomStateList>
 											<CustomState>
 												<StateRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
-												<CustomState Name="" ID="{D959BC71-4CCF-46F8-9EE4-C9510F5C2C85}" ShortID="1072644207">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="3"/>
-													</PropertyList>
-												</CustomState>
+												<CustomState Name="" ID="{D959BC71-4CCF-46F8-9EE4-C9510F5C2C85}" ShortID="1072644207"/>
 											</CustomState>
 											<CustomState>
 												<StateRef Name="False" ID="{A01DDE6E-383A-4A15-9ABF-C48223CA1DE4}"/>
@@ -1750,11 +1813,7 @@
 											</CustomState>
 											<CustomState>
 												<StateRef Name="True" ID="{FE48C335-1E4C-4AF1-B7ED-522B6F6FC8AC}"/>
-												<CustomState Name="" ID="{5F45397D-908E-4DDC-86B6-928B179DB23B}" ShortID="842919546">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="6"/>
-													</PropertyList>
-												</CustomState>
+												<CustomState Name="" ID="{5F45397D-908E-4DDC-86B6-928B179DB23B}" ShortID="842919546"/>
 											</CustomState>
 											<CustomState>
 												<StateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
@@ -1762,6 +1821,50 @@
 											</CustomState>
 										</CustomStateList>
 									</StateInfo>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{648F0984-98FC-4F6E-A852-728CE63DAABC}" ShortID="111902956">
+														<ReferenceList>
+															<Reference Name="Effect">
+																<Custom>
+																	<Effect Name="Parametric EQ (Custom)" ID="{23B3012D-7055-439D-80AF-00A19F6C93BA}" ShortID="480650188" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																		<PropertyList>
+																			<Property Name="FrequencyBand1" Type="Real32" Value="674"/>
+																			<Property Name="FrequencyBand3" Type="Real32" Value="4913"/>
+																			<Property Name="GainBand1" Type="Real32" Value="8"/>
+																			<Property Name="GainBand3" Type="Real32" Value="-8"/>
+																		</PropertyList>
+																	</Effect>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+														<StateInfo>
+															<CustomStateList>
+																<CustomState>
+																	<StateRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
+																	<CustomState Name="" ID="{B2B264A4-A9EB-44E6-BC24-EBC7F55C178D}" ShortID="827216100"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="False" ID="{A01DDE6E-383A-4A15-9ABF-C48223CA1DE4}"/>
+																	<CustomState Name="" ID="{6EEA45AB-D551-4EA1-AE18-5B9911D814D6}" ShortID="81886560"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="True" ID="{FE48C335-1E4C-4AF1-B7ED-522B6F6FC8AC}"/>
+																	<CustomState Name="" ID="{8021A700-A631-44DA-A684-82CDF7F327FE}" ShortID="368223592"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+																	<CustomState Name="" ID="{DF981248-9F97-4501-BD9E-1BC47B79DD7E}" ShortID="124026103"/>
+																</CustomState>
+															</CustomStateList>
+														</StateInfo>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 									<ActiveSourceList>
 										<ActiveSource Name="amb_bed_town" ID="{8D7E9693-EA13-4343-A626-A388A0A5B813}" Platform="Linked"/>
 									</ActiveSourceList>

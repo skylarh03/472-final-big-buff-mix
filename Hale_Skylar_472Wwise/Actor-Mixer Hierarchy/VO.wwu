@@ -33,6 +33,58 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="GameState" ID="{4D2BACBD-CD3D-4A7B-BA8E-138F164FEEBC}"/>
+							</StateGroupInfo>
+							<StateGroupInfo>
+								<StateGroupRef Name="TimeOfDay" ID="{2BBC5840-336D-4685-8392-26BA3393B836}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
+								<CustomState Name="" ID="{81F28448-F0DD-4E20-9714-0DF1D132636A}" ShortID="915969945">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Town" ID="{2478A35C-5EEB-4CE7-A31F-E6181DA77410}"/>
+								<CustomState Name="" ID="{8F929073-6807-401D-B2F4-46FBD0DBAC2A}" ShortID="12348474"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Combat" ID="{4B6B9C84-A5B7-4D4B-B90A-A9A62FF750BA}"/>
+								<CustomState Name="" ID="{D89972AA-7DDB-4F13-937F-490771D5FA44}" ShortID="413228197">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+								<CustomState Name="" ID="{52573D65-2F4F-4F9A-8102-93597BBBA7E4}" ShortID="14351464"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Exploration" ID="{CDE166DA-E50A-4F86-A0B2-0495C843848F}"/>
+								<CustomState Name="" ID="{090B650F-D725-4C42-B79B-E25EB718B6D6}" ShortID="61206888">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Beach" ID="{7ABA4F97-B04B-4FDB-BC37-3FCF5DB8F521}"/>
+								<CustomState Name="" ID="{716D0F83-D659-453B-91ED-A78895BF0C5C}" ShortID="405319143">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="vo_dialogueLoop" ID="{AAE84015-C76A-4C07-85DA-45C8DB1C1471}" Platform="Linked"/>
 					</ActiveSourceList>

@@ -1142,6 +1142,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="ForceStop_Sidechain" ID="{28C57494-A8F4-4FCE-950F-4FA0D32E679F}">
+							<ChildrenList>
+								<Action Name="" ID="{CF55C0F8-6FFD-4C8D-8AD1-D0FC70DF7978}" ShortID="175745875">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sidechaining" ID="{864882C8-9388-4B3C-A984-158775314E71}" WorkUnitID="{641D1E10-9339-45CB-8064-2A5E4AC0EC54}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

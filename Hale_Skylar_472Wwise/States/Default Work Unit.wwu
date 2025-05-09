@@ -28,6 +28,20 @@
 						<State Name="Combat" ID="{4B6B9C84-A5B7-4D4B-B90A-A9A62FF750BA}"/>
 						<State Name="Beach" ID="{7ABA4F97-B04B-4FDB-BC37-3FCF5DB8F521}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Town" ID="{2478A35C-5EEB-4CE7-A31F-E6181DA77410}"/>
+							<EndState Name="Combat" ID="{4B6B9C84-A5B7-4D4B-B90A-A9A62FF750BA}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Exploration" ID="{CDE166DA-E50A-4F86-A0B2-0495C843848F}"/>
+							<EndState Name="Combat" ID="{4B6B9C84-A5B7-4D4B-B90A-A9A62FF750BA}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 				<StateGroup Name="CombatTension" ID="{2C91092E-BC3F-4A35-A6EF-F91557A4964E}">
 					<PropertyList>

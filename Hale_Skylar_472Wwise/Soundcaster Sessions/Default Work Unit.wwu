@@ -137,10 +137,10 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="False" ID="{F4742879-D415-43DB-9A4C-CE0A06B505BA}"/>
-						<CurrentStateRef Name="Day" ID="{D678886F-E542-4E3C-B8AD-7099400C97A0}"/>
+						<CurrentStateRef Name="Night" ID="{D2FF990E-12DF-4167-9681-1905B13BB3EF}"/>
 						<CurrentStateRef Name="False" ID="{A01DDE6E-383A-4A15-9ABF-C48223CA1DE4}"/>
 						<CurrentStateRef Name="Low" ID="{4F472619-ABF5-46F8-A870-1F512C5B19B0}"/>
-						<CurrentStateRef Name="Exploration" ID="{CDE166DA-E50A-4F86-A0B2-0495C843848F}"/>
+						<CurrentStateRef Name="Town" ID="{2478A35C-5EEB-4CE7-A31F-E6181DA77410}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

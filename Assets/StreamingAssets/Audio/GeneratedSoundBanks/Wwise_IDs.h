@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID FORCESET_TIMEOFDAY_DAY = 1866332930U;
         static const AkUniqueID FORCESET_TIMEOFDAY_NIGHT = 1700992294U;
+        static const AkUniqueID FORCESTOP_SIDECHAIN = 2440680759U;
         static const AkUniqueID GAMESTART = 4058101365U;
         static const AkUniqueID HARDSTOP_DAY_MELODY_01 = 3095270486U;
         static const AkUniqueID HARDSTOP_DAY_MELODY_02 = 3095270485U;
@@ -35,7 +36,9 @@ namespace AK
         static const AkUniqueID PLAY_STINGER_EXITCOMBAT = 4268407383U;
         static const AkUniqueID PLAY_STINGER_ITEM_COLLECTION = 2049735205U;
         static const AkUniqueID PLAY_STINGER_PLAYER_GOTOBED = 2730318483U;
+        static const AkUniqueID PLAY_UI = 2044747472U;
         static const AkUniqueID PLAY_UI_BUTTON = 43599987U;
+        static const AkUniqueID PLAY_WINDGUST = 3075857625U;
         static const AkUniqueID SET_COMBATTENSION_HIGH = 1092604815U;
         static const AkUniqueID SET_COMBATTENSION_LOW = 2957603579U;
         static const AkUniqueID SET_GAMESTATE_BEACH = 3248879779U;
