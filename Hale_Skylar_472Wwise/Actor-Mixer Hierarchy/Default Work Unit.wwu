@@ -80,7 +80,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7C770FB3-0E08-4036-B3C4-80D8E0D0DDCD}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+							<ObjectRef Name="SFX" ID="{83FC9631-87A5-495E-A95F-49B8E2033289}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

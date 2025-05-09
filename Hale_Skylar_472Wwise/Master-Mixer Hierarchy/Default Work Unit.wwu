@@ -187,6 +187,48 @@
 									</ValueList>
 								</Property>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_Outdoor" ID="{4060D6E1-2CB0-4986-AB98-57F30EB2EA5A}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+								<Reference Name="UserAuxSend1">
+									<ObjectRef Name="Reverb_Indoor" ID="{D0AF4B2F-021E-4F97-945F-D9E766E63268}" WorkUnitID="{CCDBC7CB-0E5D-4E9B-BC7A-0BB2FEC01806}"/>
+								</Reference>
+							</ReferenceList>
+							<StateInfo>
+								<StatePropertyList>
+									<Property Name="BusVolume"/>
+									<Property Name="Highpass"/>
+									<Property Name="Lowpass"/>
+									<Property Name="Pitch"/>
+									<Property Name="UserAuxSendVolume0"/>
+									<Property Name="UserAuxSendVolume1"/>
+									<Property Name="Volume"/>
+								</StatePropertyList>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Inside" ID="{5AF6EA72-B1EB-408A-8AF4-85B7E188F8E2}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="False" ID="{F4742879-D415-43DB-9A4C-CE0A06B505BA}"/>
+										<CustomState Name="" ID="{FE40223D-D759-496B-8290-06393E469FB8}" ShortID="904855131">
+											<PropertyList>
+												<Property Name="UserAuxSendVolume1" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="True" ID="{3F9BC447-B1FF-4E52-AE37-CED9529785B7}"/>
+										<CustomState Name="" ID="{878DE072-2C71-40FA-AA4C-A2520B36C83C}" ShortID="540448050">
+											<PropertyList>
+												<Property Name="UserAuxSendVolume0" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</Bus>
 						<Bus Name="AMB" ID="{B1A0C875-8407-467A-8D53-99A80AD4DAE3}">
 							<PropertyList>

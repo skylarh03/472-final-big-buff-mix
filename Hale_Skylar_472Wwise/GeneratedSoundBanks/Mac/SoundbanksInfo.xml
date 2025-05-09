@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B706EFF8-20E2-886B-8386-5FBB60831DA7}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{5AAE3E93-6FD7-6775-B5F5-C1580B3D44F5}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -28,7 +28,12 @@
 			</Plugins>
 			<Busses>
 				<Bus Id="348963605" Name="Reverb"/>
-				<Bus Id="393239870" Name="SFX"/>
+				<Bus Id="393239870" Name="SFX">
+					<AuxBusRefs>
+						<AuxBusRef Id="603224157" Name="Reverb_Indoor"/>
+						<AuxBusRef Id="1578973140" Name="Reverb_Outdoor"/>
+					</AuxBusRefs>
+				</Bus>
 				<Bus Id="1117531639" Name="AMB">
 					<AuxBusRefs>
 						<AuxBusRef Id="603224157" Name="Reverb_Indoor"/>
@@ -254,7 +259,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{06803AD4-F60B-83DB-437D-D2446452532B}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{C5A83834-EF6D-E18A-4BCC-E93DE2B3FD07}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
@@ -1996,5 +2001,5 @@
 			</Triggers>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F8470FC5-D42B-6F21-D706-4A288FDD08D9}</FileHash>
+	<FileHash>{EBCF65E2-B296-C534-9BFF-032379C29390}</FileHash>
 </SoundBanksInfo>
